@@ -39,9 +39,6 @@ public class WebDriverHelper {
 		try {
 			String filename = "src/test/resources/screenshots/"+"test_"+errorLocation+"_failed.png";
 			FileUtils.copyFile(scrFile, new File(filename));
-			//logger.Log(LOG_FILE, "********** Test "+errorLocation+" Failed ************");
-			//logger.Log(LOG_FILE," generated test_"+errorLocation+ "_failed.png");
-			//logger.Log(LOG_FILE,"**********************************************************************");
 		} catch (IOException e) {System.out.println("Couldn't take the screenshot ");}	
 	}
 	
