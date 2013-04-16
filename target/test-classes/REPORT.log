@@ -1,0 +1,88 @@
+[Sun Apr 14 12:16:50 EEST 2013] TestHardExternCapacitate500(): Verifica optiunea de a afisa pe pagina doar produsele avand capacitate 500GB
+[Sun Apr 14 12:16:53 EEST 2013] Numarul de produse avand capacitatea 500Gb sunt: 11
+[Sun Apr 14 12:16:53 EEST 2013] TestHardExternCapacitate500(): TEST PASSED
+[Sun Apr 14 12:24:22 EEST 2013] TestHardExternInterfata20USB(): Verifica optiunea de a afisa pe pagina doar produsele avand Interfata 2.0USB
+[Sun Apr 14 12:24:26 EEST 2013] Numarul de produse avand interfata 2.0USB: 8
+[Sun Apr 14 12:24:26 EEST 2013] TestHardExternInterfata20USB(): TEST PASSED
+[Sun Apr 14 12:30:02 EEST 2013] TestHardExternInterfata30USB(): Verifica optiunea de a afisa pe pagina doar produsele avand Interfata 3.0USB
+[Sun Apr 14 12:30:06 EEST 2013] Numarul de produse avand interfata 3.0USB: 17
+[Sun Apr 14 12:30:06 EEST 2013] TestHardExternInterfata30USB: TEST PASSED
+[Sun Apr 14 12:35:45 EEST 2013] TestHardExternMarcaSeagate(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Seagate
+[Sun Apr 14 12:35:48 EEST 2013] Numarul de produse Seagate sunt: 9
+[Sun Apr 14 12:35:48 EEST 2013] TestHardExternMarcaSeagate(): TEST PASSED
+[Sun Apr 14 12:41:32 EEST 2013] TestHardExternMarcaToshiba(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba
+[Sun Apr 14 12:41:35 EEST 2013] Numarul de produse Toshiba sunt: 1
+[Sun Apr 14 12:41:35 EEST 2013] TestHardExternMarcaToshiba(): TEST PASSED
+[Sun Apr 14 12:49:52 EEST 2013] TestHardExternMarcaWesternDigital(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba
+[Sun Apr 14 12:49:55 EEST 2013] Numarul de produse WD sunt: 11
+[Sun Apr 14 12:49:55 EEST 2013] TestHardExternMarcaWesternDigital(): TEST PASSED
+[Sun Apr 14 21:24:32 EEST 2013] TestMagazineDomo(): Verifica linkul catre pagina care contine judetele cu magazine DOMO
+[Sun Apr 14 21:24:33 EEST 2013] TestMagazineDomo(): TEST PASSED
+[Mon Apr 15 21:04:21 EEST 2013] TestNotebookDiagonala11_6(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 11,6
+[Mon Apr 15 21:04:24 EEST 2013] Numarul de produse avand diagonala 11.6 sunt: 6
+[Mon Apr 15 21:04:24 EEST 2013] TestNotebookDiagonala11_6(): TEST PASSED
+[Mon Apr 15 21:07:28 EEST 2013] TestNotebookDiagonala13_3(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 11,6
+[Mon Apr 15 21:10:04 EEST 2013] TestNotebookDiagonala13_3(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 11,6
+[Mon Apr 15 21:11:24 EEST 2013] TestNotebookDiagonala13_3(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 11,6
+[Mon Apr 15 21:11:31 EEST 2013] Numarul de produse avand diagonala 13.3 sunt: 32
+[Mon Apr 15 21:11:31 EEST 2013] TestNotebookDiagonala13_3(): TEST PASSED
+[Mon Apr 15 21:17:12 EEST 2013] TestNotebookDiagonala14(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 14
+[Mon Apr 15 21:17:16 EEST 2013] Numarul de produse avand diagonala 14 sunt: 18
+[Mon Apr 15 21:17:16 EEST 2013] TestNotebookDiagonala13_3(): TEST PASSED
+[Mon Apr 15 21:21:20 EEST 2013] TestNotebookDiagonala15_4(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 15,4
+[Mon Apr 15 21:21:23 EEST 2013] Numarul de produse avand diagonala 15.4 sunt: 3
+[Mon Apr 15 21:21:23 EEST 2013] TestNotebookDiagonala15_4(): TEST PASSED
+[Mon Apr 15 21:27:35 EEST 2013] TestNotebookDiagonala15_5(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 15,5
+[Mon Apr 15 21:27:39 EEST 2013] Numarul de produse avand diagonala 15.5 sunt: 4
+[Mon Apr 15 21:27:39 EEST 2013] TestNotebookDiagonala15_5(): TEST PASSED
+[Mon Apr 15 21:31:06 EEST 2013] TestNotebookDiagonala15_5(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 15,6
+[Mon Apr 15 21:31:43 EEST 2013] TestNotebookDiagonala15_5(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 15,6
+[Mon Apr 15 21:31:54 EEST 2013] Numarul de produse avand diagonala 15.6 sunt: 76
+[Mon Apr 15 21:31:54 EEST 2013] TestNotebookDiagonala15_6(): TEST PASSED
+[Mon Apr 15 21:38:05 EEST 2013] TestNotebookDiagonala17_3(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 17,3
+[Mon Apr 15 21:38:10 EEST 2013] Numarul de produse avand diagonala 17.3 sunt: 13
+[Mon Apr 15 21:38:10 EEST 2013] TestNotebookDiagonala17_3(): TEST PASSED
+[Mon Apr 15 21:45:52 EEST 2013] TestNotebookMarcaAcer(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Acer
+[Mon Apr 15 21:45:56 EEST 2013] TestNotebookMarcaAcer(): TEST FAILLED !!!
+[Mon Apr 15 21:56:48 EEST 2013] TestNotebookMarcaApple(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Apple
+[Mon Apr 15 21:56:51 EEST 2013] Numarul de produse MacBook sunt: 9
+[Mon Apr 15 21:56:51 EEST 2013] TestNotebookMarcaAcer(): TEST PASSED
+[Mon Apr 15 22:02:25 EEST 2013] TestNotebookMarcaAsus(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Asus
+[Mon Apr 15 22:02:28 EEST 2013] Numarul de produse Asus sunt: 5
+[Mon Apr 15 22:02:28 EEST 2013] TestNotebookMarcaApple(): TEST PASSED
+[Mon Apr 15 22:08:18 EEST 2013] TestNotebookMarcaDell(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Dell
+[Mon Apr 15 22:08:22 EEST 2013] Numarul de produse Dell sunt: 7
+[Mon Apr 15 22:08:22 EEST 2013] TestNotebookMarcaDell(): TEST PASSED
+[Mon Apr 15 22:15:55 EEST 2013] TestNotebookMarcaFujitsu(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Fujitsu
+[Mon Apr 15 22:15:59 EEST 2013] Numarul de produse Fujitsu sunt: 7
+[Mon Apr 15 22:15:59 EEST 2013] TestNotebookMarcaFujitsu(): TEST PASSED
+[Mon Apr 15 22:22:08 EEST 2013] TestNotebookMarcaLenovo(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Lenovo
+[Mon Apr 15 22:22:15 EEST 2013] Numarul de produse Lenovo sunt: 4
+[Mon Apr 15 22:22:15 EEST 2013] TestNotebookMarcaLenovo(): TEST PASSED
+[Mon Apr 15 22:35:29 EEST 2013] TestNotebookMarcaSamsung(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Samsung
+[Mon Apr 15 22:35:32 EEST 2013] Numarul de produse Samsung sunt: 7
+[Mon Apr 15 22:35:32 EEST 2013] TestNotebookMarcaSamsung(): TEST PASSED
+[Mon Apr 15 22:35:50 EEST 2013] TestNotebookMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony Vaio
+[Mon Apr 15 22:35:53 EEST 2013] Numarul de produse Sony sunt: 10
+[Mon Apr 15 22:35:53 EEST 2013] TestNotebookMarcaSony(): TEST PASSED
+[Mon Apr 15 23:15:13 EEST 2013] TestTVLEDDiagonala_102(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 102
+[Mon Apr 15 23:15:19 EEST 2013] Numarul de produse avand diagonala 102 sunt: 19
+[Mon Apr 15 23:15:19 EEST 2013] TestNotebookDiagonala102(): TEST PASSED
+[Mon Apr 15 23:17:06 EEST 2013] TestTVLEDDiagonala_119(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 119
+[Mon Apr 15 23:17:11 EEST 2013] Numarul de produse avand diagonala 119 sunt: 12
+[Mon Apr 15 23:17:11 EEST 2013] TestTVLEDDiagonala119(): TEST PASSED
+[Mon Apr 15 23:17:38 EEST 2013] TestTVLEDDiagonala_117(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 117
+[Mon Apr 15 23:17:42 EEST 2013] TestNotebookDiagonala117(): TEST FAILLED !!!
+[Mon Apr 15 23:20:58 EEST 2013] TestTVLEDDiagonala_117(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 117
+[Mon Apr 15 23:21:06 EEST 2013] Numarul de produse avand diagonala 117 sunt: 22
+[Mon Apr 15 23:21:06 EEST 2013] TestTVLEDDiagonala117(): TEST PASSED
+[Mon Apr 15 23:43:39 EEST 2013] TestTVLEDDiagonala_127(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 127
+[Mon Apr 15 23:43:43 EEST 2013] Numarul de produse avand diagonala 127 sunt: 3
+[Mon Apr 15 23:43:43 EEST 2013] TestTVLEDDiagonala127(): TEST PASSED
+[Mon Apr 15 23:47:09 EEST 2013] TestTVLEDDiagonala152(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 152
+[Mon Apr 15 23:47:13 EEST 2013] Numarul de produse avand diagonala 152 sunt: 1
+[Mon Apr 15 23:47:13 EEST 2013] TestTVLEDDiagonala152(): TEST PASSED
+[Mon Apr 15 23:47:40 EEST 2013] TestTVLEDDiagonala132(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 132
+[Mon Apr 15 23:47:45 EEST 2013] Numarul de produse avand diagonala 132 sunt: 1
+[Mon Apr 15 23:47:45 EEST 2013] TestTVLEDDiagonala132(): TEST PASSED
+[Mon Apr 15 23:49:05 EEST 2013] TestTVLEDDiagonala163(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 163
