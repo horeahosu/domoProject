@@ -17,6 +17,7 @@ public class MarcaSony {
 
 	FirefoxDriver d = WebDriverHelper.getDriverWithUserAgent(Constants.USER_AGENT);
 	WebDriverHelper h = new WebDriverHelper(d);
+	static String LOG_FILE = "src/test/resources/REPORT.log";
 	int i=1, j=1, k=0;
 	String pret_produs;
 	boolean b=false;
@@ -29,12 +30,22 @@ public class MarcaSony {
 		d.get(Constants.SITE_TVLED);
 	}
 	
+	/**
+	 * TestTVLEDMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony
+	 * 
+	 */
+	
 	@Test
-	public void TestMarcaSony() throws InterruptedException, IOException
+	public void TestTVLEDMarcaSony() throws InterruptedException, IOException
 	{
-		
+		logger.Log(LOG_FILE, "TestTVLEDMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony");
 		//verific daca sunt pe site-ul bun
 		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
+		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED")==false)
+		{
+			logger.Log(LOG_FILE, "TestTVLEDMarcaSony(): Wrong page TEST FAILLED !!!");
+			h.screenShooter("TestTVLEDMarcaSony", d);
+		}
 		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED"));
 		
 		
@@ -47,6 +58,11 @@ public class MarcaSony {
 			if (h.isElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong"))==true)
 			{	
 				//procesez
+				if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_SONY)==false)
+				{
+					logger.Log(LOG_FILE, "TestTVLEDMarcaSony(): TEST FAILLED !!!");
+					h.screenShooter("TestTVLEDMarcaSony", d);
+				}
 				assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_SONY));
 				//procesez
 				
@@ -69,7 +85,8 @@ public class MarcaSony {
 					else
 					{
 						b=true;
-						System.out.println("Numarul de produse "+Constants.MARCA_SONY+" sunt: "+k);
+						logger.Log(LOG_FILE, "Numarul de produse "+Constants.MARCA_SONY+" sunt: "+k);
+						logger.Log(LOG_FILE, "TestTVLEDMarcaSony(): TEST PASSED");
 						i=1;
 						j=1;
 					}
