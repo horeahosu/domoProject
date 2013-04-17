@@ -29,8 +29,13 @@ public class MarcaWestwood {
 		d.get(Constants.SITE_TVLED);
 	}
 	
+	/**
+	 * TestTVLEDMarcaWestwood(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Westwood
+	 * 
+	 */
+	
 	@Test
-	public void TestMarcaWestwood() throws InterruptedException, IOException
+	public void TestTVLEDMarcaWestwood() throws InterruptedException, IOException
 	{
 		
 		//verific daca sunt pe site-ul bun

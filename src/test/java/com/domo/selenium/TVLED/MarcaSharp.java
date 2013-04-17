@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.domo.selenium.util.Constants;
 import com.domo.selenium.util.WebDriverHelper;
+import com.domo.selenium.util.logger;
 
 public class MarcaSharp {
 	

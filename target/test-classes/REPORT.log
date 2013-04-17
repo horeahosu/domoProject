@@ -86,3 +86,9 @@
 [Mon Apr 15 23:47:45 EEST 2013] Numarul de produse avand diagonala 132 sunt: 1
 [Mon Apr 15 23:47:45 EEST 2013] TestTVLEDDiagonala132(): TEST PASSED
 [Mon Apr 15 23:49:05 EEST 2013] TestTVLEDDiagonala163(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 163
+[Wed Apr 17 22:30:36 EEST 2013] TestTVLEDDiagonala163(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 163
+[Wed Apr 17 22:30:40 EEST 2013] Numarul de produse avand diagonala 163 sunt: 1
+[Wed Apr 17 22:30:40 EEST 2013] TestTVLEDDiagonala163(): TEST PASSED
+[Wed Apr 17 22:43:17 EEST 2013] TestTVLEDDiagonala56(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 56
+[Wed Apr 17 22:43:22 EEST 2013] Numarul de produse avand diagonala 56 sunt: 3
+[Wed Apr 17 22:43:22 EEST 2013] TestTVLEDDiagonala56(): TEST PASSED

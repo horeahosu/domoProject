@@ -29,8 +29,13 @@ public class MarcaToshiba {
 		d.get(Constants.SITE_TVLED);
 	}
 	
+	/**
+	 * TestTVLEDMarcaToshiba(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba
+	 * 
+	 */
+	
 	@Test
-	public void TestMarcaToshib() throws InterruptedException, IOException
+	public void TestTVLEDMarcaToshiba() throws InterruptedException, IOException
 	{
 		
 		//verific daca sunt pe site-ul bun

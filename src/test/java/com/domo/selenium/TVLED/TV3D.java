@@ -29,6 +29,11 @@ public class TV3D {
 		d.get(Constants.SITE_TVLED);
 	}
 	
+	/**
+	 * TestTV3D(): Verifica optiunea de a afisa pe pagina doar produsele 3D
+	 * 
+	 */
+	
 	@Test
 	public void TestTV3D() throws InterruptedException, IOException
 	{

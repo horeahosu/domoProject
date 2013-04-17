@@ -30,6 +30,11 @@ public class Diagonala_189 {
 		d.get(Constants.SITE_TVLED);
 	}
 	
+	/**
+	 * TestTVLEDDiagonala_189(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 189
+	 * 
+	 */
+	
 	@Test
 	public void TestDiagonala_189() throws InterruptedException, IOException
 	{

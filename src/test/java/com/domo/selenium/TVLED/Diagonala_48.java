@@ -21,7 +21,6 @@ public class Diagonala_48 {
 	int i=3, j=1, k=0;
 	String pret_produs;
 	boolean b=false;
-	//blabla
 	
 	@Before
 	public void doSetup()
@@ -29,6 +28,11 @@ public class Diagonala_48 {
 		d.manage().deleteAllCookies();
 		d.get(Constants.SITE_TVLED);
 	}
+	
+	/**
+	 * TestTVLEDDiagonala_48(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 48
+	 * 
+	 */
 	
 	@Test
 	public void TestDiagonala_48() throws InterruptedException, IOException
