@@ -21,7 +21,7 @@ public class Diagonala_48 {
 	int i=3, j=1, k=0;
 	String pret_produs;
 	boolean b=false;
-	
+	//blabla
 	
 	@Before
 	public void doSetup()
