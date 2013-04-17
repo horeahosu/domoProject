@@ -17,6 +17,7 @@ public class Diagonala_189 {
 
 	FirefoxDriver d = WebDriverHelper.getDriverWithUserAgent(Constants.USER_AGENT);
 	WebDriverHelper h = new WebDriverHelper(d);
+	static String LOG_FILE = "src/test/resources/REPORT.log";
 	int i=3, j=1, k=0;
 	String pret_produs;
 	boolean b=false;
