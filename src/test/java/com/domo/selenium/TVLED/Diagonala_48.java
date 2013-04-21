@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.domo.selenium.util.Constants;
 import com.domo.selenium.util.WebDriverHelper;
+import com.domo.selenium.util.logger;
 
 public class Diagonala_48 {
 	
@@ -35,11 +36,16 @@ public class Diagonala_48 {
 	 */
 	
 	@Test
-	public void TestDiagonala_48() throws InterruptedException, IOException
+	public void TestTVLEDDiagonala_48() throws InterruptedException, IOException
 	{
-		
+		logger.Log(LOG_FILE, "TestTVLEDDiagonala48(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 48");
 		//verific daca sunt pe site-ul bun
 		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
+		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED")==false)
+		{
+			logger.Log(LOG_FILE, "TestTVLEDDiagonala48(): Wrong page TEST FAILLED !!!");
+			h.screenShooter("TestTVLEDDiagonala48", d);
+		}
 		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED"));
 		
 		d.findElement(By.id("CB_2_48_cm")).click();
@@ -50,6 +56,11 @@ public class Diagonala_48 {
 			if (h.isElementPresent(By.xpath("html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr/td[2]"))==true)
 			{	
 				//procesez
+				if (d.findElement(By.xpath("html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr/td[2]")).getText().contains(Constants.DIAGONALA_48)==false)
+				{
+					logger.Log(LOG_FILE, "TestTVLEDDiagonala48(): TEST FAILLED !!!");
+					h.screenShooter("TestTVLEDDiagonala48", d);
+				}
 				assertTrue(d.findElement(By.xpath("html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr/td[2]")).getText().contains(Constants.DIAGONALA_48));
 				//procesez
 				
@@ -72,7 +83,8 @@ public class Diagonala_48 {
 					else
 					{
 						b=true;
-						System.out.println("Numarul de produse avand diagonala "+Constants.DIAGONALA_48+" sunt: "+k);
+						logger.Log(LOG_FILE, "Numarul de produse avand diagonala "+Constants.DIAGONALA_48+" sunt: "+k);
+						logger.Log(LOG_FILE, "TestTVLEDDiagonala48(): TEST PASSED");
 						i=3;
 						j=1;
 					}

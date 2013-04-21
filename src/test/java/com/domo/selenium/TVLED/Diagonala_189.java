@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.domo.selenium.util.Constants;
 import com.domo.selenium.util.WebDriverHelper;
+import com.domo.selenium.util.logger;
 
 public class Diagonala_189 {
 
@@ -36,11 +37,16 @@ public class Diagonala_189 {
 	 */
 	
 	@Test
-	public void TestDiagonala_189() throws InterruptedException, IOException
+	public void TestTVLEDDiagonala_189() throws InterruptedException, IOException
 	{
-		
+		logger.Log(LOG_FILE, "TestTVLEDDiagonala189(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 189");
 		//verific daca sunt pe site-ul bun
 		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
+		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED")==false)
+		{
+			logger.Log(LOG_FILE, "TestTVLEDDiagonala189(): Wrong page TEST FAILLED !!!");
+			h.screenShooter("TestTVLEDDiagonala189", d);
+		}
 		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED"));
 		
 		
@@ -53,6 +59,11 @@ public class Diagonala_189 {
 			if (h.isElementPresent(By.xpath("html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr/td[2]"))==true)
 			{	
 				//procesez
+				if (d.findElement(By.xpath("html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr/td[2]")).getText().contains(Constants.DIAGONALA_189)==false)
+				{
+					logger.Log(LOG_FILE, "TestTVLEDDiagonala189(): TEST FAILLED !!!");
+					h.screenShooter("TestTVLEDDiagonala189", d);
+				}
 				assertTrue(d.findElement(By.xpath("html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr/td[2]")).getText().contains(Constants.DIAGONALA_189));
 				//procesez
 				
@@ -75,7 +86,8 @@ public class Diagonala_189 {
 					else
 					{
 						b=true;
-						System.out.println("Numarul de produse avand diagonala "+Constants.DIAGONALA_189+" sunt: "+k);
+						logger.Log(LOG_FILE, "Numarul de produse avand diagonala "+Constants.DIAGONALA_189+" sunt: "+k);
+						logger.Log(LOG_FILE, "TestTVLEDDiagonala189(): TEST PASSED");
 						i=3;
 						j=1;
 					}
