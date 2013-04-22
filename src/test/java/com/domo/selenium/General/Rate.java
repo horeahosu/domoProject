@@ -40,22 +40,22 @@ public class Rate {
 		h.waitForElementPresent(By.className("logo"), 5);
 		d.findElement(By.linkText("Rate DOMO")).click();
 		
-		if (d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr/td")).getText().contains(Constants.Rate_C1)==false)
+		if (d.findElement(By.xpath(Constants.domo_sistem_creditare_display_title1_xpath)).getText().contains(Constants.Rate_C1)==false)
 		{
 			logger.Log(LOG_FILE, "TestRate(): "+Constants.Rate_C1+"not found TEST FAILLED !!!");
 			h.screenShooter("TestRate", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr/td")).getText().contains(Constants.Rate_C1));
+		assertTrue(d.findElement(By.xpath(Constants.domo_sistem_creditare_display_title1_xpath)).getText().contains(Constants.Rate_C1));
 		
-		if (d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr/td")).getText().contains(Constants.Rate_C2)==false)
+		if (d.findElement(By.xpath(Constants.domo_sistem_creditare_display_title2_xpath)).getText().contains(Constants.Rate_C2)==false)
 		{
 			logger.Log(LOG_FILE, "TestRate():"+Constants.Rate_C2+" not found TEST FAILLED !!!");
 			h.screenShooter("TestRate", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr/td")).getText().contains(Constants.Rate_C2));
+		assertTrue(d.findElement(By.xpath(Constants.domo_sistem_creditare_display_title2_xpath)).getText().contains(Constants.Rate_C2));
 		
 		//Credit Potrivit
-		d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr[3]/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td/table/tbody/tr/td/a/img")).click();
+		d.findElement(By.xpath(Constants.domo_sistem_creditare_link_credit_potrivit_xpath)).click();
 		Thread.sleep(2000);
 		
 		if (h.checkForTextPresentOnThePage(Constants.Rate_C3)==false)
@@ -69,8 +69,8 @@ public class Rate {
 		
 		
 		//Credit Comod
-		h.waitForElementPresent(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr[3]/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td[2]/table/tbody/tr/td/a/img"),3);
-		d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr[3]/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td[2]/table/tbody/tr/td/a/img")).click();
+		h.waitForElementPresent(By.xpath(Constants.domo_sistem_creditare_link_credit_comod_xpath),3);
+		d.findElement(By.xpath(Constants.domo_sistem_creditare_link_credit_comod_xpath)).click();
 		Thread.sleep(2000);
 		
 		if (h.checkForTextPresentOnThePage(Constants.Rate_C4)==false)
@@ -83,8 +83,8 @@ public class Rate {
 		Thread.sleep(2000);
 		
 		//Credit Pentru Tine
-		h.waitForElementPresent(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr[3]/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td[3]/table/tbody/tr/td/a/img"),3);
-		d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr[3]/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td[3]/table/tbody/tr/td/a/img")).click();
+		h.waitForElementPresent(By.xpath(Constants.domo_sistem_creditare_link_credit_pentru_tine_xpath),3);
+		d.findElement(By.xpath(Constants.domo_sistem_creditare_link_credit_pentru_tine_xpath)).click();
 		Thread.sleep(2000);
 		
 		if (h.checkForTextPresentOnThePage(Constants.Rate_C5)==false)
@@ -96,9 +96,9 @@ public class Rate {
 		d.navigate().back();
 		Thread.sleep(2000);
 		
-		//Credit in 10 rate
-		h.waitForElementPresent(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr[3]/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td[4]/table/tbody/tr/td/a/img"),3);
-		d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr[3]/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td[4]/table/tbody/tr/td/a/img")).click();
+		//Credit in 6 luni gratie 
+		h.waitForElementPresent(By.xpath(Constants.domo_sistem_creditare_link_credit_6_luni_gratie_xpath),3);
+		d.findElement(By.xpath(Constants.domo_sistem_creditare_link_credit_6_luni_gratie_xpath)).click();
 		                     
 		Thread.sleep(2000);
 		if (h.checkForTextPresentOnThePage(Constants.Rate_C6)==false)

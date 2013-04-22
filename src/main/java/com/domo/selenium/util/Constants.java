@@ -2,6 +2,33 @@ package com.domo.selenium.util;
 
 public class Constants {
 	
+	//Select
+	public final static String domo_contact_display_contact_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr/td";
+	
+	public final static String domo_cum_cumpar_display_title1_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/p/span";
+	public final static String domo_cum_cumpar_display_title2_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/p/span[3]";
+	public final static String domo_cum_cumpar_display_title3_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td";
+	public final static String domo_cum_cumpar_display_title4_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table[2]/tbody/tr/td";
+	public final static String domo_cum_cumpar_display_title5_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table[3]/tbody/tr/td";
+	public final static String domo_cum_cumpar_display_title6_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table[4]/tbody/tr/td";
+	
+	public final static String domo_magazine_domo_display_title1_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr/td";
+	
+	public final static String domo_sistem_creditare_display_title1_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr/td";
+	public final static String domo_sistem_creditare_display_title2_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr/td";
+	public final static String domo_sistem_creditare_link_credit_potrivit_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr[3]/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td/table/tbody/tr/td/a/img";
+	public final static String domo_sistem_creditare_link_credit_comod_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr[3]/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td[2]/table/tbody/tr/td/a/img";
+	public final static String domo_sistem_creditare_link_credit_pentru_tine_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr[3]/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td[3]/table/tbody/tr/td/a/img";
+	public final static String domo_sistem_creditare_link_credit_6_luni_gratie_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table[2]/tbody/tr[3]/td/table/tbody/tr/td/table[2]/tbody/tr[2]/td[4]/table/tbody/tr/td/a/img";
+	
+	public final static String domo_service_display_title1_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr/td";
+	public final static String domo_service_display_title2_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[3]/td/table/tbody/tr/td/span";
+	public final static String domo_service_button_service_online_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[3]/td/table/tbody/tr/td/div/a/img";
+	public final static String domo_service_display_title3_css="html body form#form1 div.login_MainContainer div.login_FormContainer div p.MsoNormal b span";
+	public final static String domo_service_display_title4_css="html body form#form1 div.login_MainContainer div.login_FormContainer div p.MsoNormal b span";
+	public final static String domo_service_display_title5_css="html body form#form1 div.login_MainContainer div.login_FormContainer p.MsoNormal b span";
+
+	
 	//General
 	public final static String USER_AGENT = "Mozilla/5.0 (Linux; U; Android 4.0.3; ko-kr; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko)Version/4.0 Mobile Safari/534.30";
 	public final static String SITE ="http://www.domo.ro";

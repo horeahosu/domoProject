@@ -39,14 +39,14 @@ public class Contact {
 		logger.Log(LOG_FILE, "TestContact(): Verifica anumite informatii legate de Contacte (telefon, call center, adresa)");
 		h.waitForElementPresent(By.className("logo"), 5);
 		d.findElement(By.linkText("Contact")).click();
-	
+		Thread.sleep(3000);
 		//Contact
-		if (d.findElement(By.cssSelector("html.cufon-active body div table tbody tr td table tbody tr td.text_black_mare")).getText().contains(Constants.Contact_C1)==false)
+		if (d.findElement(By.xpath(Constants.domo_contact_display_contact_xpath)).getText().contains(Constants.Contact_C1)==false)
 		{
 			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C1+"not found  TEST FAILLED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
-		assertTrue(d.findElement(By.cssSelector("html.cufon-active body div table tbody tr td table tbody tr td.text_black_mare")).getText().contains(Constants.Contact_C1));
+		assertTrue(d.findElement(By.xpath(Constants.domo_contact_display_contact_xpath)).getText().contains(Constants.Contact_C1));
 		
 		//Telefon
 		if (h.checkForTextPresentOnThePage(Constants.Contact_C2)==false)

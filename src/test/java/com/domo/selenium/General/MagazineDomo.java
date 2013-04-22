@@ -40,14 +40,14 @@ public class MagazineDomo {
 		h.waitForElementPresent(By.className("logo"), 5);
 		d.findElement(By.linkText("Magazine DOMO")).click();
 		
-		if ((d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr/td")).getText().contains(Constants.MagazineDomo_C1)==false))
+		if ((d.findElement(By.xpath(Constants.domo_magazine_domo_display_title1_xpath)).getText().contains(Constants.MagazineDomo_C1)==false))
 		{
 			logger.Log(LOG_FILE, "TestMagazineDomo(): Wrong page TEST FAILLED !!!");
 			h.screenShooter("TestMagazineDomo", d);
 		}
 		else
 			logger.Log(LOG_FILE, "TestMagazineDomo(): TEST PASSED");
-		assertTrue(d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr/td")).getText().contains(Constants.MagazineDomo_C1));
+		assertTrue(d.findElement(By.xpath(Constants.domo_magazine_domo_display_title1_xpath)).getText().contains(Constants.MagazineDomo_C1));
 		
 	}
 	

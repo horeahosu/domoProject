@@ -43,49 +43,49 @@ public class CumCumpar {
 		Thread.sleep(2000);
 		
 		
-		if (d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/p/span")).getText().contains(Constants.CumCumpar_C1)==false)
+		if (d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title1_xpath)).getText().contains(Constants.CumCumpar_C1)==false)
 		{
 			logger.Log(LOG_FILE, "TestCumCumpar():"+Constants.CumCumpar_C1+"not found TEST FAILLED !!!");
 			h.screenShooter("TestCumCumpar", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/p/span")).getText().contains(Constants.CumCumpar_C1));
+		assertTrue(d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title1_xpath)).getText().contains(Constants.CumCumpar_C1));
 		
-		if (d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/p/span[3]")).getText().contains(Constants.CumCumpar_C2)==false)
+		if (d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title2_xpath)).getText().contains(Constants.CumCumpar_C2)==false)
 		{
 			logger.Log(LOG_FILE, "TestCumCumpar():"+Constants.CumCumpar_C2+"not found TEST FAILLED !!!");
 			h.screenShooter("TestCumCumpar", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/p/span[3]")).getText().contains(Constants.CumCumpar_C2));
+		assertTrue(d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title2_xpath)).getText().contains(Constants.CumCumpar_C2));
 		
-		if (d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td")).getText().contains(Constants.CumCumpar_C3)==false)
+		if (d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title3_xpath)).getText().contains(Constants.CumCumpar_C3)==false)
 		{
 			logger.Log(LOG_FILE, "TestCumCumpar():"+Constants.CumCumpar_C3+"not found TEST FAILLED !!!");
 			h.screenShooter("TestCumCumpar", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td")).getText().contains(Constants.CumCumpar_C3));
+		assertTrue(d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title3_xpath)).getText().contains(Constants.CumCumpar_C3));
 		
-		if (d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table[2]/tbody/tr/td")).getText().contains(Constants.CumCumpar_C4)==false)
+		if (d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title4_xpath)).getText().contains(Constants.CumCumpar_C4)==false)
 		{
 			logger.Log(LOG_FILE, "TestCumCumpar():"+Constants.CumCumpar_C4+"not found TEST FAILLED !!!");
 			h.screenShooter("TestCumCumpar", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table[2]/tbody/tr/td")).getText().contains(Constants.CumCumpar_C4));
+		assertTrue(d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title4_xpath)).getText().contains(Constants.CumCumpar_C4));
 		
-		if (d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table[3]/tbody/tr/td")).getText().contains(Constants.CumCumpar_C5)==false)
+		if (d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title5_xpath)).getText().contains(Constants.CumCumpar_C5)==false)
 		{
 			logger.Log(LOG_FILE, "TestCumCumpar():"+Constants.CumCumpar_C5+"not found TEST FAILLED !!!");
 			h.screenShooter("TestCumCumpar", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table[3]/tbody/tr/td")).getText().contains(Constants.CumCumpar_C5));
+		assertTrue(d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title5_xpath)).getText().contains(Constants.CumCumpar_C5));
 		
-		if (d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table[4]/tbody/tr/td")).getText().contains(Constants.CumCumpar_C6)==false)
+		if (d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title6_xpath)).getText().contains(Constants.CumCumpar_C6)==false)
 		{
 			logger.Log(LOG_FILE, "TestCumCumpar():"+Constants.CumCumpar_C6+"not found TEST FAILLED !!!");
 			h.screenShooter("TestCumCumpar", d);
 		}
 		else
 			logger.Log(LOG_FILE, "TestCumCumpar(): TEST PASSED");
-		assertTrue(d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[2]/td/table/tbody/tr/td/table[4]/tbody/tr/td")).getText().contains(Constants.CumCumpar_C6));
+		assertTrue(d.findElement(By.xpath(Constants.domo_cum_cumpar_display_title6_xpath)).getText().contains(Constants.CumCumpar_C6));
 			
 	}
 	
