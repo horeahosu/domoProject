@@ -42,13 +42,13 @@ public class Diagonala_11_6 {
 		
 		logger.Log(LOG_FILE, "TestNotebookDiagonala11_6(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 11,6");
 		//verific daca sunt pe site-ul bun
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
-		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("Notebook")==false)
+		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h1"), 5);
+		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h1")).getText().contains("Notebook")==false)
 		{
 			logger.Log(LOG_FILE, "TestNotebookDiagonala11_6(): Wrong page TEST FAILLED !!!");
 			h.screenShooter("TestNotebookDiagonala11_6", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("Notebook"));
+		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h1")).getText().contains("Notebook"));
 		d.findElement(By.id("CB_3_11.6``")).click();
 		Thread.sleep(2000);
 		

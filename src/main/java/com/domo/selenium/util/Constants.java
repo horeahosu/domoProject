@@ -143,6 +143,28 @@ public class Constants {
 	public final static int PRET_850 =850;
 	public final static int PRET_1200 =1200;
 	public final static int PRET_2000 =2000;
-	
-	
+	public final static String SMARTPHONE_IPHONE="iPhone";
+	public final static String SMARTPHONE_ALLVIEW="Allview";
+	public final static String SMARTPHONE_PRESTIGIO="Prestigio";
+	public final static String SMARTPHONE_BLACKBERRY="Blackberry";
+	public final static String SMARTPHONE_NOKIA="Nokia";
+	public final static String SMARTPHONE_MOTOROLA="Motorola";
+	public final static String SMARTPHONE_2MP="2 Megapixeli";
+	public final static String SMARTPHONE_3MP="3 Megapixeli";
+	public final static String SMARTPHONE_3_15MP="3.15 Megapixeli";
+	public final static String SMARTPHONE_5MP="5 Megapixeli";
+	public final static String SMARTPHONE_8MP="8 Megapixeli";
+	public final static String SMARTPHONE_13MP="13 Megapixeli";
+	public final static String SMARTPHONE_2GB="2 GB";
+	public final static String SMARTPHONE_2_7GB="2.7 GB";
+	public final static String SMARTPHONE_2_9GB="2.9 GB";
+	public final static String SMARTPHONE_3GB="3 GB";
+	public final static String SMARTPHONE_4GB="4 GB";
+	public final static String SMARTPHONE_8GB="8 GB";
+	public final static String SMARTPHONE_16GB="16 GB";
+	public final static String SMARTPHONE_100MB="100 MB";
+	public final static String SMARTPHONE_140MB="140 MB";
+	public final static String SMARTPHONE_158MB="158 MB";
+	public final static String SMARTPHONE_160MB="160 MB";
+	public final static String SMARTPHONE_512MB="512 MB";
 }

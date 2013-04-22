@@ -1,0 +1,113 @@
+[Sun Apr 21 11:15:09 EEST 2013] TestSmartphonesMarcaSamsung(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Samsung
+[Sun Apr 21 11:15:16 EEST 2013] Numarul de produse Samsung sunt: 30
+[Sun Apr 21 11:15:16 EEST 2013] TestSmartphonesMarcaSamsung(): TEST PASSED
+[Sun Apr 21 11:16:36 EEST 2013] TestNotebookDiagonala11_6(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 11,6
+[Sun Apr 21 11:16:39 EEST 2013] Numarul de produse avand diagonala 11.6 sunt: 6
+[Sun Apr 21 11:16:39 EEST 2013] TestNotebookDiagonala11_6(): TEST PASSED
+[Sun Apr 21 11:17:22 EEST 2013] TestNotebookDiagonala13_3(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 13,3
+[Sun Apr 21 11:17:29 EEST 2013] Numarul de produse avand diagonala 13.3 sunt: 32
+[Sun Apr 21 11:17:29 EEST 2013] TestNotebookDiagonala13_3(): TEST PASSED
+[Sun Apr 21 11:25:26 EEST 2013] TestNotebookMarcaApple(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Apple
+[Sun Apr 21 11:25:30 EEST 2013] TestSmartphonesMarcaApple(): TEST FAILLED !!!
+[Sun Apr 21 11:30:54 EEST 2013] TestSmartphonesMarcaApple(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Apple
+[Sun Apr 21 11:30:59 EEST 2013] Numarul de produse iPhone sunt: 6
+[Sun Apr 21 11:30:59 EEST 2013] TestSmartphonesMarcaApple(): TEST PASSED
+[Sun Apr 21 11:37:49 EEST 2013] TestSmartphonesMarcaAllview(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Allview
+[Sun Apr 21 11:37:54 EEST 2013] TestSmartphonesMarcaAllview(): TEST FAILLED !!!
+[Sun Apr 21 11:38:19 EEST 2013] TestSmartphonesMarcaAllview(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Allview
+[Sun Apr 21 11:38:24 EEST 2013] Numarul de produse Allview sunt: 5
+[Sun Apr 21 11:38:24 EEST 2013] TestSmartphonesMarcaAllview: TEST PASSED
+[Sun Apr 21 11:42:27 EEST 2013] TestSmartphonesMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony Vaio
+[Sun Apr 21 11:42:27 EEST 2013] TestNotebookMarcaSony(): Wrong page TEST FAILLED !!!
+[Sun Apr 21 11:43:06 EEST 2013] TestSmartphonesMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony Vaio
+[Sun Apr 21 11:43:58 EEST 2013] TestSmartphonesMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony Vaio
+[Sun Apr 21 11:44:01 EEST 2013] Numarul de produse Sony sunt: 5
+[Sun Apr 21 11:44:01 EEST 2013] TestSmartphonesMarcaSony(): TEST PASSED
+[Sun Apr 21 11:48:52 EEST 2013] TestSmartphonesMarcaPrestigio(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Prestigio
+[Sun Apr 21 11:48:57 EEST 2013] Numarul de produse Prestigio sunt: 4
+[Sun Apr 21 11:48:57 EEST 2013] TestSmartphonesMarcaPrestigio(): TEST PASSED
+[Sun Apr 21 11:55:42 EEST 2013] TestSmartphonesMarcaBlackberry(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Blackberry
+[Sun Apr 21 11:55:46 EEST 2013] TestSmartphonesMarcaBlackberry(): TEST FAILLED !!!
+[Sun Apr 21 12:04:15 EEST 2013] TestSmartphonesMarcaNokia(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Nokia
+[Sun Apr 21 12:04:20 EEST 2013] TestSmartphonesMarcaNokia(): TEST FAILLED !!!
+[Sun Apr 21 12:04:48 EEST 2013] TestSmartphonesMarcaNokia(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Nokia
+[Sun Apr 21 12:04:52 EEST 2013] Numarul de produse Nokia sunt: 3
+[Sun Apr 21 12:04:52 EEST 2013] TestSmartphonesMarcaNokia(): TEST PASSED
+[Sun Apr 21 13:34:52 EEST 2013] TestSmartphonesMarcaApple(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Motorola
+[Sun Apr 21 13:34:56 EEST 2013] Numarul de produse Motorola sunt: 1
+[Sun Apr 21 13:34:56 EEST 2013] TestSmartphonesMarcaMotorola(): TEST PASSED
+[Sun Apr 21 17:02:13 EEST 2013] TestSmartphonesRezolutie2MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2MP
+[Sun Apr 21 17:02:15 EEST 2013] Numarul de produse avand rezolutie foto de2 Megapixeli sunt: 3
+[Sun Apr 21 17:02:15 EEST 2013] TestSmartphonesRezolutie2MP(): TEST PASSED
+[Sun Apr 21 17:06:48 EEST 2013] TestSmartphonesRezolutie3MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3MP
+[Sun Apr 21 17:06:51 EEST 2013] TestSmartphonesRezolutie3MP(): TEST FAILLED !!!
+[Sun Apr 21 17:09:09 EEST 2013] TestSmartphonesRezolutie2MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2MP
+[Sun Apr 21 17:09:11 EEST 2013] Numarul de produse avand rezolutie foto de2 Megapixeli sunt: 3
+[Sun Apr 21 17:09:11 EEST 2013] TestSmartphonesRezolutie2MP(): TEST PASSED
+[Sun Apr 21 17:09:26 EEST 2013] TestSmartphonesRezolutie3MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3MP
+[Sun Apr 21 17:09:29 EEST 2013] Numarul de produse avand rezolutie foto de3 Megapixeli sunt: 4
+[Sun Apr 21 17:09:29 EEST 2013] TestSmartphonesRezolutie3MP(): TEST PASSED
+[Sun Apr 21 17:15:00 EEST 2013] TestSmartphonesRezolutie3.15MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3.15MP
+[Sun Apr 21 17:15:03 EEST 2013] Numarul de produse avand rezolutie foto de3.15 Megapixeli sunt: 4
+[Sun Apr 21 17:15:03 EEST 2013] TestSmartphonesRezolutie3.15MP(): TEST PASSED
+[Sun Apr 21 17:20:16 EEST 2013] TestSmartphonesRezolutie5MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 5MP
+[Sun Apr 21 17:20:22 EEST 2013] Numarul de produse avand rezolutie foto de5 Megapixeli sunt: 12
+[Sun Apr 21 17:20:22 EEST 2013] TestSmartphonesRezolutie5MP(): TEST PASSED
+[Sun Apr 21 17:26:41 EEST 2013] TestSmartphonesRezolutie8MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 8MP
+[Sun Apr 21 17:26:45 EEST 2013] Numarul de produse avand rezolutie foto de8 Megapixeli sunt: 10
+[Sun Apr 21 17:26:45 EEST 2013] TestSmartphonesRezolutie8MP(): TEST PASSED
+[Sun Apr 21 17:31:51 EEST 2013] TestSmartphonesRezolutie13MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 13MP
+[Sun Apr 21 17:31:54 EEST 2013] Numarul de produse avand rezolutie foto de13 Megapixeli sunt: 2
+[Sun Apr 21 17:31:54 EEST 2013] TestSmartphonesRezolutie13MP(): TEST PASSED
+[Sun Apr 21 17:44:29 EEST 2013] TestSmartphonesMemoie2GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2GB
+[Sun Apr 21 17:44:32 EEST 2013] TestSmartphonesRezolutie2MP(): TEST FAILLED !!!
+[Sun Apr 21 17:50:41 EEST 2013] TestSmartphonesMemoie2GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2GB
+[Sun Apr 21 17:50:44 EEST 2013] Numarul de produse avand rezolutie foto de2 GB sunt: 2
+[Sun Apr 21 17:50:44 EEST 2013] TestSmartphonesRezolutie2GB(): TEST PASSED
+[Sun Apr 21 17:52:15 EEST 2013] TestSmartphonesMemoie2GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2GB
+[Sun Apr 21 17:52:18 EEST 2013] Numarul de produse avand rezolutie foto de2 GB sunt: 2
+[Sun Apr 21 17:52:18 EEST 2013] TestSmartphonesMemorie2GB(): TEST PASSED
+[Sun Apr 21 17:56:56 EEST 2013] TestSmartphonesMemoie2.7GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2.7 GB
+[Sun Apr 21 17:56:59 EEST 2013] Numarul de produse avand rezolutie foto de2.7 GB sunt: 1
+[Sun Apr 21 17:56:59 EEST 2013] TestSmartphonesMemorie2.7GB(): TEST PASSED
+[Sun Apr 21 18:03:33 EEST 2013] TestSmartphonesMemoie2.9GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2.9 GB
+[Sun Apr 21 18:03:36 EEST 2013] Numarul de produse avand rezolutie foto de2.9 GB sunt: 2
+[Sun Apr 21 18:03:36 EEST 2013] TestSmartphonesMemorie2.9GB(): TEST PASSED
+[Sun Apr 21 18:09:10 EEST 2013] TestSmartphonesMemoie3GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3GB
+[Sun Apr 21 18:09:13 EEST 2013] Numarul de produse avand rezolutie foto de3 GB sunt: 4
+[Sun Apr 21 18:09:13 EEST 2013] TestSmartphonesMemorie3GB(): TEST PASSED
+[Sun Apr 21 18:10:22 EEST 2013] TestSmartphonesMemoie2GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2GB
+[Sun Apr 21 18:10:24 EEST 2013] Numarul de produse avand rezolutie foto de2 GB sunt: 2
+[Sun Apr 21 18:10:24 EEST 2013] TestSmartphonesMemorie2GB(): TEST PASSED
+[Sun Apr 21 18:11:09 EEST 2013] TestSmartphonesMemoie3GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3GB
+[Sun Apr 21 18:11:12 EEST 2013] Numarul de produse avand rezolutie foto de3 GB sunt: 4
+[Sun Apr 21 18:11:12 EEST 2013] TestSmartphonesMemorie3GB(): TEST PASSED
+[Sun Apr 21 18:13:28 EEST 2013] TestSmartphonesMemoie2.7GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2.7 GB
+[Sun Apr 21 18:13:31 EEST 2013] Numarul de produse avand rezolutie foto de2.7 GB sunt: 1
+[Sun Apr 21 18:13:31 EEST 2013] TestSmartphonesMemorie2.7GB(): TEST PASSED
+[Sun Apr 21 18:17:14 EEST 2013] TestSmartphonesMemoie3GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3GB
+[Sun Apr 21 18:17:17 EEST 2013] Numarul de produse avand rezolutie foto de3 GB sunt: 5
+[Sun Apr 21 18:17:17 EEST 2013] TestSmartphonesMemorie3GB(): TEST PASSED
+[Sun Apr 21 18:18:17 EEST 2013] TestSmartphonesMemoie2GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2GB
+[Sun Apr 21 18:18:19 EEST 2013] Numarul de produse avand rezolutie foto de2 GB sunt: 2
+[Sun Apr 21 18:18:19 EEST 2013] TestSmartphonesMemorie2GB(): TEST PASSED
+[Mon Apr 22 21:10:17 EEST 2013] TestSmartphonesMemoie3GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 4GB
+[Mon Apr 22 21:11:07 EEST 2013] TestSmartphonesMemoie3GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 4GB
+[Mon Apr 22 21:11:40 EEST 2013] TestSmartphonesMemoie3GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3GB
+[Mon Apr 22 21:13:19 EEST 2013] TestNotebookDiagonala11_6(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 11,6
+[Mon Apr 22 21:15:12 EEST 2013] TestSmartphonesMemoie3GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3GB
+[Mon Apr 22 21:15:15 EEST 2013] Numarul de produse avand rezolutie foto de3 GB sunt: 0
+[Mon Apr 22 21:15:15 EEST 2013] TestSmartphonesMemorie3GB(): TEST PASSED
+[Mon Apr 22 21:17:24 EEST 2013] TestNotebookDiagonala11_6(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 11,6
+[Mon Apr 22 21:18:25 EEST 2013] TestNotebookDiagonala11_6(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 11,6
+[Mon Apr 22 21:18:27 EEST 2013] Numarul de produse avand diagonala 11.6 sunt: 0
+[Mon Apr 22 21:18:27 EEST 2013] TestNotebookDiagonala11_6(): TEST PASSED
+[Mon Apr 22 21:24:27 EEST 2013] TestSmartphonesMemoie3GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3GB
+[Mon Apr 22 21:24:30 EEST 2013] Numarul de produse avand rezolutie foto de3 GB sunt: 5
+[Mon Apr 22 21:24:30 EEST 2013] TestSmartphonesMemorie3GB(): TEST PASSED
+[Mon Apr 22 21:28:26 EEST 2013] TestSmartphonesMemoie8GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 8GB
+[Mon Apr 22 21:28:29 EEST 2013] Numarul de produse avand rezolutie foto de8 GB sunt: 13
+[Mon Apr 22 21:28:29 EEST 2013] TestSmartphonesMemorie8GB(): TEST PASSED
+[Mon Apr 22 21:33:02 EEST 2013] TestSmartphonesMemoie16GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 16GB
+[Mon Apr 22 21:33:05 EEST 2013] Numarul de produse avand rezolutie foto de16 GB sunt: 12
+[Mon Apr 22 21:33:05 EEST 2013] TestSmartphonesMemorie16GB(): TEST PASSED
