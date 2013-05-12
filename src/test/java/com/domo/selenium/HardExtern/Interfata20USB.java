@@ -40,13 +40,13 @@ public class Interfata20USB {
 	{
 		logger.Log(LOG_FILE, "TestHardExternInterfata20USB(): Verifica optiunea de a afisa pe pagina doar produsele avand Interfata 2.0USB");
 		//verific daca sunt pe site-ul bun
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
-		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("Hard")==false)
+		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
+		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard")==false)
 		{
 			logger.Log(LOG_FILE, "TestHardExternInterfata20USB(): Wrong page TEST FAILLED !!!");
 			h.screenShooter("TestHardExternInterfata20USB", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("Hard"));
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
 		
 		
 		d.findElement(By.id("CB_3_USB_2.0")).click();
@@ -54,19 +54,19 @@ public class Interfata20USB {
 		
 		while (b!=true)
 		{
-			if (h.isElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr[2]/td[2]"))==true)
+			if (h.isElementPresent(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j)))==true)
 			{	
 				//procesez
-				if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr[2]/td[2]")).getText().contains(Constants.INTERFATA_20))	
-				assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr[2]/td[2]")).getText().contains(Constants.INTERFATA_20));
+				if (d.findElement(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j))).getText().contains(Constants.INTERFATA_20))	
+				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j))).getText().contains(Constants.INTERFATA_20));
 				else
 				{
-					if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr[3]/td[2]")).getText().contains(Constants.INTERFATA_20)==false)
+					if (d.findElement(By.xpath(String.format(Constants.domo_product_details_3_xpath, i,j))).getText().contains(Constants.INTERFATA_20)==false)
 					{
 						logger.Log(LOG_FILE, "TestHardExternInterfata20USB(): TEST FAILLED !!!");
 						h.screenShooter("TestHardExternInterfata20USB", d);
 					}
-					assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr[3]/td[2]")).getText().contains(Constants.INTERFATA_20));
+					assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_details_3_xpath, i,j))).getText().contains(Constants.INTERFATA_20));
 				}
 				//procesez
 				

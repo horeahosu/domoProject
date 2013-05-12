@@ -41,13 +41,13 @@ public class MarcaSamsung {
 	{
 		logger.Log(LOG_FILE, "TestTVLEDMarcaSamsung(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Samsung");
 		//verific daca sunt pe site-ul bun
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
-		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED")==false)
+		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
+		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED")==false)
 		{
 			logger.Log(LOG_FILE, "TestTVLEDMarcaSamsung(): Wrong page TEST FAILLED !!!");
 			h.screenShooter("TestTVLEDMarcaSamsung", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED"));
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED"));
 		
 		
 		//sub 1900

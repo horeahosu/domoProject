@@ -37,13 +37,13 @@ public class Rezolutie13MP {
 	{
 		logger.Log(LOG_FILE, "TestSmartphonesRezolutie13MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 13MP");
 		//verific daca sunt pe site-ul bun
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
-		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("Smartphones")==false)
+		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
+		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones")==false)
 		{
 			logger.Log(LOG_FILE, "TestSmartphonesRezolutie13MP(): Wrong page TEST FAILLED !!!");
 			h.screenShooter("TestSmartphonesRezolutie13MP", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("Smartphones"));
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones"));
 		d.findElement(By.id("CB_3_13_Megapixeli")).click();
 		Thread.sleep(2000);
 		

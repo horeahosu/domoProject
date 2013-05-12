@@ -41,13 +41,13 @@ public class MarcaEboda {
 	{
 		logger.Log(LOG_FILE, "TestTVLEDMarcaEboda(): Verifica optiunea de a afisa pe pagina doar produsele avand marca: Eboda");
 		//verific daca sunt pe site-ul bun
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
-		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED")==false)
+		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
+		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED")==false)
 		{
 			logger.Log(LOG_FILE, "TestTVLEDMarcaEboda(): Wrong page TEST FAILLED !!!");
 			h.screenShooter("TestTVLEDMarcaEboda", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED"));
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED"));
 		
 		
 		d.findElement(By.linkText("altele...")).click();
@@ -56,15 +56,15 @@ public class MarcaEboda {
 		
 		while (b!=true)
 		{
-			if (h.isElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong"))==true)
+			if (h.isElementPresent(By.xpath(String.format(Constants.domo_product_name_xpath, i,j)))==true)
 			{	
 				//procesez
-				if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_EBODA)==false)
+				if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_EBODA)==false)
 				{
 					logger.Log(LOG_FILE, "TestTVLEDMarcaEboda(): TEST FAILLED !!!");
 					h.screenShooter("TestTVLEDMarcaEboda", d);
 				}
-				assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_EBODA));
+				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_EBODA));
 				//procesez
 				
 				k++;

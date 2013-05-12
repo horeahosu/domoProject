@@ -31,22 +31,22 @@ public class MarcaWesternDigital {
 	}
 	
 	/**
-	 * TestHardExternMarcaWesternDigital(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba
+	 * TestHardExternMarcaWesternDigital(): Verifica optiunea de a afisa pe pagina doar produsele avand marca WesternDigital
 	 * 
 	 */
 	
 	@Test
 	public void TestHardExternMarcaWesternDigital() throws InterruptedException, IOException
 	{
-		logger.Log(LOG_FILE, "TestHardExternMarcaWesternDigital(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba");
+		logger.Log(LOG_FILE, "TestHardExternMarcaWesternDigital(): Verifica optiunea de a afisa pe pagina doar produsele avand marca WesternDigital");
 		//verific daca sunt pe site-ul bun
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
-		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("Hard")==false)
+		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
+		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard")==false)
 		{
 			logger.Log(LOG_FILE, "TestHardExternMarcaWesternDigital(): Wrong page TEST FAILLED !!!");
 			h.screenShooter("TestHardExternMarcaWesternDigital", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("Hard"));
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
 		
 		
 		d.findElement(By.id("CB_0_Western_Digital")).click();
@@ -54,19 +54,19 @@ public class MarcaWesternDigital {
 		
 		while (b!=true)
 		{
-			if (h.isElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong"))==true)
+			if (h.isElementPresent(By.xpath(String.format(Constants.domo_product_name_xpath, i,j)))==true)
 			{	
 				//procesez
-				if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_WESTERNDIGITAL2))
-				assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_WESTERNDIGITAL2));
+				if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_WESTERNDIGITAL2))
+				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_WESTERNDIGITAL2));
 				else
 				{
-					if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_WESTERNDIGITAL)==false)
+					if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_WESTERNDIGITAL)==false)
 					{
 						logger.Log(LOG_FILE, "TestHardExternMarcaWesternDigital(): TEST FAILLED !!!");
 						h.screenShooter("TestHardExternMarcaWesternDigital", d);
 					}
-					assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_WESTERNDIGITAL));
+					assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_WESTERNDIGITAL));
 				}
 				//procesez
 				

@@ -41,27 +41,27 @@ public class MarcaSony {
 	{
 		logger.Log(LOG_FILE, "TestNotebookMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony Vaio");
 		//verific daca sunt pe site-ul bun
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
-		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("Notebook")==false)
+		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
+		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook")==false)
 		{
 			logger.Log(LOG_FILE, "TestNotebookMarcaSony(): Wrong page TEST FAILLED !!!");
 			h.screenShooter("TestNotebookMarcaSony", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("Notebook"));
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
 		d.findElement(By.id("CB_0_Sony_Vaio")).click();
 		Thread.sleep(2000);
 		
 		while (b!=true)
 		{
-			if (h.isElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong"))==true)
+			if (h.isElementPresent(By.xpath(String.format(Constants.domo_product_name_xpath, i,j)))==true)
 			{	
 				//procesez
-				if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_SONY)==false)
+				if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_SONY)==false)
 				{
 					logger.Log(LOG_FILE, "TestNotebookMarcaSony(): Wrong page TEST FAILLED !!!");
 					h.screenShooter("TestNotebookMarcaSony", d);
 				}
-				assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_SONY));
+				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_SONY));
 				//procesez
 				
 				k++;

@@ -27,7 +27,15 @@ public class Constants {
 	public final static String domo_service_display_title3_css="html body form#form1 div.login_MainContainer div.login_FormContainer div p.MsoNormal b span";
 	public final static String domo_service_display_title4_css="html body form#form1 div.login_MainContainer div.login_FormContainer div p.MsoNormal b span";
 	public final static String domo_service_display_title5_css="html body form#form1 div.login_MainContainer div.login_FormContainer p.MsoNormal b span";
-
+	
+	public final static String domo_product_first_title_xpath="/html/body/div/div[3]/div/div[2]/div/h1";
+	public final static String domo_product_details_1_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/table/tbody/tr/td[2]";
+	public final static String domo_product_details_2_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/table/tbody/tr[2]/td[2]";
+	public final static String domo_product_details_3_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/table/tbody/tr[3]/td[2]";
+	public final static String domo_product_name_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/a[2]/strong";
+	                                                            
+	public final static String domo_product_actual_price_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/span/strong";
+	public final static String domo_product_previous_price_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/span[2]/strong";	                                                         
 	
 	//General
 	public final static String USER_AGENT = "Mozilla/5.0 (Linux; U; Android 4.0.3; ko-kr; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko)Version/4.0 Mobile Safari/534.30";

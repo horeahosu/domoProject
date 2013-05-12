@@ -41,27 +41,26 @@ public class TV3D {
 	{
 		logger.Log(LOG_FILE, "TestTV3D: Verifica optiunea de a afisa pe pagina doar produsele 3D");
 		//verific daca sunt pe site-ul bun
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
-		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED"));
+		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED"));
 		
 		d.findElement(By.id("CB_3_Da")).click();
 		Thread.sleep(2000);
 		
 		while (b!=true)
 		{
-			if (h.isElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr[2]/td[2]"))==true)
+			if (h.isElementPresent(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j)))==true)
 			{	
 				//procesez
-				if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr[2]/td[2]")).getText().contains(Constants.TV3D)==false)
+				if (d.findElement(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j))).getText().contains(Constants.TV3D)==false)
 				{
 					logger.Log(LOG_FILE, "TestTV3D(): TEST FAILLED !!!");
 					h.screenShooter("TestTV3D", d);
 				}
-				assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr[2]/td[2]")).getText().contains(Constants.TV3D));
+				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j))).getText().contains(Constants.TV3D));
 				//procesez
 				
 				k++;
-				//System.out.println(k);
 				j++;
 				if (j==5)
 				{

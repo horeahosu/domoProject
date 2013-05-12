@@ -41,30 +41,30 @@ public class MarcaPhilips {
 	{
 		logger.Log(LOG_FILE, "TestTVLEDMarcaPhilips(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Philips");
 		//verific daca sunt pe site-ul bun
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
-		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED")==false)
+		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
+		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED")==false)
 		{
 			logger.Log(LOG_FILE, "TestTVLEDMarcaPhilips(): Wrong page TEST FAILLED !!!");
 			h.screenShooter("TestTVLEDMarcaPhilips", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED"));
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED"));
 		
 		
-		//sub 1900
+		d.findElement(By.linkText("altele...")).click();
 		d.findElement(By.id("CB_0_Philips")).click();
 		Thread.sleep(2000);
 		
 		while (b!=true)
 		{
-			if (h.isElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong"))==true)
+			if (h.isElementPresent(By.xpath(String.format(Constants.domo_product_name_xpath, i,j)))==true)
 			{	
 				//procesez
-				if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_PHILIPS)==false)
+				if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_PHILIPS)==false)
 				{
 					logger.Log(LOG_FILE, "TestTVLEDMarcaPhilips(): TEST FAILLED !!!");
 					h.screenShooter("TestTVLEDMarcaPhilips", d);
 				}
-				assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/a[2]/strong")).getText().contains(Constants.MARCA_PHILIPS));
+				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_PHILIPS));
 				//procesez
 				
 				k++;
@@ -86,8 +86,8 @@ public class MarcaPhilips {
 					else
 					{
 						b=true;
-						logger.Log(LOG_FILE, "Numarul de produse "+Constants.MARCA_SONY+" sunt: "+k);
-						logger.Log(LOG_FILE, "TestTVLEDMarcaSony(): TEST PASSED");
+						logger.Log(LOG_FILE, "Numarul de produse "+Constants.MARCA_PHILIPS+" sunt: "+k);
+						logger.Log(LOG_FILE, "TestTVLEDMarcaPhilips(): TEST PASSED");
 						i=1;
 						j=1;
 					}

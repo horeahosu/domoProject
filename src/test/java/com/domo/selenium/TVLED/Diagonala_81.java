@@ -40,14 +40,13 @@ public class Diagonala_81 {
 	{
 		logger.Log(LOG_FILE, "TestTVLEDDiagonala81(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 81");
 		//verific daca sunt pe site-ul bun
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext"), 5);
-		if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED")==false)
+		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
+		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED")==false)
 		{
 			logger.Log(LOG_FILE, "TestTVLEDDiagonala81(): Wrong page TEST FAILLED !!!");
 			h.screenShooter("TestTVLEDDiagonala81", d);
 		}
-		assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/h2/cufon/cufontext")).getText().contains("LED"));
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED"));
 		
 		
 		d.findElements(By.linkText("altele...")).get(1).click();
@@ -56,15 +55,15 @@ public class Diagonala_81 {
 		
 		while (b!=true)
 		{
-			if (h.isElementPresent(By.xpath("html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr/td[2]"))==true)
+			if (h.isElementPresent(By.xpath(String.format(Constants.domo_product_details_1_xpath, i,j)))==true)
 			{	
 				//procesez
-				if (d.findElement(By.xpath("html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr/td[2]")).getText().contains(Constants.DIAGONALA_81)==false)
+				if (d.findElement(By.xpath(String.format(Constants.domo_product_details_1_xpath, i,j))).getText().contains(Constants.DIAGONALA_81)==false)
 				{
 					logger.Log(LOG_FILE, "TestTVLEDDiagonala81(): TEST FAILLED !!!");
 					h.screenShooter("TestTVLEDDiagonala81", d);
 				}
-				assertTrue(d.findElement(By.xpath("html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr/td[2]")).getText().contains(Constants.DIAGONALA_81));
+				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_details_1_xpath, i,j))).getText().contains(Constants.DIAGONALA_81));
 				//procesez
 				
 				k++;
