@@ -51,13 +51,12 @@ public class CosCumparaturi_Scenariul2 {
 		}
 		
 		d.findElement(By.linkText("LED TV")).click();
-		d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr[4]/td/a/img")).click();
+		d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, 1,1))).click();
 		
 		//stochez pretul
 		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/form/div[2]/div[3]/table/tbody/tr[2]/td/div/span/strong"), 5);
 		String price1 = d.findElement(By.xpath("/html/body/div/div[3]/form/div[2]/div[3]/table/tbody/tr[2]/td/div/span/strong")).getText();
 		System.out.println(price1);
-		
 		//adaug in cos
 		d.findElement(By.xpath("/html/body/div/div[3]/form/div[2]/div[3]/table/tbody/tr[3]/td/div/span/input")).click();		                        
 		

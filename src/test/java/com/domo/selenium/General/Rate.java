@@ -39,6 +39,7 @@ public class Rate {
 		logger.Log(LOG_FILE, "TestRate(): Verifica informatii legate de tipurile de rate oferite de DOMO");
 		h.waitForElementPresent(By.className("logo"), 5);
 		d.findElement(By.linkText("Rate DOMO")).click();
+		Thread.sleep(3000);
 		
 		if (d.findElement(By.xpath(Constants.domo_sistem_creditare_display_title1_xpath)).getText().contains(Constants.Rate_C1)==false)
 		{
