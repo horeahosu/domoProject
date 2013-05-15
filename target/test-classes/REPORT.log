@@ -1,1 +1,5 @@
-
+[Wed May 15 21:06:14 EEST 2013] TestLogo(): Verifica prezenta logo-ului DOMO pe pagina principala
+[Wed May 15 21:06:14 EEST 2013] TestCumCumpar(): TEST PASSED
+[Wed May 15 21:30:26 EEST 2013] TestContact(): Verifica anumite informatii legate de Contacte (telefon, call center, adresa)
+[Wed May 15 21:30:46 EEST 2013] TestContact(): TEST PASSED
+[Wed May 15 21:39:02 EEST 2013] Scenariul 3: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor) iar apoi il sterge. Verific daca cosul de cumparaturi nu contine niciun produs: Cosul Dvs. nu contine nici un produs
