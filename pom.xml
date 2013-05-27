@@ -49,7 +49,7 @@
                 <version >2.10</version>
                 <configuration>
                     <includes>
-                        <include>**/PretNotebook*</include>
+                        <include>**/Logo*</include>
                     </includes>
                 </configuration>
             </plugin>
