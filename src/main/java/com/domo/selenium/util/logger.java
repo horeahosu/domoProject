@@ -16,7 +16,6 @@ public class logger {
 	
 	out_file.write("["+timeStamp+"] " + MESSAGE); // REPORT.log file writer
 	System.out.println("["+timeStamp+"] " + MESSAGE); //console file writer
-	//Reporter.log("["+timeStamp+"] " + MESSAGE); // TestNG reporter writer
 	out_file.newLine();
 	out_file.flush();
 	out_file.close();
