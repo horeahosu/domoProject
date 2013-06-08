@@ -79,11 +79,12 @@ public class MarcaToshiba {
 				}
 			} 
 			else 
-				{ if (d.findElement(By.id("NextPage")).isDisplayed()==true)
+				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage")).click();
+						d.findElement(By.id("NextPage2")).click();
 						i=1;
 						j=1;
+						Thread.sleep(2000);
 					}
 					else
 					{

@@ -29,7 +29,7 @@ public class MarcaPrestigio {
 	}
 	
 	/**
-	 * TestSmartphonesMarcaPrestigio(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Apple
+	 * TestSmartphonesMarcaPrestigio(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Prestigio
 	 * 
 	 */
 	
@@ -45,7 +45,15 @@ public class MarcaPrestigio {
 			h.screenShooter("TestSmartphonesMarcaPrestigio", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones"));
+		
 		d.findElements(By.linkText("altele...")).get(0).click();
+		if (h.isElementPresent(By.id("CB_0_Prestigio"))==false)
+		{
+			logger.Log(LOG_FILE, "TestSmartphonesMarcaPrestigio(): Option is not available TEST FAILLED !!!");
+			h.screenShooter("TestSmartphonesMarcaPrestigio", d);
+		}
+		assertTrue(h.isElementPresent(By.id("CB_0_Prestigio"))==true);
+		
 		d.findElement(By.id("CB_0_Prestigio")).click();
 		Thread.sleep(2000);
 		
@@ -72,9 +80,9 @@ public class MarcaPrestigio {
 				}
 			} 
 			else 
-				{ if (d.findElement(By.id("NextPage")).isDisplayed()==true)
+				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage")).click();
+						d.findElement(By.id("NextPage2")).click();
 						i=1;
 						j=1;
 						Thread.sleep(2000);

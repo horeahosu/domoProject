@@ -50,6 +50,13 @@ public class Diagonala_17_3 {
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
 
 		d.findElements(By.linkText("altele...")).get(2).click();
+		if (h.isElementPresent(By.id("CB_3_17.3``"))==false)
+		{
+			logger.Log(LOG_FILE, "TestNotebookDiagonala17_3(): Option is not available TEST FAILLED !!!");
+			h.screenShooter("TestNotebookDiagonala17_3", d);
+		}
+		assertTrue(h.isElementPresent(By.id("CB_3_17.3``"))==true);
+		
 		d.findElement(By.id("CB_3_17.3``")).click();
 		Thread.sleep(2000);
 		
@@ -76,11 +83,12 @@ public class Diagonala_17_3 {
 				}
 			} 
 			else 
-				{ if (d.findElement(By.id("NextPage")).isDisplayed()==true)
+				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage")).click();
+						d.findElement(By.id("NextPage2")).click();
 						i=3;
 						j=1;
+						Thread.sleep(2000);
 					}
 					else
 					{

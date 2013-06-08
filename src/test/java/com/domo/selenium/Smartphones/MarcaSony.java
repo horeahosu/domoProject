@@ -47,6 +47,15 @@ public class MarcaSony {
 			h.screenShooter("TestNotebookMarcaSony", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones"));
+		
+		d.findElements(By.linkText("altele...")).get(0).click();
+		if (h.isElementPresent(By.id("CB_0_Sony"))==false)
+		{
+			logger.Log(LOG_FILE, "TestSmartphonesMarcaSony(): Option is not available TEST FAILLED !!!");
+			h.screenShooter("TestSmartphonesMarcaSony", d);
+		}
+		assertTrue(h.isElementPresent(By.id("CB_0_Sony"))==true);
+		
 		d.findElement(By.id("CB_0_Sony")).click();
 		Thread.sleep(2000);
 		
@@ -73,9 +82,9 @@ public class MarcaSony {
 				}
 			} 
 			else 
-				{ if (d.findElement(By.id("NextPage")).isDisplayed()==true)
+				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage")).click();
+						d.findElement(By.id("NextPage2")).click();
 						i=1;
 						j=1;
 						Thread.sleep(2000);

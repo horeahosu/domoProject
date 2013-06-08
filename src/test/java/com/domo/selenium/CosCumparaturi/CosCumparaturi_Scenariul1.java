@@ -41,8 +41,9 @@ public class CosCumparaturi_Scenariul1 {
 		
 		logger.Log(LOG_FILE, "TestScenariul1:Un user nou pe site va vedea la sectiunea Cos Cumparaturi mesajul: Cosul Dvs. nu contine nici un produs");
 		h.waitForElementPresent(By.className("logo"), 5);
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		d.findElement(By.className("cart-link")).click();
+		Thread.sleep(2000);
 		if (h.checkForTextPresentOnThePage("Cosul Dvs. nu contine nici un produs"))
 		logger.Log(LOG_FILE, "TestScenariul1: TEST PASSED");
 		else

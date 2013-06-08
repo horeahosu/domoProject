@@ -33,7 +33,8 @@ public class Constants {
 	public final static String domo_product_details_2_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/table/tbody/tr[2]/td[2]";
 	public final static String domo_product_details_3_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/table/tbody/tr[3]/td[2]";
 	public final static String domo_product_name_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/a[2]/strong";
-	                                                            
+	
+	public final static String domo_product_cut_price_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/span";
 	public final static String domo_product_actual_price_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/span/strong";
 	public final static String domo_product_previous_price_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/span[2]/strong";	                                                         
 	
@@ -104,7 +105,7 @@ public class Constants {
 	public final static String Rate_C6 ="6 Luni Gratie";
 	
 	//NoteBook
-	public final static String SITE_NOTEBOOK = "http://www.domo.ro/Computere/Laptop-uri/Notebook_-_Laptop";
+	public final static String SITE_NOTEBOOK = "http://www.domo.ro/Laptopuri_&_Tablete/Laptop-uri/Notebook_-_Laptop";
 	public final static String MARCA_ACER ="Acer";
 	public final static String MARCA_TOSHIBA ="Toshiba";
 	public final static String MARCA_APPLE ="MacBook";
@@ -121,10 +122,10 @@ public class Constants {
 	public final static String DIAGONALA_15_5 ="15.5";
 	public final static String DIAGONALA_15_6 ="15.6";
 	public final static String DIAGONALA_17_3 ="17.3";
-	public final static int PRET_MAX_1900 = 1900;
-	public final static int PRET_2400 = 2400;
-	public final static int PRET_3200 = 3200;
-	public final static int PRET_4900 = 4900;
+	public final static int NOTEBOOK_PRET_2100 = 2100;
+	public final static int NOTEBOOK_PRET_2900 = 2900;
+	public final static int NOTEBOOK_PRET_3600 = 3600;
+	public final static int NOTEBOOK_PRET_4800 = 4800;
 	
 	//TVLED
 	public final static String SITE_TVLED = "http://www.domo.ro/Televizoare_&_Home_cinema/Televizoare/LED_TV";
@@ -159,25 +160,25 @@ public class Constants {
 	public final static String TVNON3D="Nu";
 	
 	//Hard Extern
-	public final static String SITE_HARDEXTERN = "http://www.domo.ro/Retelistica_&_Acc_PC/Accesorii_PC/Hard_disk-uri_externe";
+	public final static String SITE_HARDEXTERN = "http://www.domo.ro/PC_&_Print_&_Retelistica/Accesorii_PC/Hard_disk-uri_externe";
 	public final static String MARCA_WESTERNDIGITAL ="WD";
 	public final static String MARCA_WESTERNDIGITAL2 ="Western Digital";
 	public final static String MARCA_SEAGATE ="Seagate";
-	public final static int PRET_270 =270;
-	public final static int PRET_350 =350;
-	public final static int PRET_390 =390;
-	public final static int PRET_400 =400;
+	public final static int HARD_EXTERN_PRET_260 =260;
+	public final static int HARD_EXTERN_PRET_270 =270;
+	public final static int HARD_EXTERN_PRET_360 =360;
+	public final static int HARD_EXTERN_PRET_390 =390;
 	public final static String CAPACITATE_500 ="500 Gb";
 	public final static String CAPACITATE_1000 ="1000 Gb";
 	public final static String INTERFATA_20 ="USB 2.0";
 	public final static String INTERFATA_30 ="USB 3.0";
 	
 	//Smartphones
-	public final static String SITE_SMARTPHONES = "http://www.domo.ro/Telecom_&_Birotica/GSM/Smartphones";
-	public final static int PRET_630 =630;
-	public final static int PRET_850 =850;
-	public final static int PRET_1200 =1200;
-	public final static int PRET_2000 =2000;
+	public final static String SITE_SMARTPHONES = "http://www.domo.ro/Telefoane/GSM/Smartphones";
+	public final static int SMARTPHONES_PRET_560 =560;
+	public final static int SMARTPHONES_PRET_800 =800;
+	public final static int SMARTPHONES_PRET_1000 =1000;
+	public final static int SMARTPHONES_PRET_1900 =1900;
 	public final static String SMARTPHONE_IPHONE="iPhone";
 	public final static String SMARTPHONE_ALLVIEW="Allview";
 	public final static String SMARTPHONE_PRESTIGIO="Prestigio";

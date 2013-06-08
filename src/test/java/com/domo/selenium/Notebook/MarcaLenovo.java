@@ -49,7 +49,14 @@ public class MarcaLenovo {
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
 		
-		d.findElements(By.linkText("altele...")).get(0).click();
+		d.findElement(By.linkText("altele...")).click();
+		if (h.isElementPresent(By.id("CB_0_Lenovo"))==false)
+		{
+			logger.Log(LOG_FILE, "TestNotebookMarcaLenovo(): Option is not available TEST FAILLED !!!");
+			h.screenShooter("TestNotebookMarcaLenovo", d);
+		}
+		assertTrue(h.isElementPresent(By.id("CB_0_Lenovo"))==true);
+		
 		d.findElement(By.id("CB_0_Lenovo")).click();
 		Thread.sleep(2000);
 		
@@ -76,9 +83,9 @@ public class MarcaLenovo {
 				}
 			} 
 			else 
-				{ if (d.findElement(By.id("NextPage")).isDisplayed()==true)
+				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage")).click();
+						d.findElement(By.id("NextPage2")).click();
 						i=1;
 						j=1;
 						Thread.sleep(2000);

@@ -36,7 +36,7 @@ public class Memorie16GB {
 	@Test
 	public void TestSmartphonesMemoie16GB() throws InterruptedException, IOException
 	{
-		logger.Log(LOG_FILE, "TestSmartphonesMemoie16GB(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 16GB");
+		logger.Log(LOG_FILE, "TestSmartphonesMemoie16GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 16GB");
 		//verific daca sunt pe site-ul bun
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones")==false)
@@ -45,6 +45,14 @@ public class Memorie16GB {
 			h.screenShooter("TestSmartphonesMemoie16GB", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones"));
+		
+		if (h.isElementPresent(By.id("CB_4_16_GB"))==false)
+		{
+			logger.Log(LOG_FILE, "TestSmartphonesMemorie16GB(): Option is not available TEST FAILLED !!!");
+			h.screenShooter("TestSmartphonesMemorie16GB", d);
+		}
+		assertTrue(h.isElementPresent(By.id("CB_4_16_GB"))==true);
+		
 		d.findElement(By.id("CB_4_16_GB")).click();
 		Thread.sleep(2000);
 		
@@ -71,9 +79,9 @@ public class Memorie16GB {
 				}
 			} 
 			else 
-				{ if (d.findElement(By.id("NextPage")).isDisplayed()==true)
+				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage")).click();
+						d.findElement(By.id("NextPage2")).click();
 						i=1;
 						j=1;
 						Thread.sleep(2000);
@@ -81,7 +89,7 @@ public class Memorie16GB {
 					else
 					{
 						b=true;
-						logger.Log(LOG_FILE, "Numarul de produse avand rezolutie foto de"+Constants.SMARTPHONE_16GB+" sunt: "+k);
+						logger.Log(LOG_FILE, "Numarul de produse avand memoria interna de"+Constants.SMARTPHONE_16GB+" sunt: "+k);
 						logger.Log(LOG_FILE, "TestSmartphonesMemorie16GB(): TEST PASSED");
 						i=1;
 						j=1;

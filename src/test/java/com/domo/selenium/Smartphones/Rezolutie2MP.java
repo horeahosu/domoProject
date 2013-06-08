@@ -45,20 +45,28 @@ public class Rezolutie2MP {
 			h.screenShooter("TestSmartphonesRezolutie2MP", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones"));
+		
+		if (h.isElementPresent(By.id("CB_3_2_Megapixeli"))==false)
+		{
+			logger.Log(LOG_FILE, "TestSmartphonesRezolutie2MP(): Option is not available TEST FAILLED !!!");
+			h.screenShooter("TestSmartphonesRezolutie2MP", d);
+		}
+		assertTrue(h.isElementPresent(By.id("CB_3_2_Megapixeli"))==true);
+		
 		d.findElement(By.id("CB_3_2_Megapixeli")).click();
 		Thread.sleep(2000);
 		
 		while (b!=true)
 		{
-			if (h.isElementPresent(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr[2]/td[2]"))==true)
+			if (h.isElementPresent(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j)))==true)
 			{	
 				//procesez
-				if (d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr[2]/td[2]")).getText().contains(Constants.SMARTPHONE_2MP)==false)
+				if (d.findElement(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j))).getText().contains(Constants.SMARTPHONE_2MP)==false)
 				{
 					logger.Log(LOG_FILE, "TestSmartphonesRezolutie2MP(): TEST FAILLED !!!");
 					h.screenShooter("TestSmartphonesRezolutie2MP", d);
 				}
-				assertTrue(d.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/form/span[2]/table/tbody/tr/td/table/tbody/tr["+i+"]/td["+j+"]/table/tbody/tr[2]/td[2]")).getText().contains(Constants.SMARTPHONE_2MP));
+				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j))).getText().contains(Constants.SMARTPHONE_2MP));
 				//procesez
 				
 				k++;
@@ -71,9 +79,9 @@ public class Rezolutie2MP {
 				}
 			} 
 			else 
-				{ if (d.findElement(By.id("NextPage")).isDisplayed()==true)
+				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage")).click();
+						d.findElement(By.id("NextPage2")).click();
 						i=1;
 						j=1;
 						Thread.sleep(2000);

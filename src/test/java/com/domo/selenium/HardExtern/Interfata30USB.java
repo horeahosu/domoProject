@@ -47,9 +47,14 @@ public class Interfata30USB {
 			h.screenShooter("TestHardExternInterfata30USB", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
+
+		if (h.isElementPresent(By.id("CB_3_USB_3.0"))==false)
+		{
+			logger.Log(LOG_FILE, "TestHardexternInterfata30USB(): Option is not available TEST FAILLED !!!");
+			h.screenShooter("TestHardexternInterfata30USB", d);
+		}
+		assertTrue(h.isElementPresent(By.id("CB_3_USB_3.0"))==true);
 		
-		
-		//sub 1900
 		d.findElement(By.id("CB_3_USB_3.0")).click();
 		Thread.sleep(2000);
 		
@@ -81,11 +86,12 @@ public class Interfata30USB {
 				}
 			} 
 			else 
-				{ if (d.findElement(By.id("NextPage")).isDisplayed()==true)
+				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage")).click();
+						d.findElement(By.id("NextPage2")).click();
 						i=3;
 						j=1;
+						Thread.sleep(2000);
 					}
 					else
 					{
