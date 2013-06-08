@@ -58,7 +58,6 @@ public class Pret_1500_2400 {
 				int amount = h.ConvertAmountToInt(pret_produs);
 				
 				assertTrue(amount>Constants.PRET_1500);
-				assertTrue(amount<Constants.PRET_2400);
 				//procesez
 				
 				k++;

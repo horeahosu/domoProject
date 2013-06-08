@@ -1,0 +1,14 @@
+[Sat Jun 08 15:36:27 EEST 2013] TestContact(): Verifica anumite informatii legate de Contacte (telefon, call center, adresa)
+[Sat Jun 08 15:36:51 EEST 2013] TestContact(): TEST PASSED
+[Sat Jun 08 15:37:01 EEST 2013] TestCumCumpar(): Verifica prezenta capitoloelor importante din sectiunea Cum Cumpar
+[Sat Jun 08 15:37:04 EEST 2013] TestCumCumpar(): TEST PASSED
+[Sat Jun 08 15:37:12 EEST 2013] TestLogo(): Verifica prezenta logo-ului DOMO pe pagina principala
+[Sat Jun 08 15:37:12 EEST 2013] TestCumCumpar(): TEST PASSED
+[Sat Jun 08 15:37:20 EEST 2013] TestMagazineDomo(): Verifica linkul catre pagina care contine judetele cu magazine DOMO
+[Sat Jun 08 15:37:23 EEST 2013] TestMagazineDomo(): TEST PASSED
+[Sat Jun 08 15:37:31 EEST 2013] TestRate(): Verifica informatii legate de tipurile de rate oferite de DOMO
+[Sat Jun 08 15:38:08 EEST 2013] TestRate():6 Luni Gratie not found TEST FAILLED !!!
+[Sat Jun 08 15:38:19 EEST 2013] TestService(): Verifica informatii legate de Service-ul oferit de DOMO pentru clientii siteului
+[Sat Jun 08 15:38:38 EEST 2013] TestService(): TEST PASSED
+[Sat Jun 08 15:38:46 EEST 2013] TestTelefonComezi(): Verifica numarul de telefon pentru comenzi pe pagina principala
+[Sat Jun 08 15:38:46 EEST 2013] TestTelefonComezi(): TEST PASSED
