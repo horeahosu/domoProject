@@ -52,7 +52,7 @@ public class HardExternPretMin390 {
 		
 		if (h.isElementPresent(By.id("CB_1_Peste_390_lei"))==false)
 		{
-			logger.Log(LOG_FILE, "TestHardexternPretMin390(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestHardexternPretMin390(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestHardexternPretMin390", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_1_Peste_390_lei"))==true);			
@@ -74,7 +74,7 @@ public class HardExternPretMin390 {
 				
 				if ((amount>Constants.HARD_EXTERN_PRET_260)==false)
 				{
-					logger.Log(LOG_FILE, "TestHardexternPretMin390(): A product with non coresponding price was found TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestHardexternPretMin390(): A product with non coresponding price was found TEST FAILED !!!");
 					h.screenShooter("TestHardexternPretMin390", d);
 				}
 				assertTrue(amount>Constants.HARD_EXTERN_PRET_390);

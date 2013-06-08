@@ -49,7 +49,7 @@ public class HardExternPretHDD {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard")==false)
 		{
-			logger.Log(LOG_FILE, "TestPretHDD(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestPretHDD(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestPretHDD", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
@@ -91,7 +91,7 @@ public class HardExternPretHDD {
 					int amount = h.ConvertAmountToInt(pret_site);
 					if ((pret[ii]==amount)==false)
 					{
-						logger.Log(LOG_FILE, "TestPretHDD(): "+cod_site+" "+amount+" "+"did not match DATABASE -- TEST FAILLED !!!");
+						logger.Log(LOG_FILE, "TestPretHDD(): "+cod_site+" "+amount+" "+"did not match DATABASE -- TEST FAILED !!!");
 						h.screenShooter("TestPretHDD", d);
 					}
 					else

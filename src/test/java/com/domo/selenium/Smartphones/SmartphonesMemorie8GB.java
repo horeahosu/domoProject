@@ -41,14 +41,14 @@ public class SmartphonesMemorie8GB {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones")==false)
 		{
-			logger.Log(LOG_FILE, "TestSmartphonesMemorie8GB(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestSmartphonesMemorie8GB(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestSmartphonesMemoie8GB", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones"));
 		
 		if (h.isElementPresent(By.id("CB_4_8_GB"))==false)
 		{
-			logger.Log(LOG_FILE, "TestSmartphonesMemorie8GB(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestSmartphonesMemorie8GB(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestSmartphonesMemorie8GB", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_4_8_GB"))==true);
@@ -63,7 +63,7 @@ public class SmartphonesMemorie8GB {
 				//procesez
 				if (d.findElement(By.xpath(String.format(Constants.domo_product_details_3_xpath, i,j))).getText().contains(Constants.SMARTPHONE_8GB)==false)
 				{
-					logger.Log(LOG_FILE, "TestSmartphonesMemorie8GB(): TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestSmartphonesMemorie8GB(): TEST FAILED !!!");
 					h.screenShooter("TestSmartphonesMemorie8GB", d);
 				}
 				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_details_3_xpath, i,j))).getText().contains(Constants.SMARTPHONE_8GB));

@@ -44,7 +44,7 @@ public class NotebookMarcaDell {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook")==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookMarcaDell(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookMarcaDell(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestNotebookMarcaDell", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
@@ -52,7 +52,7 @@ public class NotebookMarcaDell {
 		d.findElement(By.linkText("altele...")).click();
 		if (h.isElementPresent(By.id("CB_0_Dell"))==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookMarcaDell(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookMarcaDell(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestNotebookMarcaDell", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_0_Dell"))==true);
@@ -67,7 +67,7 @@ public class NotebookMarcaDell {
 				//procesez
 				if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_DELL)==false)
 				{
-					logger.Log(LOG_FILE, "TestNotebookMarcaDell(): TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestNotebookMarcaDell(): TEST FAILED !!!");
 					h.screenShooter("TestNotebookMarcaDell", d);
 				}
 				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_DELL));

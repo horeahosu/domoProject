@@ -43,7 +43,7 @@ public class GeneralContact {
 		//Contact
 		if (d.findElement(By.xpath(Constants.domo_contact_display_contact_xpath)).getText().contains(Constants.Contact_C1)==false)
 		{
-			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C1+"not found  TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C1+"not found  TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_contact_display_contact_xpath)).getText().contains(Constants.Contact_C1));
@@ -51,7 +51,7 @@ public class GeneralContact {
 		//Telefon
 		if (h.checkForTextPresentOnThePage(Constants.Contact_C2)==false)
 		{
-			logger.Log(LOG_FILE, "TestContact():"+Constants.Contact_C2+"not found  TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestContact():"+Constants.Contact_C2+"not found  TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
 		assertTrue(h.checkForTextPresentOnThePage(Constants.Contact_C2));
@@ -59,7 +59,7 @@ public class GeneralContact {
 		//CallCenter
 		if (h.checkForTextPresentOnThePage(Constants.Contact_C3)==false)
 		{
-			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C3+"not found  TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C3+"not found  TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
 		assertTrue(h.checkForTextPresentOnThePage(Constants.Contact_C3));
@@ -67,7 +67,7 @@ public class GeneralContact {
 		//FAX
 		if (h.checkForTextPresentOnThePage(Constants.Contact_C4)==false)
 		{
-			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C4+"not found   TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C4+"not found   TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
 		assertTrue(h.checkForTextPresentOnThePage(Constants.Contact_C4));
@@ -75,7 +75,7 @@ public class GeneralContact {
 		//Telverde
 		if (h.checkForTextPresentOnThePage(Constants.Contact_C5)==false)
 		{
-			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C5+"not found   TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C5+"not found   TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
 		assertTrue(h.checkForTextPresentOnThePage(Constants.Contact_C5));
@@ -83,7 +83,7 @@ public class GeneralContact {
 		//Posta
 		if (h.checkForTextPresentOnThePage(Constants.Contact_C6)==false)
 		{
-			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C6+"not found   TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C6+"not found   TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
 		else

@@ -43,28 +43,28 @@ public class GeneralService {
 		
 		if (d.findElement(By.xpath(Constants.domo_service_display_title1_xpath)).getText().contains(Constants.Service_C1)==false)
 		{
-			logger.Log(LOG_FILE, "TestService(): "+Constants.Service_C1+"not found TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestService(): "+Constants.Service_C1+"not found TEST FAILED !!!");
 			h.screenShooter("TestService", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_service_display_title1_xpath)).getText().contains(Constants.Service_C1));
 		
 		if (d.findElement(By.xpath(Constants.domo_service_display_title2_xpath)).getText().contains(Constants.Service_C2)==false)
 		{
-			logger.Log(LOG_FILE, "TestService(): "+Constants.Service_C2+"not found TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestService(): "+Constants.Service_C2+"not found TEST FAILED !!!");
 			h.screenShooter("TestService", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_service_display_title2_xpath)).getText().contains(Constants.Service_C2));
 		
 		if (h.isElementPresent(By.linkText("informatii@domo.ro"))==false)
 		{
-			logger.Log(LOG_FILE, "TestService(): informatii@domo.ro not found TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestService(): informatii@domo.ro not found TEST FAILED !!!");
 			h.screenShooter("TestService", d);
 		}
 		assertTrue(h.isElementPresent(By.linkText("informatii@domo.ro")));
 		
 		if (h.isElementPresent(By.linkText("service@domo.ro"))==false)
 		{
-			logger.Log(LOG_FILE, "TestService(): service@domo.ro not found TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestService(): service@domo.ro not found TEST FAILED !!!");
 			h.screenShooter("TestService", d);
 		}
 		assertTrue(h.isElementPresent(By.linkText("service@domo.ro")));
@@ -76,7 +76,7 @@ public class GeneralService {
 		h.selectWindowByTitle("Domo Service");
 		if (d.findElement(By.cssSelector(Constants.domo_service_display_title3_css)).getText().contains(Constants.Service_C3)==false)
 		{
-			logger.Log(LOG_FILE, "TestService(): "+Constants.Service_C3+"not found TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestService(): "+Constants.Service_C3+"not found TEST FAILED !!!");
 			h.screenShooter("TestService", d);
 		}
 		assertTrue(d.findElement(By.cssSelector(Constants.domo_service_display_title3_css)).getText().contains(Constants.Service_C3));
@@ -86,7 +86,7 @@ public class GeneralService {
 		h.waitForElementPresent(By.cssSelector(Constants.domo_service_display_title4_css) ,8);
 		if (d.findElement(By.cssSelector(Constants.domo_service_display_title4_css)).getText().contains(Constants.Service_C4)==false)
 		{
-			logger.Log(LOG_FILE, "TestService(): "+Constants.Service_C4+"not found TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestService(): "+Constants.Service_C4+"not found TEST FAILED !!!");
 			h.screenShooter("TestService", d);
 		}
 		assertTrue(d.findElement(By.cssSelector(Constants.domo_service_display_title4_css)).getText().contains(Constants.Service_C4));
@@ -97,7 +97,7 @@ public class GeneralService {
 		h.waitForElementPresent(By.cssSelector(Constants.domo_service_display_title5_css) ,8);
 		if (d.findElement(By.cssSelector(Constants.domo_service_display_title5_css)).getText().contains(Constants.Service_C5)==false)
 		{
-			logger.Log(LOG_FILE, "TestService(): "+Constants.Service_C5+"not found TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestService(): "+Constants.Service_C5+"not found TEST FAILED !!!");
 			h.screenShooter("TestService", d);
 		}
 		else

@@ -44,7 +44,7 @@ public class NotebookMarcaSamsung {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook")==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookMarcaSamsung(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookMarcaSamsung(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestNotebookMarcaSamsung", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
@@ -52,7 +52,7 @@ public class NotebookMarcaSamsung {
 		d.findElement(By.linkText("altele...")).click();
 		if (h.isElementPresent(By.id("CB_0_Samsung"))==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookMarcaSamsung(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookMarcaSamsung(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestNotebookMarcaSamsung", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_0_Samsung"))==true);
@@ -67,7 +67,7 @@ public class NotebookMarcaSamsung {
 				//procesez
 				if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_SAMSUNG)==false)
 				{
-					logger.Log(LOG_FILE, "TestNotebookMarcaSamsung(): Wrong page TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestNotebookMarcaSamsung(): Wrong page TEST FAILED !!!");
 					h.screenShooter("TestNotebookMarcaSamsung", d);
 				}
 				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_SAMSUNG));

@@ -45,14 +45,14 @@ public class HardExternCapacitate1000 {
 		
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard")==false)
 		{
-			logger.Log(LOG_FILE, "TestHardExternCapacitate1000(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestHardExternCapacitate1000(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestHardExternCapacitate1000", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
 		
 		if (h.isElementPresent(By.id("CB_2_1000_Gb"))==false)
 		{
-			logger.Log(LOG_FILE, "TestHardexternCapacitate1000(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestHardexternCapacitate1000(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestHardexternCapacitate1000", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_2_1000_Gb"))==true);
@@ -67,7 +67,7 @@ public class HardExternCapacitate1000 {
 				//procesez
 				if (d.findElement(By.xpath(String.format(Constants.domo_product_details_1_xpath, i,j))).getText().contains(Constants.CAPACITATE_1000)==false)
 				{
-					logger.Log(LOG_FILE, "TestHardExternCapacitate1000(): TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestHardExternCapacitate1000(): TEST FAILED !!!");
 					h.screenShooter("TestHardExternCapacitate1000", d);
 				}
 				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_details_1_xpath, i,j))).getText().contains(Constants.CAPACITATE_1000));

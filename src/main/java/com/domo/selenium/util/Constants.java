@@ -136,9 +136,10 @@ public class Constants {
 	public final static String MARCA_SHARP ="Sharp";
 	public final static String MARCA_TELEFUNKEN ="Telefunken";
 	public final static String MARCA_EBODA ="E-Boda";
-	public final static int PRET_1500 = 1500;
-	public final static int PRET_3600 = 3600;
-	public final static int PRET_6000 = 6000;
+	public final static int TVLED_PRET_1700 = 1700;
+	public final static int TVLED_PRET_2700 = 2700;
+	public final static int TVLED_PRET_4000 = 4000;
+	public final static int TVLED_PRET_6200 = 6200;
 	public final static String DIAGONALA_48="48";
 	public final static String DIAGONALA_56="56";
 	public final static String DIAGONALA_58="58";
@@ -182,7 +183,7 @@ public class Constants {
 	public final static String SMARTPHONE_IPHONE="iPhone";
 	public final static String SMARTPHONE_ALLVIEW="Allview";
 	public final static String SMARTPHONE_PRESTIGIO="Prestigio";
-	public final static String SMARTPHONE_BLACKBERRY="Blackberry";
+	public final static String SMARTPHONE_BLACKBERRY="BlackBerry";
 	public final static String SMARTPHONE_NOKIA="Nokia";
 	public final static String SMARTPHONE_MOTOROLA="Motorola";
 	public final static String SMARTPHONE_2MP="2 Megapixeli";

@@ -42,7 +42,7 @@ public class GeneralLogo {
 		
 		if (d.findElement(By.className("logo")).getText().contains(Constants.Logo_C1)==false)
 		{
-			logger.Log(LOG_FILE, "TestCumCumpar(): Logo "+Constants.Logo_C1+"not found TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestCumCumpar(): Logo "+Constants.Logo_C1+"not found TEST FAILED !!!");
 			h.screenShooter("TestCumCumpar", d);
 		}
 		else

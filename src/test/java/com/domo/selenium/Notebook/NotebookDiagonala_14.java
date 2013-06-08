@@ -44,7 +44,7 @@ public class NotebookDiagonala_14 {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook")==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookDiagonala14(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookDiagonala14(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestNotebookDiagonala14", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
@@ -52,7 +52,7 @@ public class NotebookDiagonala_14 {
 		d.findElements(By.linkText("altele...")).get(2).click();
 		if (h.isElementPresent(By.id("CB_3_14``"))==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookDiagonala14(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookDiagonala14(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestNotebookDiagonala14", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_3_14``"))==true);
@@ -67,7 +67,7 @@ public class NotebookDiagonala_14 {
 				//procesez
 				if (d.findElement(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j))).getText().contains(Constants.DIAGONALA_14)==false)
 				{
-					logger.Log(LOG_FILE, "TestNotebookDiagonala14(): TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestNotebookDiagonala14(): TEST FAILED !!!");
 					h.screenShooter("TestNotebookDiagonala14", d);
 				}
 				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j))).getText().contains(Constants.DIAGONALA_14));

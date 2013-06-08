@@ -44,7 +44,7 @@ public class NotebookMarcaAcer {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook")==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookMarcaAcer(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookMarcaAcer(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestNotebookMarcaAcer", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
@@ -52,7 +52,7 @@ public class NotebookMarcaAcer {
 		d.findElement(By.linkText("altele...")).click();
 		if (h.isElementPresent(By.id("CB_0_Acer"))==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookMarcaAcer(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookMarcaAcer(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestNotebookMarcaAcer", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_0_Acer"))==true);
@@ -67,7 +67,7 @@ public class NotebookMarcaAcer {
 				//procesez
 				if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_ACER)==false)
 				{
-					logger.Log(LOG_FILE, "TestNotebookMarcaAcer(): TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestNotebookMarcaAcer(): TEST FAILED !!!");
 					h.screenShooter("TestNotebookMarcaAcer", d);
 				}
 				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_ACER));

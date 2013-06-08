@@ -43,7 +43,7 @@ public class GeneralTelefonComenzi {
 			logger.Log(LOG_FILE, "TestTelefonComezi(): TEST PASSED");
 			else
 			{
-				logger.Log(LOG_FILE, "TestTelefonComezi(): TEST FAILLED !!!");
+				logger.Log(LOG_FILE, "TestTelefonComezi(): TEST FAILED !!!");
 				h.screenShooter("TestTelefonComezi", d);
 			}
 		assertTrue(d.findElement(By.className("contact")).getText().contains("021.319.81.96"));

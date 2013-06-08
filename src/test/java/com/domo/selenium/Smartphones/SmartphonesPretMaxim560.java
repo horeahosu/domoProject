@@ -45,14 +45,14 @@ public class SmartphonesPretMaxim560 {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones")==false)
 		{
-			logger.Log(LOG_FILE, "TestSmartphonesPretMaxim560(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestSmartphonesPretMaxim560(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestSmartphonesPretMaxim560", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones"));
 		
 		if (h.isElementPresent(By.id("CB_1_Sub_560_lei"))==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookPretMaxim2100: Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookPretMaxim2100: Option is not available TEST FAILED !!!");
 			h.screenShooter("TestNotebookPretMaxim2100", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_1_Sub_560_lei"))==true);			
@@ -74,7 +74,7 @@ public class SmartphonesPretMaxim560 {
 				
 				if ((amount<Constants.SMARTPHONES_PRET_560)==false)
 				{
-					logger.Log(LOG_FILE, "TestSmartphonesPretMaxim560(): A product with non coresponding price was found TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestSmartphonesPretMaxim560(): A product with non coresponding price was found TEST FAILED !!!");
 					h.screenShooter("TestSmartphonesPretMaxim560", d);
 				}
 				assertTrue(amount<Constants.SMARTPHONES_PRET_560);

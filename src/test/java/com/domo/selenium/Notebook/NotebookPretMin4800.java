@@ -45,14 +45,14 @@ public class NotebookPretMin4800 {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook")==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookPretMin4800(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookPretMin4800(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestNotebookPretMin4800", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
 		
 		if (h.isElementPresent(By.id("CB_1_Peste_4.800_lei"))==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookPretMin4800(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookPretMin4800(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestNotebookPretMin4800", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_1_Peste_4.800_lei"))==true);			
@@ -74,7 +74,7 @@ public class NotebookPretMin4800 {
 				
 				if ((amount>Constants.NOTEBOOK_PRET_4800)==false)
 				{
-					logger.Log(LOG_FILE, "TestNotebookPretMin4800(): A product with non coresponding price was found TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestNotebookPretMin4800(): A product with non coresponding price was found TEST FAILED !!!");
 					h.screenShooter("TestNotebookPretMin4800", d);
 				}
 				assertTrue(amount>Constants.NOTEBOOK_PRET_4800);

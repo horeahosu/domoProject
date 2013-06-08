@@ -53,6 +53,7 @@
                         <include>**/HardExtern*</include>
                         <include>**/Notebook*</include>
                         <include>**/Smartphones*</include>
+                        <include>**/TVLED*</include>
                     </includes>
                 </configuration>
             </plugin>

@@ -43,14 +43,14 @@ public class HardExternInterfata20USB {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard")==false)
 		{
-			logger.Log(LOG_FILE, "TestHardExternInterfata20USB(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestHardExternInterfata20USB(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestHardExternInterfata20USB", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
 		
 		if (h.isElementPresent(By.id("CB_3_USB_2.0"))==false)
 		{
-			logger.Log(LOG_FILE, "TestHardexternInterfata20USB(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestHardexternInterfata20USB(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestHardexternInterfata20USB", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_3_USB_2.0"))==true);
@@ -70,7 +70,7 @@ public class HardExternInterfata20USB {
 				{
 					if (d.findElement(By.xpath(String.format(Constants.domo_product_details_3_xpath, i,j))).getText().contains(Constants.INTERFATA_20)==false)
 					{
-						logger.Log(LOG_FILE, "TestHardExternInterfata20USB(): TEST FAILLED !!!");
+						logger.Log(LOG_FILE, "TestHardExternInterfata20USB(): TEST FAILED !!!");
 						h.screenShooter("TestHardExternInterfata20USB", d);
 					}
 					assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_details_3_xpath, i,j))).getText().contains(Constants.INTERFATA_20));

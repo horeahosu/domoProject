@@ -41,7 +41,7 @@ public class SmartphonesMarcaNokia {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones")==false)
 		{
-			logger.Log(LOG_FILE, "TestSmartphonesMarcaNokia(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestSmartphonesMarcaNokia(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestSmartphonesMarcaNokia", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones"));
@@ -49,7 +49,7 @@ public class SmartphonesMarcaNokia {
 		d.findElements(By.linkText("altele...")).get(0).click();
 		if (h.isElementPresent(By.id("CB_0_Nokia"))==false)
 		{
-			logger.Log(LOG_FILE, "TestSmartphonesMarcaNokia(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestSmartphonesMarcaNokia(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestSmartphonesMarcaNokia", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_0_Nokia"))==true);
@@ -64,7 +64,7 @@ public class SmartphonesMarcaNokia {
 				//procesez
 				if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.SMARTPHONE_NOKIA)==false)
 				{
-					logger.Log(LOG_FILE, "TestSmartphonesMarcaNokia(): TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestSmartphonesMarcaNokia(): TEST FAILED !!!");
 					h.screenShooter("TestSmartphonesMarcaNokia", d);
 				}
 				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.SMARTPHONE_NOKIA));

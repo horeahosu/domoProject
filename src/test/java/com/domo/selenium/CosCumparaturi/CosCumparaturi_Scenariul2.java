@@ -66,7 +66,7 @@ public class CosCumparaturi_Scenariul2 {
 		//Compar preturile
 		if (price1.equals(price2)!=true)
 		{
-			logger.Log(LOG_FILE, "TestScenariul2: TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestScenariul2: TEST FAILED !!!");
 			h.screenShooter("TestScenariul2", d);
 		}
 		assertEquals(price1, price2);
@@ -74,7 +74,7 @@ public class CosCumparaturi_Scenariul2 {
 		//Verific butonul Pasul2
 		if (h.isElementPresent(By.name("Pasul2"))!=true)
 		{
-			logger.Log(LOG_FILE, "TestScenariul2: TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestScenariul2: TEST FAILED !!!");
 			h.screenShooter("TestScenariul2", d);
 		}
 		assertTrue(h.isElementPresent(By.name("Pasul2")));
@@ -95,7 +95,7 @@ public class CosCumparaturi_Scenariul2 {
 		System.out.println(price2_int);
 		if (price3.contains(price2_int)!=true)
 		{
-			logger.Log(LOG_FILE, "TestScenariul2: TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestScenariul2: TEST FAILED !!!");
 			h.screenShooter("TestScenariul2", d);
 		}
 		else

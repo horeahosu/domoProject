@@ -44,7 +44,7 @@ public class NotebookMarcaToshiba {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook")==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookMarcaToshiba(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookMarcaToshiba(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestNotebookMarcaToshiba", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
@@ -52,7 +52,7 @@ public class NotebookMarcaToshiba {
 		d.findElement(By.linkText("altele...")).click();
 		if (h.isElementPresent(By.id("CB_0_Toshiba"))==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookMarcaToshiba(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestNotebookMarcaToshiba(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestNotebookMarcaToshiba", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_0_Toshiba"))==true);
@@ -67,7 +67,7 @@ public class NotebookMarcaToshiba {
 				//procesez
 				if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_TOSHIBA)==false)
 				{
-					logger.Log(LOG_FILE, "TestNotebookMarcaToshiba(): Wrong page TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestNotebookMarcaToshiba(): Wrong page TEST FAILED !!!");
 					h.screenShooter("TestNotebookMarcaToshiba", d);
 				}
 				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_TOSHIBA));

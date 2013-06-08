@@ -48,10 +48,18 @@ public class HardExternMarcaToshiba {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard")==false)
 		{
-			logger.Log(LOG_FILE, "TestHardExternMarcaToshiba(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestHardExternMarcaToshiba(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestHardExternMarcaToshiba", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
+		
+
+		if (h.isElementPresent(By.id("CB_0_Toshiba"))==false)
+		{
+			logger.Log(LOG_FILE, "TestHardexternMarcaToshiba(): Option is not available TEST FAILED !!!");
+			h.screenShooter("TestHardexternMarcaToshiba", d);
+		}
+		assertTrue(h.isElementPresent(By.id("CB_0_Toshiba"))==true);
 		
 		d.findElement(By.id("CB_0_Toshiba")).click();
 		Thread.sleep(2000);
@@ -63,7 +71,7 @@ public class HardExternMarcaToshiba {
 				//procesez
 				if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_TOSHIBA)==false)
 				{
-					logger.Log(LOG_FILE, "TestHardExternMarcaToshiba(): TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestHardExternMarcaToshiba(): TEST FAILED !!!");
 					h.screenShooter("TestHardExternMarcaToshiba", d);
 				}
 				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_TOSHIBA));

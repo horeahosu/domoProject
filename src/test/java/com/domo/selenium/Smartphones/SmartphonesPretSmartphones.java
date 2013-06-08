@@ -49,7 +49,7 @@ public class SmartphonesPretSmartphones {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones")==false)
 		{
-			logger.Log(LOG_FILE, "TestPretSmartphones(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestPretSmartphones(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestPretSmartphones", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones"));
@@ -91,7 +91,7 @@ public class SmartphonesPretSmartphones {
 					int amount = h.ConvertAmountToInt(pret_site);
 					if ((pret[ii]==amount)==false)
 					{
-						logger.Log(LOG_FILE, "TestPretSmartphones(): "+cod_site+" "+amount+" "+"did not match DATABASE -- TEST FAILLED !!!");
+						logger.Log(LOG_FILE, "TestPretSmartphones(): "+cod_site+" "+amount+" "+"did not match DATABASE -- TEST FAILED !!!");
 						h.screenShooter("TestPretSmartphones", d);
 					}
 					else

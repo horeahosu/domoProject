@@ -45,14 +45,14 @@ public class HardExternPretMaxim260 {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard")==false)
 		{
-			logger.Log(LOG_FILE, "TestHardexternPretMaxim260(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestHardexternPretMaxim260(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestHardexternPretMaxim260", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
 		
 		if (h.isElementPresent(By.id("CB_1_Sub_260_lei"))==false)
 		{
-			logger.Log(LOG_FILE, "TestHardexternPretMaxim260(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestHardexternPretMaxim260(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestHardexternPretMaxim260", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_1_Sub_260_lei"))==true);			
@@ -74,7 +74,7 @@ public class HardExternPretMaxim260 {
 				
 				if ((amount<Constants.HARD_EXTERN_PRET_260)==false)
 				{
-					logger.Log(LOG_FILE, "TestHardexternPretMaxim260(): A product with non coresponding price was found TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestHardexternPretMaxim260(): A product with non coresponding price was found TEST FAILED !!!");
 					h.screenShooter("TestHardexternPretMaxim260", d);
 				}
 				assertTrue(amount<Constants.HARD_EXTERN_PRET_260);

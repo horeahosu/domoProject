@@ -41,14 +41,14 @@ public class SmartphonesRezolutie3MP {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones")==false)
 		{
-			logger.Log(LOG_FILE, "TestSmartphonesRezolutie3MP(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestSmartphonesRezolutie3MP(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestSmartphonesRezolutie3MP", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones"));
 		
 		if (h.isElementPresent(By.id("CB_3_3_Megapixeli"))==false)
 		{
-			logger.Log(LOG_FILE, "TestSmartphonesRezolutie3MP(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestSmartphonesRezolutie3MP(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestSmartphonesRezolutie3MP", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_3_3_Megapixeli"))==true);
@@ -63,7 +63,7 @@ public class SmartphonesRezolutie3MP {
 				//procesez
 				if (d.findElement(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j))).getText().contains(Constants.SMARTPHONE_3MP)==false)
 				{
-					logger.Log(LOG_FILE, "TestSmartphonesRezolutie3MP(): TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestSmartphonesRezolutie3MP(): TEST FAILED !!!");
 					h.screenShooter("TestSmartphonesRezolutie3MP", d);
 				}
 				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_details_2_xpath, i,j))).getText().contains(Constants.SMARTPHONE_3MP));

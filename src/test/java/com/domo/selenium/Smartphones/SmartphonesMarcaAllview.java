@@ -40,7 +40,7 @@ public class SmartphonesMarcaAllview {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones")==false)
 		{
-			logger.Log(LOG_FILE, "TestSmartphonesMarcaAllview(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestSmartphonesMarcaAllview(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestSmartphonesMarcaAllview()", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Smartphones"));
@@ -48,7 +48,7 @@ public class SmartphonesMarcaAllview {
 		d.findElements(By.linkText("altele...")).get(0).click();
 		if (h.isElementPresent(By.id("CB_0_Allview"))==false)
 		{
-			logger.Log(LOG_FILE, "TestSmartphonesMarcaAllview(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestSmartphonesMarcaAllview(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestSmartphonesMarcaAllview", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_0_Allview"))==true);
@@ -63,7 +63,7 @@ public class SmartphonesMarcaAllview {
 				//procesez
 				if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.SMARTPHONE_ALLVIEW)==false)
 				{
-					logger.Log(LOG_FILE, "TestSmartphonesMarcaAllview(): TEST FAILLED !!!");
+					logger.Log(LOG_FILE, "TestSmartphonesMarcaAllview(): TEST FAILED !!!");
 					h.screenShooter("TestSmartphonesMarcaAllview", d);
 				}
 				assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.SMARTPHONE_ALLVIEW));

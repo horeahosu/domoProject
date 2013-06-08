@@ -43,14 +43,14 @@ public class HardExternMarcaWesternDigital {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard")==false)
 		{
-			logger.Log(LOG_FILE, "TestHardExternMarcaWesternDigital(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestHardExternMarcaWesternDigital(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestHardExternMarcaWesternDigital", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
 		
 		if (h.isElementPresent(By.id("CB_0_Western_Digital"))==false)
 		{
-			logger.Log(LOG_FILE, "TestHardexternMarcaWesternDigital(): Option is not available TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestHardexternMarcaWesternDigital(): Option is not available TEST FAILED !!!");
 			h.screenShooter("TestHardexternMarcaWesternDigital", d);
 		}
 		assertTrue(h.isElementPresent(By.id("CB_0_Western_Digital"))==true);
@@ -69,7 +69,7 @@ public class HardExternMarcaWesternDigital {
 				{
 					if (d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_WESTERNDIGITAL)==false)
 					{
-						logger.Log(LOG_FILE, "TestHardExternMarcaWesternDigital(): TEST FAILLED !!!");
+						logger.Log(LOG_FILE, "TestHardExternMarcaWesternDigital(): TEST FAILED !!!");
 						h.screenShooter("TestHardExternMarcaWesternDigital", d);
 					}
 					assertTrue(d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, i,j))).getText().contains(Constants.MARCA_WESTERNDIGITAL));

@@ -44,7 +44,7 @@ public class GeneralMagazineDomo {
 		
 		if ((d.findElement(By.xpath(Constants.domo_magazine_domo_display_title1_xpath)).getText().contains(Constants.MagazineDomo_C1)==false))
 		{
-			logger.Log(LOG_FILE, "TestMagazineDomo(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestMagazineDomo(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestMagazineDomo", d);
 		}
 		else

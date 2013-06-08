@@ -49,7 +49,7 @@ public class NotebookPretProduse {
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook")==false)
 		{
-			logger.Log(LOG_FILE, "TestPretNotebook(): Wrong page TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestPretNotebook(): Wrong page TEST FAILED !!!");
 			h.screenShooter("TestPretNotebook", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
@@ -91,7 +91,7 @@ public class NotebookPretProduse {
 					int amount = h.ConvertAmountToInt(pret_site);
 					if ((pret[ii]==amount)==false)
 					{
-						logger.Log(LOG_FILE, "TestPretNotebook(): "+cod_site+" "+amount+" "+"did not match DATABASE -- TEST FAILLED !!!");
+						logger.Log(LOG_FILE, "TestPretNotebook(): "+cod_site+" "+amount+" "+"did not match DATABASE -- TEST FAILED !!!");
 						h.screenShooter("TestPretNotebook", d);
 					}
 					else

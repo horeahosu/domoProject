@@ -48,7 +48,7 @@ public class CosCumparaturi_Scenariul1 {
 		logger.Log(LOG_FILE, "TestScenariul1: TEST PASSED");
 		else
 		{
-			logger.Log(LOG_FILE, "TestScenariul1: TEST FAILLED !!!");
+			logger.Log(LOG_FILE, "TestScenariul1: TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
 		assertTrue(h.checkForTextPresentOnThePage("Cosul Dvs. nu contine nici un produs"));
