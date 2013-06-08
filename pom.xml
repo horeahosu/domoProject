@@ -49,7 +49,6 @@
                 <version >2.10</version>
                 <configuration>
                     <includes>
-                        <include>**/General*</include>
                         <include>**/HardExtern*</include>
                         <include>**/Notebook*</include>
                         <include>**/Smartphones*</include>
