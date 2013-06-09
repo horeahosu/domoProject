@@ -1,0 +1,10 @@
+[Sun Jun 09 13:04:19 EEST 2013] TestScenariul1:Un user nou pe site va vedea la sectiunea Cos Cumparaturi mesajul: Cosul Dvs. nu contine nici un produs
+[Sun Jun 09 13:04:26 EEST 2013] TestScenariul1: TEST PASSED
+[Sun Jun 09 13:07:33 EEST 2013] TestScenariul 2: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2
+[Sun Jun 09 13:13:06 EEST 2013] TestScenariul 2: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2
+[Sun Jun 09 13:14:31 EEST 2013] TestScenariul 2: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2
+[Sun Jun 09 13:14:37 EEST 2013] TestScenariul2: TEST PASSED
+[Sun Jun 09 13:15:24 EEST 2013] TestScenariul 2: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2
+[Sun Jun 09 13:15:30 EEST 2013] TestScenariul2: TEST PASSED
+[Sun Jun 09 13:40:39 EEST 2013] TestScenariul 3: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2
+[Sun Jun 09 13:40:47 EEST 2013] TestScenariul1: TEST PASSED

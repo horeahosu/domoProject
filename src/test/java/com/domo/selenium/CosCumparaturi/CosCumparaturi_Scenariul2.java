@@ -25,7 +25,7 @@ public class CosCumparaturi_Scenariul2 {
 	public void doSetup()
 	{	
 		d.manage().deleteAllCookies();
-		d.get(Constants.SITE);
+		d.get(Constants.SITE_TVLED);
 	}
 	
 	/**
@@ -39,29 +39,25 @@ public class CosCumparaturi_Scenariul2 {
 	public void TestScenariul2() throws InterruptedException, IOException
 	{
 		
-		logger.Log(LOG_FILE, "TestScenariul 2: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2");
-		h.waitForElementPresent(By.className("logo"), 5);
-		d.findElement(By.linkText("Televizoare & Home cinema")).click();
-		Thread.sleep(2000);
-		if (h.isElementPresent(By.linkText("LED TV"))==false)
+		logger.Log(LOG_FILE, "TestScenariul2: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2");
+		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
+		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED")==false)
 		{
-			d.navigate().back();
-			Thread.sleep(3000);
-			d.findElement(By.linkText("Televizoare & Home cinema")).click();
+			logger.Log(LOG_FILE, "TestScenariul2(): Wrong page TEST FAILED !!!");
+			h.screenShooter("TestScenariul2", d);
 		}
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED"));
 		
-		d.findElement(By.linkText("LED TV")).click();
 		d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, 1,1))).click();
 		
 		//stochez pretul
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/form/div[2]/div[3]/table/tbody/tr[2]/td/div/span/strong"), 5);
-		String price1 = d.findElement(By.xpath("/html/body/div/div[3]/form/div[2]/div[3]/table/tbody/tr[2]/td/div/span/strong")).getText();
-		System.out.println(price1);
+		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div[2]/div[3]/table/tbody/tr[2]/td/div/span/strong"), 5);
+		String price1 = d.findElement(By.xpath("/html/body/div/div[3]/div[2]/div[3]/table/tbody/tr[2]/td/div/span/strong")).getText();
 		//adaug in cos
-		d.findElement(By.xpath("/html/body/div/div[3]/form/div[2]/div[3]/table/tbody/tr[3]/td/div/span/input")).click();		                        
-		
+		d.findElement(By.xpath("/html/body/div/div[3]/div[2]/div[3]/table/tbody/tr[3]/td/div/div/input")).click();		                        
+		Thread.sleep(2000);
 		//verific pret pe pagina Pasul1
-		String price2 = d.findElement(By.xpath("/html/body/div/table/tbody/tr[3]/td/table/tbody/tr[5]/td[4]/strong")).getText();
+		String price2 = d.findElement(By.xpath("/html/body/div[4]/div/div/div/div/div/form/div/table/tbody/tr/td[3]")).getText();
 		
 		//Compar preturile
 		if (price1.equals(price2)!=true)
@@ -71,16 +67,16 @@ public class CosCumparaturi_Scenariul2 {
 		}
 		assertEquals(price1, price2);
 		
-		//Verific butonul Pasul2
-		if (h.isElementPresent(By.name("Pasul2"))!=true)
+		//Verific optiunea de a trece la Pasul2
+		if (h.isElementPresent(By.xpath("/html/body/div[4]/div/div/div/div/div/form/div/div[2]/a"))!=true)
 		{
 			logger.Log(LOG_FILE, "TestScenariul2: TEST FAILED !!!");
 			h.screenShooter("TestScenariul2", d);
 		}
-		assertTrue(h.isElementPresent(By.name("Pasul2")));
+		assertTrue(h.isElementPresent(By.xpath("/html/body/div[4]/div/div/div/div/div/form/div/div[2]/a")));
 		
 		//verific pretul pe pagina Pasul2
-		d.findElement(By.name("Pasul2")).click();
+		d.findElement(By.xpath("/html/body/div[4]/div/div/div/div/div/form/div/div[2]/a")).click();
 		Thread.sleep(2000);
 		if (h.isElementPresent(By.id("TotalPlata"))==false)
 		{
@@ -89,10 +85,8 @@ public class CosCumparaturi_Scenariul2 {
 			d.findElement(By.name("Pasul2")).click();
 		}
 		String price3 = d.findElement(By.id("TotalPlata")).getText();
-		System.out.println(price3);
 		
 		String price2_int = h.SplitString1(price2);
-		System.out.println(price2_int);
 		if (price3.contains(price2_int)!=true)
 		{
 			logger.Log(LOG_FILE, "TestScenariul2: TEST FAILED !!!");

@@ -49,6 +49,8 @@
                 <version >2.10</version>
                 <configuration>
                     <includes>
+                    	<include>**/CosCumparaturi*</include>
+                    	<include>**/General*</include>
                         <include>**/HardExtern*</include>
                         <include>**/Notebook*</include>
                         <include>**/Smartphones*</include>
