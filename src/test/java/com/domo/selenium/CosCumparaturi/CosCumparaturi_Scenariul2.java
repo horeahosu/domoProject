@@ -57,19 +57,18 @@ public class CosCumparaturi_Scenariul2 {
 		d.findElement(By.xpath("/html/body/div/div[3]/div[2]/div[3]/table/tbody/tr[3]/td/div/div/input")).click();		                        
 		Thread.sleep(2000);
 		//verific pret pe pagina Pasul1
-		String price2 = d.findElement(By.xpath("/html/body/div[4]/div/div/div/div/div/form/div/table/tbody/tr/td[3]")).getText();
-		
+		String price2 = d.findElement(By.xpath("/html/body/div[4]/div/div/div/div/div/form/div/div/table/tbody/tr/td/span")).getText();
 		//Compar preturile
-		if (price1.equals(price2)!=true)
+		if (price2.contains(price1)!=true)
 		{
 			logger.Log(LOG_FILE, "TestScenariul2: TEST FAILED !!!");
 			h.screenShooter("TestScenariul2", d);
 		}
-		assertEquals(price1, price2);
+		assertTrue(price2.contains(price1));
 		
 		//Verific optiunea de a trece la Pasul2
 		if (h.isElementPresent(By.xpath("/html/body/div[4]/div/div/div/div/div/form/div/div[2]/a"))!=true)
-		{
+		{								
 			logger.Log(LOG_FILE, "TestScenariul2: TEST FAILED !!!");
 			h.screenShooter("TestScenariul2", d);
 		}
@@ -85,16 +84,15 @@ public class CosCumparaturi_Scenariul2 {
 			d.findElement(By.name("Pasul2")).click();
 		}
 		String price3 = d.findElement(By.id("TotalPlata")).getText();
-		
-		String price2_int = h.SplitString1(price2);
-		if (price3.contains(price2_int)!=true)
+		String price1_int = h.SplitString1(price1);
+		if (price3.contains(price1_int)!=true)
 		{
 			logger.Log(LOG_FILE, "TestScenariul2: TEST FAILED !!!");
 			h.screenShooter("TestScenariul2", d);
 		}
 		else
 			logger.Log(LOG_FILE, "TestScenariul2: TEST PASSED");
-		assertTrue(price3.contains(price2_int));
+		assertTrue(price3.contains(price1_int));
 	}
 	
 	@After
