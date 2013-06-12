@@ -38,6 +38,9 @@ public class Constants {
 	public final static String domo_product_actual_price_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/span/strong";
 	public final static String domo_product_previous_price_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/span[2]/strong";	                                                         
 	
+	//CosCumparaturi
+	public final static String cos_cumparauri_mesaj_cos_gol_xpath="/html/body/div[4]/div/div/div/div/div/form/div/div/table/tbody/tr/td";
+	
 	//General
 	public final static String USER_AGENT = "Mozilla/5.0 (Linux; U; Android 4.0.3; ko-kr; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko)Version/4.0 Mobile Safari/534.30";
 	public final static String SITE ="http://www.domo.ro";
@@ -61,9 +64,11 @@ public class Constants {
 	public final static String Service_C5 ="RECLAMAÞIE";
 	
 	//Contact
-	public final static String Contact_C1 ="Contact DOMO";                   
+	public final static String Contact_C1 ="Contact DOMO"; 
 	public final static String Contact_C2 ="Tel: 021.319.81.96 (Romtelecom), 0372.679.101 (Vodafone)";
+	public final static String Contact_C2_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[3]/td/table/tbody/tr/td/span/strong/span";
 	public final static String Contact_C3 ="Call Center DOMO: 0372.679.200 -> 207, 021.316.93.93, 021.319.81.95";
+	public final static String Contact_xpath="/html/body/div/table/tbody/tr[3]/td[3]/table/tbody/tr[3]/td/table/tbody/tr/td";
 	public final static String Contact_C4 ="Bucuresti: 021.316.73.73";
 	public final static String Contact_C5 ="Valabil numai in Bucuresti: 0800.805.805";
 	public final static String Contact_C6 ="Bulevardul Dimitrie Pompei, nr.10A, etaj 8, Complex Conect 3 Business Park, sector 2, cod postal: 020337";

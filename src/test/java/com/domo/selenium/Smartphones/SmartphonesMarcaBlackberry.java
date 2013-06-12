@@ -34,7 +34,7 @@ public class SmartphonesMarcaBlackberry {
 	 */
 	
 	@Test
-	public void TestSmartphonesMarcaApple() throws InterruptedException, IOException
+	public void TestSmartphonesMarcaBlackBerry() throws InterruptedException, IOException
 	{
 		logger.Log(LOG_FILE, "TestSmartphonesMarcaBlackberry(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Blackberry");
 		//verific daca sunt pe site-ul bun

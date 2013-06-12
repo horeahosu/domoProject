@@ -44,14 +44,14 @@ public class CosCumparaturi_Scenariul1 {
 		Thread.sleep(2000);
 		d.findElement(By.className("cart-link")).click();
 		Thread.sleep(2000);
-		if (h.checkForTextPresentOnThePage("Cosul Dvs. nu contine nici un produs"))
+		if (h.isElementPresent(By.xpath(Constants.cos_cumparauri_mesaj_cos_gol_xpath))==true)
 		logger.Log(LOG_FILE, "TestScenariul1: TEST PASSED");
 		else
 		{
 			logger.Log(LOG_FILE, "TestScenariul1: TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
-		assertTrue(h.checkForTextPresentOnThePage("Cosul Dvs. nu contine nici un produs"));
+		assertTrue(h.isElementPresent(By.xpath(Constants.cos_cumparauri_mesaj_cos_gol_xpath)));
 	}
 	
 	@After

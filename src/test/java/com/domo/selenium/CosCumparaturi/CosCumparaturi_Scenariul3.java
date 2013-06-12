@@ -48,10 +48,11 @@ public class CosCumparaturi_Scenariul3 {
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("LED"));
 		
 		d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, 1,1))).click();
+		Thread.sleep(2000);
 		
 		//adaug in cos
 		d.findElement(By.xpath("/html/body/div/div[3]/div[2]/div[3]/table/tbody/tr[3]/td/div/div/input")).click();		                        
-		Thread.sleep(2000);
+		Thread.sleep(2000);     
 		
 		//verific ca produsul exista in cosul de cumparaturi pe pagina Pasul1
 		if (h.isElementPresent(By.xpath("/html/body/div[4]/div/div/div/div/div/form/div/table/tbody/tr/td[3]"))==false)
@@ -65,14 +66,14 @@ public class CosCumparaturi_Scenariul3 {
 		d.findElement(By.className("removeproduct")).click();
 		
 		//Verific mesajul "Cosul Dvs. nu contine nici un produs"
-		if (h.checkForTextPresentOnThePage("Cosul Dvs. nu contine nici un produs"))
+		if (h.isElementPresent(By.xpath(Constants.cos_cumparauri_mesaj_cos_gol_xpath))==true)
 			logger.Log(LOG_FILE, "TestScenariul1: TEST PASSED");
 			else
 			{
 				logger.Log(LOG_FILE, "TestScenariul1: TEST FAILED !!!");
 				h.screenShooter("TestScenariul1", d);
 			}
-			assertTrue(h.checkForTextPresentOnThePage("Cosul Dvs. nu contine nici un produs"));
+			assertTrue(h.isElementPresent(By.xpath(Constants.cos_cumparauri_mesaj_cos_gol_xpath)));
 		
 	}
 	

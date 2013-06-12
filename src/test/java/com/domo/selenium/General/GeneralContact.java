@@ -49,46 +49,46 @@ public class GeneralContact {
 		assertTrue(d.findElement(By.xpath(Constants.domo_contact_display_contact_xpath)).getText().contains(Constants.Contact_C1));
 		
 		//Telefon
-		if (h.checkForTextPresentOnThePage(Constants.Contact_C2)==false)
+		if (d.findElement(By.xpath(Constants.Contact_C2_xpath)).getText().contains(Constants.Contact_C2)==false)
 		{
 			logger.Log(LOG_FILE, "TestContact():"+Constants.Contact_C2+"not found  TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
-		assertTrue(h.checkForTextPresentOnThePage(Constants.Contact_C2));
+		assertTrue(d.findElement(By.xpath(Constants.Contact_C2_xpath)).getText().contains(Constants.Contact_C2));
 		
 		//CallCenter
-		if (h.checkForTextPresentOnThePage(Constants.Contact_C3)==false)
+		if (d.findElement(By.xpath(Constants.Contact_xpath)).getText().contains(Constants.Contact_C3)==false)
 		{
 			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C3+"not found  TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
-		assertTrue(h.checkForTextPresentOnThePage(Constants.Contact_C3));
+		assertTrue(d.findElement(By.xpath(Constants.Contact_xpath)).getText().contains(Constants.Contact_C3));
 		
 		//FAX
-		if (h.checkForTextPresentOnThePage(Constants.Contact_C4)==false)
+		if (d.findElement(By.xpath(Constants.Contact_xpath)).getText().contains(Constants.Contact_C4)==false)
 		{
 			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C4+"not found   TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
-		assertTrue(h.checkForTextPresentOnThePage(Constants.Contact_C4));
+		assertTrue(d.findElement(By.xpath(Constants.Contact_xpath)).getText().contains(Constants.Contact_C4));
 		
 		//Telverde
-		if (h.checkForTextPresentOnThePage(Constants.Contact_C5)==false)
+		if (d.findElement(By.xpath(Constants.Contact_xpath)).getText().contains(Constants.Contact_C5)==false)
 		{
 			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C5+"not found   TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
-		assertTrue(h.checkForTextPresentOnThePage(Constants.Contact_C5));
+		assertTrue(d.findElement(By.xpath(Constants.Contact_xpath)).getText().contains(Constants.Contact_C5));
 		
 		//Posta
-		if (h.checkForTextPresentOnThePage(Constants.Contact_C6)==false)
+		if (d.findElement(By.xpath(Constants.Contact_xpath)).getText().contains(Constants.Contact_C6)==false)
 		{
 			logger.Log(LOG_FILE, "TestContact(): "+Constants.Contact_C6+"not found   TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
 		else
 			logger.Log(LOG_FILE, "TestContact(): TEST PASSED");
-		assertTrue(h.checkForTextPresentOnThePage(Constants.Contact_C6));
+		assertTrue(d.findElement(By.xpath(Constants.Contact_xpath)).getText().contains(Constants.Contact_C6));
 	}
 	
 	@After
