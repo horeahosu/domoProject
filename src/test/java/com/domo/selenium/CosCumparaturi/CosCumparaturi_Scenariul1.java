@@ -44,16 +44,16 @@ public class CosCumparaturi_Scenariul1 {
 		Thread.sleep(2000);
 		d.findElement(By.className("cart-link")).click();
 		Thread.sleep(2000);
-		if (h.isElementPresent(By.xpath(Constants.cos_cumparauri_mesaj_cos_gol_xpath))==true)
+		if (d.findElement(By.id(Constants.cos_cumparauri_mesaj_cos_gol_id)).getText().contains("Cosul Dvs. nu contine nici un produs")==true)
 		logger.Log(LOG_FILE, "TestScenariul1: TEST PASSED");
 		else
 		{
 			logger.Log(LOG_FILE, "TestScenariul1: TEST FAILED !!!");
 			h.screenShooter("TestScenariul1", d);
 		}
-		assertTrue(h.isElementPresent(By.xpath(Constants.cos_cumparauri_mesaj_cos_gol_xpath)));
+		assertTrue(d.findElement(By.id(Constants.cos_cumparauri_mesaj_cos_gol_id)).getText().contains("Cosul Dvs. nu contine nici un produs"));
 	}
-	
+	//h.isElementPresent(By.xpath(Constants.cos_cumparauri_mesaj_cos_gol_xpath))==true
 	@After
 	public void quitDriver()
 	{

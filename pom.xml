@@ -56,6 +56,9 @@
                         <include>**/Smartphones*</include>
                         <include>**/TVLED*</include>
                     </includes>
+                     <excludes>
+            			<exclude>**/GeneralRate.java</exclude>
+          			</excludes>
                 </configuration>
             </plugin>
             <plugin >

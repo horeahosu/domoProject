@@ -39,7 +39,8 @@ public class Constants {
 	public final static String domo_product_previous_price_xpath="/html/body/div/div[3]/div/div[2]/form/div[2]/table/tbody/tr[2]/td/table/tbody/tr[%d]/td[%d]/span[2]/strong";	                                                         
 	
 	//CosCumparaturi
-	public final static String cos_cumparauri_mesaj_cos_gol_xpath="/html/body/div[4]/div/div/div/div/div/form/div/div/table/tbody/tr/td";
+	public final static String cos_cumparauri_mesaj_cos_gol_xpath="/html/body/div[4]/div/div/div/div/div/div/div/table/tbody/tr/td";
+	public final static String cos_cumparauri_mesaj_cos_gol_id="cart-subtotal";
 	
 	//General
 	public final static String USER_AGENT = "Mozilla/5.0 (Linux; U; Android 4.0.3; ko-kr; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko)Version/4.0 Mobile Safari/534.30";

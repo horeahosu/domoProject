@@ -55,25 +55,26 @@ public class CosCumparaturi_Scenariul3 {
 		Thread.sleep(2000);     
 		
 		//verific ca produsul exista in cosul de cumparaturi pe pagina Pasul1
-		if (h.isElementPresent(By.xpath("/html/body/div[4]/div/div/div/div/div/form/div/table/tbody/tr/td[3]"))==false)
+		if (h.isElementPresent(By.xpath("/html/body/div[4]/div/div/div/div/div/div/form/table/tbody/tr/td[2]/h4/a"))==false)
 		{
 			logger.Log(LOG_FILE, "TestScenariul3(): No product found in shopper basket TEST FAILED !!!");
 			h.screenShooter("TestScenariul3", d);
 		}
-		assertTrue(h.isElementPresent(By.xpath("/html/body/div[4]/div/div/div/div/div/form/div/table/tbody/tr/td[3]")));
+		assertTrue(h.isElementPresent(By.xpath("/html/body/div[4]/div/div/div/div/div/div/form/table/tbody/tr/td[2]/h4/a")));
 		
 		//Sterg produsul
 		d.findElement(By.className("removeproduct")).click();
+		Thread.sleep(1000);
 		
 		//Verific mesajul "Cosul Dvs. nu contine nici un produs"
-		if (h.isElementPresent(By.xpath(Constants.cos_cumparauri_mesaj_cos_gol_xpath))==true)
+		if (d.findElement(By.id(Constants.cos_cumparauri_mesaj_cos_gol_id)).getText().contains("Cosul Dvs. nu contine nici un produs")==true)
 			logger.Log(LOG_FILE, "TestScenariul1: TEST PASSED");
 			else
 			{
 				logger.Log(LOG_FILE, "TestScenariul1: TEST FAILED !!!");
-				h.screenShooter("TestScenariul1", d);
+				h.screenShooter("TestScenariul3", d);
 			}
-			assertTrue(h.isElementPresent(By.xpath(Constants.cos_cumparauri_mesaj_cos_gol_xpath)));
+			assertTrue(d.findElement(By.id(Constants.cos_cumparauri_mesaj_cos_gol_id)).getText().contains("Cosul Dvs. nu contine nici un produs"));
 		
 	}
 	
