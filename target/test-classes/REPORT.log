@@ -1,353 +1,289 @@
-[Wed Jun 12 20:48:58 EEST 2013] TestScenariul1:Un user nou pe site va vedea la sectiunea Cos Cumparaturi mesajul: Cosul Dvs. nu contine nici un produs
-[Wed Jun 12 20:49:02 EEST 2013] TestScenariul1: TEST PASSED
-[Wed Jun 12 20:49:10 EEST 2013] TestScenariul2: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2
-[Wed Jun 12 20:49:16 EEST 2013] TestScenariul2: TEST PASSED
-[Wed Jun 12 20:49:23 EEST 2013] TestScenariul 3: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor) iar apoi sterge produsul din cos. Verific mesajul: Cosul Dvs. nu contine nici un produs
-[Wed Jun 12 20:49:28 EEST 2013] TestScenariul1: TEST PASSED
-[Wed Jun 12 20:49:36 EEST 2013] TestContact(): Verifica anumite informatii legate de Contacte (telefon, call center, adresa)
-[Wed Jun 12 20:49:40 EEST 2013] TestContact(): TEST PASSED
-[Wed Jun 12 20:49:48 EEST 2013] TestCumCumpar(): Verifica prezenta capitoloelor importante din sectiunea Cum Cumpar
-[Wed Jun 12 20:49:50 EEST 2013] TestCumCumpar(): TEST PASSED
-[Wed Jun 12 20:49:58 EEST 2013] TestLogo(): Verifica prezenta logo-ului DOMO pe pagina principala
-[Wed Jun 12 20:49:58 EEST 2013] TestCumCumpar(): TEST PASSED
-[Wed Jun 12 20:50:06 EEST 2013] TestMagazineDomo(): Verifica linkul catre pagina care contine judetele cu magazine DOMO
-[Wed Jun 12 20:50:10 EEST 2013] TestMagazineDomo(): TEST PASSED
-[Wed Jun 12 20:50:17 EEST 2013] TestRate(): Verifica informatii legate de tipurile de rate oferite de DOMO
-[Wed Jun 12 20:50:51 EEST 2013] TestRate():6 Luni Gratie not found TEST FAILED !!!
-[Wed Jun 12 20:51:01 EEST 2013] TestService(): Verifica informatii legate de Service-ul oferit de DOMO pentru clientii siteului
-[Wed Jun 12 20:51:26 EEST 2013] TestService(): TEST PASSED
-[Wed Jun 12 20:51:34 EEST 2013] TestTelefonComezi(): Verifica numarul de telefon pentru comenzi pe pagina principala
-[Wed Jun 12 20:51:34 EEST 2013] TestTelefonComezi(): TEST PASSED
-[Wed Jun 12 20:51:41 EEST 2013] TestHardExternCapacitate1000(): Verifica optiunea de a afisa pe pagina doar produsele avand capacitate 1000GB
-[Wed Jun 12 20:51:44 EEST 2013] Numarul de produse avand capacitatea 1000Gb sunt: 9
-[Wed Jun 12 20:51:44 EEST 2013] TestHardExternCapacitate1000(): TEST PASSED
-[Wed Jun 12 20:51:52 EEST 2013] TestHardExternCapacitate500(): Verifica optiunea de a afisa pe pagina doar produsele avand capacitate 500GB
-[Wed Jun 12 20:51:55 EEST 2013] Numarul de produse avand capacitatea 500Gb sunt: 9
-[Wed Jun 12 20:51:55 EEST 2013] TestHardExternCapacitate500(): TEST PASSED
-[Wed Jun 12 20:52:02 EEST 2013] TestHardExternInterfata20USB(): Verifica optiunea de a afisa pe pagina doar produsele avand Interfata 2.0USB
-[Wed Jun 12 20:52:05 EEST 2013] Numarul de produse avand interfata 2.0USB: 5
-[Wed Jun 12 20:52:05 EEST 2013] TestHardExternInterfata20USB(): TEST PASSED
-[Wed Jun 12 20:52:12 EEST 2013] TestHardExternInterfata30USB(): Verifica optiunea de a afisa pe pagina doar produsele avand Interfata 3.0USB
-[Wed Jun 12 20:52:16 EEST 2013] Numarul de produse avand interfata 3.0USB: 15
-[Wed Jun 12 20:52:16 EEST 2013] TestHardExternInterfata30USB: TEST PASSED
-[Wed Jun 12 20:52:23 EEST 2013] TestHardExternMarcaSeagate(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Seagate
-[Wed Jun 12 20:52:26 EEST 2013] Numarul de produse Seagate sunt: 6
-[Wed Jun 12 20:52:26 EEST 2013] TestHardExternMarcaSeagate(): TEST PASSED
-[Wed Jun 12 20:52:33 EEST 2013] TestHardExternMarcaToshiba(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba
-[Wed Jun 12 20:52:36 EEST 2013] Numarul de produse Toshiba sunt: 1
-[Wed Jun 12 20:52:36 EEST 2013] TestHardExternMarcaToshiba(): TEST PASSED
-[Wed Jun 12 20:52:44 EEST 2013] TestHardExternMarcaWesternDigital(): Verifica optiunea de a afisa pe pagina doar produsele avand marca WesternDigital
-[Wed Jun 12 20:52:47 EEST 2013] Numarul de produse WD sunt: 10
-[Wed Jun 12 20:52:47 EEST 2013] TestHardExternMarcaWesternDigital(): TEST PASSED
-[Wed Jun 12 20:52:55 EEST 2013] TestPretHDD(): Verifica pretul produselor HDD pe baza fisierului: PreturiProduse.xls
-[Wed Jun 12 20:52:58 EEST 2013] TestPretHDD(): Verify product:HDD Extern WD 500GB USB 3.0 2.5inch WDBKXH5000ABK
-[Wed Jun 12 20:52:58 EEST 2013] TestPretHDD(): HDD Extern WD 500GB USB 3.0 2.5inch WDBKXH5000ABK 239 did not match DATABASE -- TEST FAILED !!!
-[Wed Jun 12 20:53:07 EEST 2013] TestHardexternPretMaxim260(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 260
-[Wed Jun 12 20:53:09 EEST 2013] Numarul de produse avand pretul mai mic de 260 sunt: 4
-[Wed Jun 12 20:53:09 EEST 2013] TestHardexternPretMaxim260(): TEST PASSED
-[Wed Jun 12 20:53:16 EEST 2013] TestHardexternPretMin390(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mare de 390
-[Wed Jun 12 20:53:19 EEST 2013] Numarul de produse avand pretul mai mare de 360 sunt: 1
-[Wed Jun 12 20:53:19 EEST 2013] TestHardexternPretMin390(): TEST PASSED
-[Wed Jun 12 20:53:27 EEST 2013] TestHardexternPret_260_270(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 260 si 270
-[Wed Jun 12 20:53:27 EEST 2013] TestHardexternPretMaxim260(): Option is not available TEST FAILED !!!
-[Wed Jun 12 20:53:35 EEST 2013] TestHardexternPret_270_360(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 270 si 360
-[Wed Jun 12 20:53:35 EEST 2013] TestHardexternPret_270_360(): Option is not available TEST FAILED !!!
-[Wed Jun 12 20:53:44 EEST 2013] TestHardexternPret_360_390(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 360 si 390
-[Wed Jun 12 20:53:46 EEST 2013] Numarul de produse avand pretul intre 360 si 390 sunt: 6
-[Wed Jun 12 20:53:46 EEST 2013] TestHardexternPret_360_390(): TEST PASSED
-[Wed Jun 12 20:53:54 EEST 2013] TestNotebookDiagonala11_6(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 11,6
-[Wed Jun 12 20:53:59 EEST 2013] Numarul de produse avand diagonala 11.6 sunt: 6
-[Wed Jun 12 20:53:59 EEST 2013] TestNotebookDiagonala11_6(): TEST PASSED
-[Wed Jun 12 20:54:06 EEST 2013] TestNotebookDiagonala13_3(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 13,3
-[Wed Jun 12 20:54:15 EEST 2013] Numarul de produse avand diagonala 13.3 sunt: 35
-[Wed Jun 12 20:54:15 EEST 2013] TestNotebookDiagonala13_3(): TEST PASSED
-[Wed Jun 12 20:54:23 EEST 2013] TestNotebookDiagonala14(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 14
-[Wed Jun 12 20:54:31 EEST 2013] Numarul de produse avand diagonala 14 sunt: 25
-[Wed Jun 12 20:54:31 EEST 2013] TestNotebookDiagonala14(): TEST PASSED
-[Wed Jun 12 20:54:39 EEST 2013] TestNotebookDiagonala15_4(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 15,4
-[Wed Jun 12 20:54:44 EEST 2013] Numarul de produse avand diagonala 15.4 sunt: 3
-[Wed Jun 12 20:54:44 EEST 2013] TestNotebookDiagonala15_4(): TEST PASSED
-[Wed Jun 12 20:54:51 EEST 2013] TestNotebookDiagonala15_5(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 15,5
-[Wed Jun 12 20:54:56 EEST 2013] Numarul de produse avand diagonala 15.5 sunt: 7
-[Wed Jun 12 20:54:56 EEST 2013] TestNotebookDiagonala15_5(): TEST PASSED
-[Wed Jun 12 20:55:05 EEST 2013] TestNotebookDiagonala15_6(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 15,6
-[Wed Jun 12 20:55:23 EEST 2013] Numarul de produse avand diagonala 15.6 sunt: 89
-[Wed Jun 12 20:55:23 EEST 2013] TestNotebookDiagonala15_6(): TEST PASSED
-[Wed Jun 12 20:55:31 EEST 2013] TestNotebookDiagonala17_3(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 17,3
-[Wed Jun 12 20:55:37 EEST 2013] Numarul de produse avand diagonala 17.3 sunt: 13
-[Wed Jun 12 20:55:37 EEST 2013] TestNotebookDiagonala17_3(): TEST PASSED
-[Wed Jun 12 20:55:44 EEST 2013] TestNotebookMarcaAcer(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Acer
-[Wed Jun 12 20:55:52 EEST 2013] Numarul de produse Acer sunt: 36
-[Wed Jun 12 20:55:52 EEST 2013] TestNotebookMarcaAcer(): TEST PASSED
-[Wed Jun 12 20:56:00 EEST 2013] TestNotebookMarcaApple(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Apple
-[Wed Jun 12 20:56:04 EEST 2013] Numarul de produse MacBook sunt: 9
-[Wed Jun 12 20:56:04 EEST 2013] TestNotebookMarcaApple(): TEST PASSED
-[Wed Jun 12 20:56:11 EEST 2013] TestNotebookMarcaAsus(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Asus
-[Wed Jun 12 20:56:15 EEST 2013] Numarul de produse Asus sunt: 11
-[Wed Jun 12 20:56:15 EEST 2013] TestNotebookMarcaAsus(): TEST PASSED
-[Wed Jun 12 20:56:23 EEST 2013] TestNotebookMarcaDell(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Dell
-[Wed Jun 12 20:56:27 EEST 2013] Numarul de produse Dell sunt: 5
-[Wed Jun 12 20:56:27 EEST 2013] TestNotebookMarcaDell(): TEST PASSED
-[Wed Jun 12 20:56:35 EEST 2013] TestNotebookMarcaFujitsu(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Fujitsu
-[Wed Jun 12 20:56:39 EEST 2013] Numarul de produse Fujitsu sunt: 6
-[Wed Jun 12 20:56:39 EEST 2013] TestNotebookMarcaFujitsu(): TEST PASSED
-[Wed Jun 12 20:56:46 EEST 2013] TestNotebookMarcaLenovo(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Lenovo
-[Wed Jun 12 20:56:50 EEST 2013] Numarul de produse Lenovo sunt: 5
-[Wed Jun 12 20:56:50 EEST 2013] TestNotebookMarcaLenovo(): TEST PASSED
-[Wed Jun 12 20:56:58 EEST 2013] TestNotebookMarcaSamsung(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Samsung
-[Wed Jun 12 20:57:02 EEST 2013] Numarul de produse Samsung sunt: 7
-[Wed Jun 12 20:57:02 EEST 2013] TestNotebookMarcaSamsung(): TEST PASSED
-[Wed Jun 12 20:57:09 EEST 2013] TestNotebookMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony Vaio
-[Wed Jun 12 20:57:14 EEST 2013] Numarul de produse Sony sunt: 16
-[Wed Jun 12 20:57:14 EEST 2013] TestNotebookMarcaSony(): TEST PASSED
-[Wed Jun 12 20:57:22 EEST 2013] TestNotebookMarcaToshiba(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba
-[Wed Jun 12 20:57:36 EEST 2013] Numarul de produse Toshiba sunt: 75
-[Wed Jun 12 20:57:36 EEST 2013] TestNotebookMarcaToshiba(): TEST PASSED
-[Wed Jun 12 20:57:44 EEST 2013] TestNotebookPretMaxim2100(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 2100
-[Wed Jun 12 20:57:50 EEST 2013] Numarul de produse avand pretul mai mic de 2100 sunt: 38
-[Wed Jun 12 20:57:50 EEST 2013] TestNotebookPretMaxim2100(): TEST PASSED
-[Wed Jun 12 20:57:58 EEST 2013] TestNotebookPretMin4800(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 4800
-[Wed Jun 12 20:57:58 EEST 2013] TestNotebookPretMin4800(): Option is not available TEST FAILED !!!
-[Wed Jun 12 20:58:07 EEST 2013] TestPretNotebook(): Verifica pretul produselor Notebook pe baza fisierului: PreturiProduse.xls
-[Wed Jun 12 20:58:09 EEST 2013] TestPretNotebook(): Verify product:Notebook Asus X401U-WX011D
-[Wed Jun 12 20:58:09 EEST 2013] TestPretNotebook(): Notebook Asus X401U-WX011D 1199 did not match DATABASE -- TEST FAILED !!!
-[Wed Jun 12 20:58:18 EEST 2013] TestNotebookPret_2100_2900(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 2100 si 2900
-[Wed Jun 12 20:58:24 EEST 2013] Numarul de produse avand pretul intre 2100 si 2900 sunt: 37
-[Wed Jun 12 20:58:24 EEST 2013] TestNotebookPret_2100_2900(): TEST PASSED
-[Wed Jun 12 20:58:32 EEST 2013] TestNotebookPret_2900_3600(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 2900 si 3600
-[Wed Jun 12 20:58:32 EEST 2013] TestNotebookPret_2900_3600(): Option is not available TEST FAILED !!!
-[Wed Jun 12 20:58:41 EEST 2013] TestNotebookPret_3600_4800(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 3600 si 4800
-[Wed Jun 12 20:58:41 EEST 2013] TestNotebookPret_3600_4800(): Option is not available TEST FAILED !!!
-[Wed Jun 12 20:58:50 EEST 2013] TestSmartphonesMarcaAllview(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Allview
-[Wed Jun 12 20:58:54 EEST 2013] Numarul de produse Allview sunt: 5
-[Wed Jun 12 20:58:54 EEST 2013] TestSmartphonesMarcaAllview: TEST PASSED
-[Wed Jun 12 20:59:02 EEST 2013] TestSmartphonesMarcaApple(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Apple
-[Wed Jun 12 20:59:06 EEST 2013] Numarul de produse iPhone sunt: 3
-[Wed Jun 12 20:59:06 EEST 2013] TestSmartphonesMarcaApple(): TEST PASSED
-[Wed Jun 12 20:59:14 EEST 2013] TestSmartphonesMarcaBlackberry(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Blackberry
-[Wed Jun 12 20:59:18 EEST 2013] TestSmartphonesMarcaBlackberry(): TEST FAILED !!!
-[Wed Jun 12 20:59:30 EEST 2013] TestSmartphonesMarcaMotorola(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Motorola
-[Wed Jun 12 20:59:34 EEST 2013] Numarul de produse Motorola sunt: 1
-[Wed Jun 12 20:59:34 EEST 2013] TestSmartphonesMarcaMotorola(): TEST PASSED
-[Wed Jun 12 20:59:44 EEST 2013] TestSmartphonesMarcaNokia(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Nokia
-[Wed Jun 12 20:59:48 EEST 2013] Numarul de produse Nokia sunt: 2
-[Wed Jun 12 20:59:48 EEST 2013] TestSmartphonesMarcaNokia(): TEST PASSED
-[Wed Jun 12 20:59:58 EEST 2013] TestSmartphonesMarcaPrestigio(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Prestigio
-[Wed Jun 12 21:00:02 EEST 2013] Numarul de produse Prestigio sunt: 5
-[Wed Jun 12 21:00:02 EEST 2013] TestSmartphonesMarcaPrestigio(): TEST PASSED
-[Wed Jun 12 21:00:10 EEST 2013] TestSmartphonesMarcaSamsung(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Samsung
-[Wed Jun 12 21:00:18 EEST 2013] Numarul de produse Samsung sunt: 24
-[Wed Jun 12 21:00:18 EEST 2013] TestSmartphonesMarcaSamsung(): TEST PASSED
-[Wed Jun 12 21:00:26 EEST 2013] TestSmartphonesMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony
-[Wed Jun 12 21:00:30 EEST 2013] Numarul de produse Sony sunt: 2
-[Wed Jun 12 21:00:30 EEST 2013] TestSmartphonesMarcaSony(): TEST PASSED
-[Wed Jun 12 21:00:38 EEST 2013] TestSmartphonesMemoie16GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 16GB
-[Wed Jun 12 21:00:41 EEST 2013] Numarul de produse avand memoria interna de16 GB sunt: 9
-[Wed Jun 12 21:00:41 EEST 2013] TestSmartphonesMemorie16GB(): TEST PASSED
-[Wed Jun 12 21:00:48 EEST 2013] TestSmartphonesMemoie2GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 2GB
-[Wed Jun 12 21:00:51 EEST 2013] Numarul de produse avand memorie interna de2 GB sunt: 2
-[Wed Jun 12 21:00:51 EEST 2013] TestSmartphonesMemorie2GB(): TEST PASSED
-[Wed Jun 12 21:00:59 EEST 2013] TestSmartphonesMemoie2.7GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 2.7 GB
-[Wed Jun 12 21:01:01 EEST 2013] Numarul de produse avand memorie interna de2.7 GB sunt: 1
-[Wed Jun 12 21:01:01 EEST 2013] TestSmartphonesMemorie2.7GB(): TEST PASSED
-[Wed Jun 12 21:01:09 EEST 2013] TestSmartphonesMemoie2.9GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 2.9 GB
-[Wed Jun 12 21:01:09 EEST 2013] TestSmartphonesMemorie2.9GB(): Option is not available TEST FAILED !!!
-[Wed Jun 12 21:01:18 EEST 2013] TestSmartphonesMemoie3GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 3GB
-[Wed Jun 12 21:01:20 EEST 2013] Numarul de produse avand memorie interna de3 GB sunt: 4
-[Wed Jun 12 21:01:20 EEST 2013] TestSmartphonesMemorie3GB(): TEST PASSED
-[Wed Jun 12 21:01:28 EEST 2013] TestSmartphonesMemoie4GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 4GB
-[Wed Jun 12 21:01:31 EEST 2013] Numarul de produse avand memorie interna de4 GB sunt: 16
-[Wed Jun 12 21:01:31 EEST 2013] TestSmartphonesMemorie4GB(): TEST PASSED
-[Wed Jun 12 21:01:39 EEST 2013] TestSmartphonesMemoie8GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 8GB
-[Wed Jun 12 21:01:42 EEST 2013] Numarul de produse avand memorie interna de8 GB sunt: 7
-[Wed Jun 12 21:01:42 EEST 2013] TestSmartphonesMemorie8GB(): TEST PASSED
-[Wed Jun 12 21:01:50 EEST 2013] TestSmartphonesPretMaxim560(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 560
-[Wed Jun 12 21:01:53 EEST 2013] Numarul de produse avand pretul mai mic de 560 sunt: 10
-[Wed Jun 12 21:01:53 EEST 2013] TestSmartphonesPretMaxim560(): TEST PASSED
-[Wed Jun 12 21:02:00 EEST 2013] TestSmartphonesPretMin1900(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mare de 1900
-[Wed Jun 12 21:02:03 EEST 2013] Numarul de produse avand pretul mai mare de 1900 sunt: 9
-[Wed Jun 12 21:02:03 EEST 2013] TestSmartphonesPretMin1900(): TEST PASSED
-[Wed Jun 12 21:02:11 EEST 2013] TestPretSmartphones(): Verifica pretul produselor Smartphones pe baza fisierului: PreturiProduse.xls
-[Wed Jun 12 21:02:13 EEST 2013] TestPretSmartphones(): Verify product:Smartphone 2SIM Prestigio MultiPhone 4020 DUO
-[Wed Jun 12 21:02:13 EEST 2013] TestPretSmartphones(): Product Smartphone 2SIM Prestigio MultiPhone 4020 DUO does not appear in DATABASE !!
-[Wed Jun 12 21:02:13 EEST 2013] TestPretSmartphones(): Verify product:Smartphone Samsung S5360 Galaxy Y Black
-[Wed Jun 12 21:02:13 EEST 2013] TestPretSmartphones(): Product Smartphone Samsung S5360 Galaxy Y Black does not appear in DATABASE !!
-[Wed Jun 12 21:02:13 EEST 2013] TestPretSmartphones(): Verify product:Smartphone Samsung S5360 Galaxy Y Pure White
-[Wed Jun 12 21:02:13 EEST 2013] TestPretSmartphones(): Smartphone Samsung S5360 Galaxy Y Pure White 449 did not match DATABASE -- TEST FAILED !!!
-[Wed Jun 12 21:02:22 EEST 2013] TestSmartphonesPret_1000_1900(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 1000 si 1900
-[Wed Jun 12 21:02:24 EEST 2013] Numarul de produse avand pretul intre 1000 si 1900 sunt: 8
-[Wed Jun 12 21:02:24 EEST 2013] TestSmartphonesPret_1000_1900(): TEST PASSED
-[Wed Jun 12 21:02:32 EEST 2013] TestSmartphonesPret_560_800(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 560 si 800
-[Wed Jun 12 21:02:35 EEST 2013] Numarul de produse avand pretul intre 560 si 800 sunt: 10
-[Wed Jun 12 21:02:35 EEST 2013] TestSmartphonesPret_560_800(): TEST PASSED
-[Wed Jun 12 21:02:42 EEST 2013] TestSmartphonesPret_800_1000(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 800 si 1000
-[Wed Jun 12 21:02:45 EEST 2013] Numarul de produse avand pretul intre 800 si 1000 sunt: 11
-[Wed Jun 12 21:02:45 EEST 2013] TestSmartphonesPret_800_1000(): TEST PASSED
-[Wed Jun 12 21:02:54 EEST 2013] TestSmartphonesRezolutie13MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 13MP
-[Wed Jun 12 21:02:56 EEST 2013] Numarul de produse avand rezolutie foto de13 Megapixeli sunt: 3
-[Wed Jun 12 21:02:56 EEST 2013] TestSmartphonesRezolutie13MP(): TEST PASSED
-[Wed Jun 12 21:03:04 EEST 2013] TestSmartphonesRezolutie2MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2MP
-[Wed Jun 12 21:03:06 EEST 2013] Numarul de produse avand rezolutie foto de2 Megapixeli sunt: 3
-[Wed Jun 12 21:03:06 EEST 2013] TestSmartphonesRezolutie2MP(): TEST PASSED
-[Wed Jun 12 21:04:12 EEST 2013] TestSmartphonesRezolutie3MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3MP
-[Wed Jun 12 21:04:14 EEST 2013] Numarul de produse avand rezolutie foto de3 Megapixeli sunt: 4
-[Wed Jun 12 21:04:14 EEST 2013] TestSmartphonesRezolutie3MP(): TEST PASSED
-[Wed Jun 12 21:04:22 EEST 2013] TestSmartphonesRezolutie3.15MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3.15MP
-[Wed Jun 12 21:04:25 EEST 2013] Numarul de produse avand rezolutie foto de3.15 Megapixeli sunt: 2
-[Wed Jun 12 21:04:25 EEST 2013] TestSmartphonesRezolutie3.15MP(): TEST PASSED
-[Wed Jun 12 21:04:32 EEST 2013] TestSmartphonesRezolutie5MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 5MP
-[Wed Jun 12 21:04:38 EEST 2013] Numarul de produse avand rezolutie foto de5 Megapixeli sunt: 12
-[Wed Jun 12 21:04:38 EEST 2013] TestSmartphonesRezolutie5MP(): TEST PASSED
-[Wed Jun 12 21:04:46 EEST 2013] TestSmartphonesRezolutie8MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 8MP
-[Wed Jun 12 21:04:49 EEST 2013] Numarul de produse avand rezolutie foto de8 Megapixeli sunt: 8
-[Wed Jun 12 21:04:49 EEST 2013] TestSmartphonesRezolutie8MP(): TEST PASSED
-[Wed Jun 12 21:04:56 EEST 2013] TestTVLEDDiagonala102(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 102
-[Wed Jun 12 21:05:02 EEST 2013] Numarul de produse avand diagonala 102 sunt: 19
-[Wed Jun 12 21:05:02 EEST 2013] TestTVLEDDiagonala102(): TEST PASSED
-[Wed Jun 12 21:05:10 EEST 2013] TestTVLEDDiagonala107(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 107
-[Wed Jun 12 21:05:18 EEST 2013] Numarul de produse avand diagonala 107 sunt: 27
-[Wed Jun 12 21:05:18 EEST 2013] TestTVLEDDiagonala107(): TEST PASSED
-[Wed Jun 12 21:05:26 EEST 2013] TestTVLEDDiagonala117(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 117
-[Wed Jun 12 21:05:34 EEST 2013] Numarul de produse avand diagonala 117 sunt: 21
-[Wed Jun 12 21:05:34 EEST 2013] TestTVLEDDiagonala117(): TEST PASSED
-[Wed Jun 12 21:05:41 EEST 2013] TestTVLEDDiagonala119(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 119
-[Wed Jun 12 21:05:49 EEST 2013] Numarul de produse avand diagonala 119 sunt: 23
-[Wed Jun 12 21:05:49 EEST 2013] TestTVLEDDiagonala119(): TEST PASSED
-[Wed Jun 12 21:05:57 EEST 2013] TestTVLEDDiagonala127(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 127
-[Wed Jun 12 21:06:01 EEST 2013] Numarul de produse avand diagonala 127 sunt: 6
-[Wed Jun 12 21:06:01 EEST 2013] TestTVLEDDiagonala127(): TEST PASSED
-[Wed Jun 12 21:06:09 EEST 2013] TestTVLEDDiagonala132(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 132
-[Wed Jun 12 21:06:11 EEST 2013] TestTVLEDDiagonala132(): Option is not available TEST FAILED !!!
-[Wed Jun 12 21:06:21 EEST 2013] TestTVLEDDiagonala140(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 140
-[Wed Jun 12 21:06:29 EEST 2013] Numarul de produse avand diagonala 140 sunt: 23
-[Wed Jun 12 21:06:29 EEST 2013] TestTVLEDDiagonala140(): TEST PASSED
-[Wed Jun 12 21:06:36 EEST 2013] TestTVLEDDiagonala152(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 152
-[Wed Jun 12 21:06:41 EEST 2013] Numarul de produse avand diagonala 152 sunt: 4
-[Wed Jun 12 21:06:41 EEST 2013] TestTVLEDDiagonala152(): TEST PASSED
-[Wed Jun 12 21:06:48 EEST 2013] TestTVLEDDiagonala163(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 163
-[Wed Jun 12 21:06:53 EEST 2013] Numarul de produse avand diagonala 163 sunt: 2
-[Wed Jun 12 21:06:53 EEST 2013] TestTVLEDDiagonala163(): TEST PASSED
-[Wed Jun 12 21:07:00 EEST 2013] TestTVLEDDiagonala165(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 165
-[Wed Jun 12 21:07:03 EEST 2013] TestTVLEDDiagonala165(): Option is not available TEST FAILED !!!
-[Wed Jun 12 21:07:11 EEST 2013] TestTVLEDDiagonala189(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 189
-[Wed Jun 12 21:07:15 EEST 2013] Numarul de produse avand diagonala 189 sunt: 1
-[Wed Jun 12 21:07:15 EEST 2013] TestTVLEDDiagonala189(): TEST PASSED
-[Wed Jun 12 21:07:23 EEST 2013] TestTVLEDDiagonala48(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 48
-[Wed Jun 12 21:07:27 EEST 2013] Numarul de produse avand diagonala 48 sunt: 2
-[Wed Jun 12 21:07:27 EEST 2013] TestTVLEDDiagonala48(): TEST PASSED
-[Wed Jun 12 21:07:34 EEST 2013] TestTVLEDDiagonala56(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 56
-[Wed Jun 12 21:07:39 EEST 2013] Numarul de produse avand diagonala 56 sunt: 4
-[Wed Jun 12 21:07:39 EEST 2013] TestTVLEDDiagonala56(): TEST PASSED
-[Wed Jun 12 21:07:47 EEST 2013] TestTVLEDDiagonala58(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 58
-[Wed Jun 12 21:07:51 EEST 2013] Numarul de produse avand diagonala 58 sunt: 2
-[Wed Jun 12 21:07:51 EEST 2013] TestTVLEDDiagonala58(): TEST PASSED
-[Wed Jun 12 21:07:58 EEST 2013] TestTVLEDDiagonala61(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 61
-[Wed Jun 12 21:08:03 EEST 2013] Numarul de produse avand diagonala 61 sunt: 3
-[Wed Jun 12 21:08:03 EEST 2013] TestTVLEDDiagonala61(): TEST PASSED
-[Wed Jun 12 21:08:10 EEST 2013] TestTVLEDDiagonala66(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 66
-[Wed Jun 12 21:08:15 EEST 2013] Numarul de produse avand diagonala 66 sunt: 4
-[Wed Jun 12 21:08:15 EEST 2013] TestTVLEDDiagonala66(): TEST PASSED
-[Wed Jun 12 21:08:23 EEST 2013] TestTVLEDDiagonala81(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 81
-[Wed Jun 12 21:08:34 EEST 2013] Numarul de produse avand diagonala 81 sunt: 44
-[Wed Jun 12 21:08:34 EEST 2013] TestTVLEDDiagonala81(): TEST PASSED
-[Wed Jun 12 21:08:42 EEST 2013] TestTVLEDMarcaEboda(): Verifica optiunea de a afisa pe pagina doar produsele avand marca: Eboda
-[Wed Jun 12 21:08:45 EEST 2013] Numarul de produse E-Boda sunt: 1
-[Wed Jun 12 21:08:45 EEST 2013] TestTVLEDMarcaEboda(): TEST PASSED
-[Wed Jun 12 21:08:53 EEST 2013] TestTVLEDMarcaLG(): Verifica optiunea de a afisa pe pagina doar produsele avand marca LG
-[Wed Jun 12 21:09:04 EEST 2013] Numarul de produse LG sunt: 49
-[Wed Jun 12 21:09:04 EEST 2013] TestTVLEDMarcaLG(): TEST PASSED
-[Wed Jun 12 21:09:11 EEST 2013] TestTVLEDMarcaPanasonic(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Panasonic
-[Wed Jun 12 21:09:15 EEST 2013] Numarul de produse Panasonic sunt: 8
-[Wed Jun 12 21:09:15 EEST 2013] TestTVLEDMarcaPanasonic(): TEST PASSED
-[Wed Jun 12 21:09:22 EEST 2013] TestTVLEDMarcaPhilips(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Philips
-[Wed Jun 12 21:09:29 EEST 2013] Numarul de produse Philips sunt: 24
-[Wed Jun 12 21:09:29 EEST 2013] TestTVLEDMarcaPhilips(): TEST PASSED
-[Wed Jun 12 21:09:37 EEST 2013] TestTVLEDMarcaSamsung(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Samsung
-[Wed Jun 12 21:09:51 EEST 2013] Numarul de produse Samsung sunt: 68
-[Wed Jun 12 21:09:51 EEST 2013] TestTVLEDMarcaSamsung(): TEST PASSED
-[Wed Jun 12 21:09:59 EEST 2013] TestTVLEDMarcaSharp(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sharp
-[Wed Jun 12 21:10:03 EEST 2013] Numarul de produse Sharp sunt: 12
-[Wed Jun 12 21:10:03 EEST 2013] TestTVLEDMarcaSharp(): TEST PASSED
-[Wed Jun 12 21:10:10 EEST 2013] TestTVLEDMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony
-[Wed Jun 12 21:10:15 EEST 2013] Numarul de produse Sony sunt: 15
-[Wed Jun 12 21:10:15 EEST 2013] TestTVLEDMarcaSony(): TEST PASSED
-[Wed Jun 12 21:10:22 EEST 2013] TestTVLEDMarcaTelefunken(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Telefunken
-[Wed Jun 12 21:10:26 EEST 2013] Numarul de produse Telefunken sunt: 3
-[Wed Jun 12 21:10:26 EEST 2013] TestTVLEDMarcaTelefunken(): TEST PASSED
-[Wed Jun 12 21:10:34 EEST 2013] TestTVLEDMarcaToshiba(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba
-[Wed Jun 12 21:10:38 EEST 2013] Numarul de produse Toshiba sunt: 18
-[Wed Jun 12 21:10:38 EEST 2013] TestTVLEDMarcaToshiba(): TEST PASSED
-[Wed Jun 12 21:10:46 EEST 2013] TestTVLEDMarcaWestwood(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Westwood
-[Wed Jun 12 21:10:49 EEST 2013] Numarul de produse Westwood sunt: 2
-[Wed Jun 12 21:10:49 EEST 2013] TestTVLEDMarcaWestwood(): TEST PASSED
-[Wed Jun 12 21:10:57 EEST 2013] TestTVLEDPretMax1700(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 1700
-[Wed Jun 12 21:11:06 EEST 2013] Numarul de produse avand pretul mai mic de 1700 sunt: 43
-[Wed Jun 12 21:11:06 EEST 2013] TestTVLEDPretMax1700(): TEST PASSED
-[Wed Jun 12 21:11:13 EEST 2013] TestTVLEDPretMin6200(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 6200
-[Wed Jun 12 21:11:13 EEST 2013] TestTVLEDPretMin6200(): Option is not available TEST FAILED !!!
-[Wed Jun 12 21:11:22 EEST 2013] TestPretLEDTV(): Verifica pretul produselor Notebook pe baza fisierului: PreturiProduse.xls
-[Wed Jun 12 21:11:25 EEST 2013] TestPretLEDTV(): Verify product:LED TV Westwood 19V1 LED
-[Wed Jun 12 21:11:25 EEST 2013] TestPretLEDTV(): LED TV Westwood 19V1 LED 549 MATCHED DATABASE
-[Wed Jun 12 21:11:25 EEST 2013] TestPretLEDTV(): Verify product:LED TV Westwood FullHD 22V1 LED
-[Wed Jun 12 21:11:25 EEST 2013] TestPretLEDTV(): LED TV Westwood FullHD 22V1 LED 670 did not match DATABASE -- TEST FAILED !!!
-[Wed Jun 12 21:11:33 EEST 2013] TestTVLEDPret_1700_2700(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 1700 si 2700
-[Wed Jun 12 21:11:33 EEST 2013] TestTVLEDPret_1700_2700(): Option is not available TEST FAILED !!!
-[Wed Jun 12 21:11:42 EEST 2013] TestTVLEDPret_2700_4000(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 2700 si 4000
-[Wed Jun 12 21:11:42 EEST 2013] TestTVLEDPret_2700_4000(): Option is not available TEST FAILED !!!
-[Wed Jun 12 21:11:51 EEST 2013] TestTVLEDPret_4000_6200(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 4000 si 6200
-[Wed Jun 12 21:11:51 EEST 2013] TestTVLEDPret_4000_6200(): Option is not available TEST FAILED !!!
-[Wed Jun 12 21:12:00 EEST 2013] TestTV3D: Verifica optiunea de a afisa pe pagina doar produsele 3D
-[Wed Jun 12 21:12:20 EEST 2013] Numarul de produse 3D sunt: 105
-[Wed Jun 12 21:12:20 EEST 2013] TestTV3D(): TEST PASSED
-[Wed Jun 12 21:12:27 EEST 2013] TestTVnon3D(): Verifica optiunea de a afisa pe pagina doar produsele non3D
-[Wed Jun 12 21:12:44 EEST 2013] Numarul de produse non 3D sunt: 94
-[Wed Jun 12 21:12:44 EEST 2013] TestTVNON3D(): TEST PASSED
-[Sun Jun 16 13:26:23 EEST 2013] TestScenariul1:Un user nou pe site va vedea la sectiunea Cos Cumparaturi mesajul: Cosul Dvs. nu contine nici un produs
-[Sun Jun 16 13:26:28 EEST 2013] TestScenariul1: TEST FAILED !!!
-[Sun Jun 16 13:26:36 EEST 2013] TestScenariul2: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2
-[Sun Jun 16 13:26:47 EEST 2013] TestScenariul 3: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor) iar apoi sterge produsul din cos. Verific mesajul: Cosul Dvs. nu contine nici un produs
-[Sun Jun 16 13:26:51 EEST 2013] TestScenariul3(): No product found in shopper basket TEST FAILED !!!
-[Sun Jun 16 13:27:00 EEST 2013] TestContact(): Verifica anumite informatii legate de Contacte (telefon, call center, adresa)
-[Sun Jun 16 13:27:04 EEST 2013] TestContact(): TEST PASSED
-[Sun Jun 16 13:27:11 EEST 2013] TestCumCumpar(): Verifica prezenta capitoloelor importante din sectiunea Cum Cumpar
-[Sun Jun 16 13:27:14 EEST 2013] TestCumCumpar(): TEST PASSED
-[Sun Jun 16 13:27:22 EEST 2013] TestLogo(): Verifica prezenta logo-ului DOMO pe pagina principala
-[Sun Jun 16 13:27:22 EEST 2013] TestCumCumpar(): TEST PASSED
-[Sun Jun 16 13:27:29 EEST 2013] TestMagazineDomo(): Verifica linkul catre pagina care contine judetele cu magazine DOMO
-[Sun Jun 16 13:27:33 EEST 2013] TestMagazineDomo(): TEST PASSED
-[Sun Jun 16 13:27:40 EEST 2013] TestService(): Verifica informatii legate de Service-ul oferit de DOMO pentru clientii siteului
-[Sun Jun 16 13:27:58 EEST 2013] TestService(): TEST PASSED
-[Sun Jun 16 13:28:05 EEST 2013] TestTelefonComezi(): Verifica numarul de telefon pentru comenzi pe pagina principala
-[Sun Jun 16 13:28:05 EEST 2013] TestTelefonComezi(): TEST PASSED
-[Sun Jun 16 13:28:12 EEST 2013] TestHardExternCapacitate1000(): Verifica optiunea de a afisa pe pagina doar produsele avand capacitate 1000GB
-[Sun Jun 16 13:28:15 EEST 2013] Numarul de produse avand capacitatea 1000Gb sunt: 10
-[Sun Jun 16 13:28:15 EEST 2013] TestHardExternCapacitate1000(): TEST PASSED
-[Sun Jun 16 13:28:23 EEST 2013] TestHardExternCapacitate500(): Verifica optiunea de a afisa pe pagina doar produsele avand capacitate 500GB
-[Sun Jun 16 13:28:26 EEST 2013] Numarul de produse avand capacitatea 500Gb sunt: 12
-[Sun Jun 16 13:28:26 EEST 2013] TestHardExternCapacitate500(): TEST PASSED
-[Sun Jun 16 13:28:50 EEST 2013] TestHardExternInterfata30USB(): Verifica optiunea de a afisa pe pagina doar produsele avand Interfata 3.0USB
-[Sun Jun 16 13:28:55 EEST 2013] Numarul de produse avand interfata 3.0USB: 16
-[Sun Jun 16 13:28:55 EEST 2013] TestHardExternInterfata30USB: TEST PASSED
-[Sun Jun 16 13:29:01 EEST 2013] TestHardExternMarcaSeagate(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Seagate
-[Sun Jun 16 13:29:05 EEST 2013] Numarul de produse Seagate sunt: 9
-[Sun Jun 16 13:29:05 EEST 2013] TestHardExternMarcaSeagate(): TEST PASSED
-[Sun Jun 16 13:29:11 EEST 2013] TestHardExternMarcaToshiba(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba
-[Sun Jun 16 13:29:15 EEST 2013] Numarul de produse Toshiba sunt: 0
-[Sun Jun 16 13:29:15 EEST 2013] TestHardExternMarcaToshiba(): TEST PASSED
-[Sun Jun 16 13:37:08 EEST 2013] TestScenariul1:Un user nou pe site va vedea la sectiunea Cos Cumparaturi mesajul: Cosul Dvs. nu contine nici un produs
-[Sun Jun 16 13:37:13 EEST 2013] TestScenariul1: TEST FAILED !!!
-[Sun Jun 16 13:43:52 EEST 2013] TestScenariul1:Un user nou pe site va vedea la sectiunea Cos Cumparaturi mesajul: Cosul Dvs. nu contine nici un produs
-[Sun Jun 16 13:43:57 EEST 2013] TestScenariul1: TEST PASSED
-[Sun Jun 16 13:44:58 EEST 2013] TestScenariul 3: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor) iar apoi sterge produsul din cos. Verific mesajul: Cosul Dvs. nu contine nici un produs
-[Sun Jun 16 13:45:03 EEST 2013] TestScenariul3(): No product found in shopper basket TEST FAILED !!!
-[Sun Jun 16 13:48:35 EEST 2013] TestScenariul 3: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor) iar apoi sterge produsul din cos. Verific mesajul: Cosul Dvs. nu contine nici un produs
-[Sun Jun 16 13:48:41 EEST 2013] TestScenariul1: TEST FAILED !!!
-[Sun Jun 16 13:50:37 EEST 2013] TestScenariul 3: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor) iar apoi sterge produsul din cos. Verific mesajul: Cosul Dvs. nu contine nici un produs
-[Sun Jun 16 13:50:43 EEST 2013] TestScenariul1: TEST PASSED
-[Sun Jun 16 13:51:12 EEST 2013] TestScenariul2: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2
-[Sun Jun 16 13:53:36 EEST 2013] TestScenariul2: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2
-[Sun Jun 16 13:53:40 EEST 2013] TestScenariul2: TEST FAILED !!!
-[Sun Jun 16 13:57:57 EEST 2013] TestScenariul1:Un user nou pe site va vedea la sectiunea Cos Cumparaturi mesajul: Cosul Dvs. nu contine nici un produs
-[Sun Jun 16 13:58:01 EEST 2013] TestScenariul1: TEST PASSED
-[Sun Jun 16 13:58:38 EEST 2013] TestScenariul 3: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor) iar apoi sterge produsul din cos. Verific mesajul: Cosul Dvs. nu contine nici un produs
-[Sun Jun 16 13:59:45 EEST 2013] TestScenariul3(): No product found in shopper basket TEST FAILED !!!
+[Sun Jun 16 16:27:49 EEST 2013] TestScenariul1:Un user nou pe site va vedea la sectiunea Cos Cumparaturi mesajul: Cosul Dvs. nu contine nici un produs
+[Sun Jun 16 16:27:53 EEST 2013] TestScenariul1: TEST PASSED
+[Sun Jun 16 16:28:01 EEST 2013] TestScenariul2: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor). Verific pretul produsului in sectiunea Cos Cumparaturi, atat pe pagina Pasul1 cat si Pasul2
+[Sun Jun 16 16:28:07 EEST 2013] TestScenariul2: TEST PASSED
+[Sun Jun 16 16:28:15 EEST 2013] TestScenariul 3: Un user nou pe site adauga in cosul de cumparaturi un produs (televizor) iar apoi sterge produsul din cos. Verific mesajul: Cosul Dvs. nu contine nici un produs
+[Sun Jun 16 16:28:21 EEST 2013] TestScenariul1: TEST PASSED
+[Sun Jun 16 16:28:29 EEST 2013] TestContact(): Verifica anumite informatii legate de Contacte (telefon, call center, adresa)
+[Sun Jun 16 16:28:33 EEST 2013] TestContact(): TEST PASSED
+[Sun Jun 16 16:28:40 EEST 2013] TestCumCumpar(): Verifica prezenta capitoloelor importante din sectiunea Cum Cumpar
+[Sun Jun 16 16:28:43 EEST 2013] TestCumCumpar(): TEST PASSED
+[Sun Jun 16 16:28:51 EEST 2013] TestLogo(): Verifica prezenta logo-ului DOMO pe pagina principala
+[Sun Jun 16 16:28:51 EEST 2013] TestCumCumpar(): TEST PASSED
+[Sun Jun 16 16:28:59 EEST 2013] TestMagazineDomo(): Verifica linkul catre pagina care contine judetele cu magazine DOMO
+[Sun Jun 16 16:29:02 EEST 2013] TestMagazineDomo(): TEST PASSED
+[Sun Jun 16 16:29:10 EEST 2013] TestService(): Verifica informatii legate de Service-ul oferit de DOMO pentru clientii siteului
+[Sun Jun 16 16:29:31 EEST 2013] TestService(): TEST PASSED
+[Sun Jun 16 16:29:39 EEST 2013] TestTelefonComezi(): Verifica numarul de telefon pentru comenzi pe pagina principala
+[Sun Jun 16 16:29:39 EEST 2013] TestTelefonComezi(): TEST PASSED
+[Sun Jun 16 16:29:47 EEST 2013] TestHardExternCapacitate1000(): Verifica optiunea de a afisa pe pagina doar produsele avand capacitate 1000GB
+[Sun Jun 16 16:29:50 EEST 2013] Numarul de produse avand capacitatea 1000Gb sunt: 10
+[Sun Jun 16 16:29:50 EEST 2013] TestHardExternCapacitate1000(): TEST PASSED
+[Sun Jun 16 16:29:58 EEST 2013] TestHardExternCapacitate500(): Verifica optiunea de a afisa pe pagina doar produsele avand capacitate 500GB
+[Sun Jun 16 16:30:01 EEST 2013] Numarul de produse avand capacitatea 500Gb sunt: 12
+[Sun Jun 16 16:30:01 EEST 2013] TestHardExternCapacitate500(): TEST PASSED
+[Sun Jun 16 16:30:09 EEST 2013] TestHardExternInterfata20USB(): Verifica optiunea de a afisa pe pagina doar produsele avand Interfata 2.0USB
+[Sun Jun 16 16:30:12 EEST 2013] Numarul de produse avand interfata 2.0USB: 9
+[Sun Jun 16 16:30:12 EEST 2013] TestHardExternInterfata20USB(): TEST PASSED
+[Sun Jun 16 16:30:21 EEST 2013] TestHardExternInterfata30USB(): Verifica optiunea de a afisa pe pagina doar produsele avand Interfata 3.0USB
+[Sun Jun 16 16:30:24 EEST 2013] Numarul de produse avand interfata 3.0USB: 16
+[Sun Jun 16 16:30:24 EEST 2013] TestHardExternInterfata30USB: TEST PASSED
+[Sun Jun 16 16:30:32 EEST 2013] TestHardExternMarcaSeagate(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Seagate
+[Sun Jun 16 16:30:35 EEST 2013] Numarul de produse Seagate sunt: 9
+[Sun Jun 16 16:30:35 EEST 2013] TestHardExternMarcaSeagate(): TEST PASSED
+[Sun Jun 16 16:30:43 EEST 2013] TestHardExternMarcaToshiba(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba
+[Sun Jun 16 16:30:45 EEST 2013] Numarul de produse Toshiba sunt: 1
+[Sun Jun 16 16:30:45 EEST 2013] TestHardExternMarcaToshiba(): TEST PASSED
+[Sun Jun 16 16:30:53 EEST 2013] TestHardExternMarcaWesternDigital(): Verifica optiunea de a afisa pe pagina doar produsele avand marca WesternDigital
+[Sun Jun 16 16:30:56 EEST 2013] Numarul de produse WD sunt: 10
+[Sun Jun 16 16:30:56 EEST 2013] TestHardExternMarcaWesternDigital(): TEST PASSED
+[Sun Jun 16 16:31:04 EEST 2013] TestPretHDD(): Verifica pretul produselor HDD pe baza fisierului: PreturiProduse.xls
+[Sun Jun 16 16:31:07 EEST 2013] TestPretHDD(): Verify product:HDD Seagate 500 GB 2.5inch GoFlex STAA500200
+[Sun Jun 16 16:31:07 EEST 2013] TestPretHDD(): HDD Seagate 500 GB 2.5inch GoFlex STAA500200 199 did not match DATABASE -- TEST FAILED !!!
+[Sun Jun 16 16:31:16 EEST 2013] TestHardexternPretMaxim260(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 260
+[Sun Jun 16 16:31:19 EEST 2013] Numarul de produse avand pretul mai mic de 260 sunt: 7
+[Sun Jun 16 16:31:19 EEST 2013] TestHardexternPretMaxim260(): TEST PASSED
+[Sun Jun 16 16:31:27 EEST 2013] TestHardexternPretMin390(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mare de 390
+[Sun Jun 16 16:31:29 EEST 2013] Numarul de produse avand pretul mai mare de 360 sunt: 1
+[Sun Jun 16 16:31:29 EEST 2013] TestHardexternPretMin390(): TEST PASSED
+[Sun Jun 16 16:31:37 EEST 2013] TestHardexternPret_260_270(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 260 si 270
+[Sun Jun 16 16:31:39 EEST 2013] Numarul de produse avand pretul intre 260 si 270 sunt: 2
+[Sun Jun 16 16:31:39 EEST 2013] TestHardexternPret_260_270(): TEST PASSED
+[Sun Jun 16 16:31:47 EEST 2013] TestHardexternPret_270_360(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 270 si 360
+[Sun Jun 16 16:31:47 EEST 2013] TestHardexternPret_270_360(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:31:56 EEST 2013] TestHardexternPret_360_390(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 360 si 390
+[Sun Jun 16 16:31:56 EEST 2013] TestHardexternPret_360_390(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:32:05 EEST 2013] TestNotebookDiagonala11_6(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 11,6
+[Sun Jun 16 16:32:10 EEST 2013] Numarul de produse avand diagonala 11.6 sunt: 5
+[Sun Jun 16 16:32:10 EEST 2013] TestNotebookDiagonala11_6(): TEST PASSED
+[Sun Jun 16 16:32:18 EEST 2013] TestNotebookDiagonala13_3(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 13,3
+[Sun Jun 16 16:32:27 EEST 2013] Numarul de produse avand diagonala 13.3 sunt: 35
+[Sun Jun 16 16:32:27 EEST 2013] TestNotebookDiagonala13_3(): TEST PASSED
+[Sun Jun 16 16:32:35 EEST 2013] TestNotebookDiagonala14(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 14
+[Sun Jun 16 16:32:44 EEST 2013] Numarul de produse avand diagonala 14 sunt: 27
+[Sun Jun 16 16:32:44 EEST 2013] TestNotebookDiagonala14(): TEST PASSED
+[Sun Jun 16 16:32:52 EEST 2013] TestNotebookDiagonala15_4(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 15,4
+[Sun Jun 16 16:32:57 EEST 2013] Numarul de produse avand diagonala 15.4 sunt: 3
+[Sun Jun 16 16:32:57 EEST 2013] TestNotebookDiagonala15_4(): TEST PASSED
+[Sun Jun 16 16:33:04 EEST 2013] TestNotebookDiagonala15_5(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 15,5
+[Sun Jun 16 16:33:10 EEST 2013] Numarul de produse avand diagonala 15.5 sunt: 7
+[Sun Jun 16 16:33:10 EEST 2013] TestNotebookDiagonala15_5(): TEST PASSED
+[Sun Jun 16 16:33:17 EEST 2013] TestNotebookDiagonala15_6(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 15,6
+[Sun Jun 16 16:33:36 EEST 2013] Numarul de produse avand diagonala 15.6 sunt: 95
+[Sun Jun 16 16:33:36 EEST 2013] TestNotebookDiagonala15_6(): TEST PASSED
+[Sun Jun 16 16:33:44 EEST 2013] TestNotebookDiagonala17_3(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 17,3
+[Sun Jun 16 16:33:50 EEST 2013] Numarul de produse avand diagonala 17.3 sunt: 13
+[Sun Jun 16 16:33:50 EEST 2013] TestNotebookDiagonala17_3(): TEST PASSED
+[Sun Jun 16 16:33:58 EEST 2013] TestNotebookMarcaAcer(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Acer
+[Sun Jun 16 16:34:05 EEST 2013] Numarul de produse Acer sunt: 36
+[Sun Jun 16 16:34:05 EEST 2013] TestNotebookMarcaAcer(): TEST PASSED
+[Sun Jun 16 16:34:14 EEST 2013] TestNotebookMarcaApple(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Apple
+[Sun Jun 16 16:34:18 EEST 2013] Numarul de produse MacBook sunt: 9
+[Sun Jun 16 16:34:18 EEST 2013] TestNotebookMarcaApple(): TEST PASSED
+[Sun Jun 16 16:34:26 EEST 2013] TestNotebookMarcaAsus(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Asus
+[Sun Jun 16 16:34:30 EEST 2013] Numarul de produse Asus sunt: 11
+[Sun Jun 16 16:34:30 EEST 2013] TestNotebookMarcaAsus(): TEST PASSED
+[Sun Jun 16 16:34:38 EEST 2013] TestNotebookMarcaDell(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Dell
+[Sun Jun 16 16:34:42 EEST 2013] Numarul de produse Dell sunt: 5
+[Sun Jun 16 16:34:42 EEST 2013] TestNotebookMarcaDell(): TEST PASSED
+[Sun Jun 16 16:34:50 EEST 2013] TestNotebookMarcaFujitsu(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Fujitsu
+[Sun Jun 16 16:34:54 EEST 2013] Numarul de produse Fujitsu sunt: 6
+[Sun Jun 16 16:34:54 EEST 2013] TestNotebookMarcaFujitsu(): TEST PASSED
+[Sun Jun 16 16:35:02 EEST 2013] TestNotebookMarcaLenovo(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Lenovo
+[Sun Jun 16 16:35:05 EEST 2013] Numarul de produse Lenovo sunt: 5
+[Sun Jun 16 16:35:05 EEST 2013] TestNotebookMarcaLenovo(): TEST PASSED
+[Sun Jun 16 16:35:13 EEST 2013] TestNotebookMarcaSamsung(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Samsung
+[Sun Jun 16 16:35:17 EEST 2013] Numarul de produse Samsung sunt: 7
+[Sun Jun 16 16:35:17 EEST 2013] TestNotebookMarcaSamsung(): TEST PASSED
+[Sun Jun 16 16:35:25 EEST 2013] TestNotebookMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony Vaio
+[Sun Jun 16 16:35:29 EEST 2013] Numarul de produse Sony sunt: 15
+[Sun Jun 16 16:35:29 EEST 2013] TestNotebookMarcaSony(): TEST PASSED
+[Sun Jun 16 16:35:37 EEST 2013] TestNotebookMarcaToshiba(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba
+[Sun Jun 16 16:35:54 EEST 2013] Numarul de produse Toshiba sunt: 82
+[Sun Jun 16 16:35:54 EEST 2013] TestNotebookMarcaToshiba(): TEST PASSED
+[Sun Jun 16 16:36:02 EEST 2013] TestNotebookPretMaxim2100(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 2100
+[Sun Jun 16 16:36:09 EEST 2013] Numarul de produse avand pretul mai mic de 2100 sunt: 39
+[Sun Jun 16 16:36:09 EEST 2013] TestNotebookPretMaxim2100(): TEST PASSED
+[Sun Jun 16 16:36:17 EEST 2013] TestNotebookPretMin4800(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 4800
+[Sun Jun 16 16:36:17 EEST 2013] TestNotebookPretMin4800(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:36:26 EEST 2013] TestPretNotebook(): Verifica pretul produselor Notebook pe baza fisierului: PreturiProduse.xls
+[Sun Jun 16 16:36:29 EEST 2013] TestPretNotebook(): Verify product:Notebook Asus X401U-WX011D
+[Sun Jun 16 16:36:29 EEST 2013] TestPretNotebook(): Notebook Asus X401U-WX011D 1199 did not match DATABASE -- TEST FAILED !!!
+[Sun Jun 16 16:36:38 EEST 2013] TestNotebookPret_2100_2900(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 2100 si 2900
+[Sun Jun 16 16:36:38 EEST 2013] TestNotebookPret_2100_2900(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:36:47 EEST 2013] TestNotebookPret_2900_3600(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 2900 si 3600
+[Sun Jun 16 16:36:47 EEST 2013] TestNotebookPret_2900_3600(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:36:56 EEST 2013] TestNotebookPret_3600_4800(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 3600 si 4800
+[Sun Jun 16 16:36:57 EEST 2013] TestNotebookPret_3600_4800(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:37:06 EEST 2013] TestSmartphonesMarcaAllview(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Allview
+[Sun Jun 16 16:37:10 EEST 2013] Numarul de produse Allview sunt: 5
+[Sun Jun 16 16:37:10 EEST 2013] TestSmartphonesMarcaAllview: TEST PASSED
+[Sun Jun 16 16:37:18 EEST 2013] TestSmartphonesMarcaApple(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Apple
+[Sun Jun 16 16:37:23 EEST 2013] Numarul de produse iPhone sunt: 3
+[Sun Jun 16 16:37:23 EEST 2013] TestSmartphonesMarcaApple(): TEST PASSED
+[Sun Jun 16 16:37:31 EEST 2013] TestSmartphonesMarcaBlackberry(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Blackberry
+[Sun Jun 16 16:37:35 EEST 2013] TestSmartphonesMarcaBlackberry(): TEST FAILED !!!
+[Sun Jun 16 16:37:43 EEST 2013] TestSmartphonesMarcaMotorola(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Motorola
+[Sun Jun 16 16:37:48 EEST 2013] Numarul de produse Motorola sunt: 1
+[Sun Jun 16 16:37:48 EEST 2013] TestSmartphonesMarcaMotorola(): TEST PASSED
+[Sun Jun 16 16:37:55 EEST 2013] TestSmartphonesMarcaNokia(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Nokia
+[Sun Jun 16 16:38:00 EEST 2013] Numarul de produse Nokia sunt: 2
+[Sun Jun 16 16:38:00 EEST 2013] TestSmartphonesMarcaNokia(): TEST PASSED
+[Sun Jun 16 16:38:08 EEST 2013] TestSmartphonesMarcaPrestigio(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Prestigio
+[Sun Jun 16 16:38:12 EEST 2013] Numarul de produse Prestigio sunt: 5
+[Sun Jun 16 16:38:12 EEST 2013] TestSmartphonesMarcaPrestigio(): TEST PASSED
+[Sun Jun 16 16:38:22 EEST 2013] TestSmartphonesMarcaSamsung(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Samsung
+[Sun Jun 16 16:38:29 EEST 2013] Numarul de produse Samsung sunt: 21
+[Sun Jun 16 16:38:29 EEST 2013] TestSmartphonesMarcaSamsung(): TEST PASSED
+[Sun Jun 16 16:38:37 EEST 2013] TestSmartphonesMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony
+[Sun Jun 16 16:38:42 EEST 2013] Numarul de produse Sony sunt: 2
+[Sun Jun 16 16:38:42 EEST 2013] TestSmartphonesMarcaSony(): TEST PASSED
+[Sun Jun 16 16:38:49 EEST 2013] TestSmartphonesMemoie16GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 16GB
+[Sun Jun 16 16:38:52 EEST 2013] Numarul de produse avand memoria interna de16 GB sunt: 9
+[Sun Jun 16 16:38:52 EEST 2013] TestSmartphonesMemorie16GB(): TEST PASSED
+[Sun Jun 16 16:39:00 EEST 2013] TestSmartphonesMemoie2GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 2GB
+[Sun Jun 16 16:39:03 EEST 2013] Numarul de produse avand memorie interna de2 GB sunt: 2
+[Sun Jun 16 16:39:03 EEST 2013] TestSmartphonesMemorie2GB(): TEST PASSED
+[Sun Jun 16 16:39:10 EEST 2013] TestSmartphonesMemoie2.7GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 2.7 GB
+[Sun Jun 16 16:39:13 EEST 2013] Numarul de produse avand memorie interna de2.7 GB sunt: 1
+[Sun Jun 16 16:39:13 EEST 2013] TestSmartphonesMemorie2.7GB(): TEST PASSED
+[Sun Jun 16 16:39:20 EEST 2013] TestSmartphonesMemoie2.9GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 2.9 GB
+[Sun Jun 16 16:39:21 EEST 2013] TestSmartphonesMemorie2.9GB(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:39:29 EEST 2013] TestSmartphonesMemoie3GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 3GB
+[Sun Jun 16 16:39:32 EEST 2013] Numarul de produse avand memorie interna de3 GB sunt: 4
+[Sun Jun 16 16:39:32 EEST 2013] TestSmartphonesMemorie3GB(): TEST PASSED
+[Sun Jun 16 16:39:40 EEST 2013] TestSmartphonesMemoie4GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 4GB
+[Sun Jun 16 16:39:43 EEST 2013] Numarul de produse avand memorie interna de4 GB sunt: 14
+[Sun Jun 16 16:39:43 EEST 2013] TestSmartphonesMemorie4GB(): TEST PASSED
+[Sun Jun 16 16:39:51 EEST 2013] TestSmartphonesMemoie8GB(): Verifica optiunea de a afisa pe pagina doar produsele avand memorie interna 8GB
+[Sun Jun 16 16:39:54 EEST 2013] Numarul de produse avand memorie interna de8 GB sunt: 7
+[Sun Jun 16 16:39:54 EEST 2013] TestSmartphonesMemorie8GB(): TEST PASSED
+[Sun Jun 16 16:40:01 EEST 2013] TestSmartphonesPretMaxim560(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 560
+[Sun Jun 16 16:40:02 EEST 2013] TestNotebookPretMaxim2100: Option is not available TEST FAILED !!!
+[Sun Jun 16 16:40:10 EEST 2013] TestSmartphonesPretMin1900(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mare de 1900
+[Sun Jun 16 16:40:11 EEST 2013] TestSmartphonesPretMin1900: Option is not available TEST FAILED !!!
+[Sun Jun 16 16:40:20 EEST 2013] TestPretSmartphones(): Verifica pretul produselor Smartphones pe baza fisierului: PreturiProduse.xls
+[Sun Jun 16 16:40:22 EEST 2013] TestPretSmartphones(): Verify product:Smartphone Samsung S5360 Galaxy Y Mettalic Grey
+[Sun Jun 16 16:40:22 EEST 2013] TestPretSmartphones(): Smartphone Samsung S5360 Galaxy Y Mettalic Grey 399 did not match DATABASE -- TEST FAILED !!!
+[Sun Jun 16 16:40:31 EEST 2013] TestSmartphonesPret_1000_1900(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 1000 si 1900
+[Sun Jun 16 16:40:31 EEST 2013] TestSmartphonesPret_1000_1900(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:40:40 EEST 2013] TestSmartphonesPret_560_800(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 560 si 800
+[Sun Jun 16 16:40:40 EEST 2013] TestSmartphonesPret_560_800(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:40:48 EEST 2013] TestSmartphonesPret_800_1000(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 800 si 1000
+[Sun Jun 16 16:40:49 EEST 2013] TestSmartphonesPret_800_1000(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:40:57 EEST 2013] TestSmartphonesRezolutie13MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 13MP
+[Sun Jun 16 16:41:05 EEST 2013] TestSmartphonesRezolutie2MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 2MP
+[Sun Jun 16 16:41:08 EEST 2013] Numarul de produse avand rezolutie foto de2 Megapixeli sunt: 3
+[Sun Jun 16 16:41:08 EEST 2013] TestSmartphonesRezolutie2MP(): TEST PASSED
+[Sun Jun 16 16:41:15 EEST 2013] TestSmartphonesRezolutie3MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3MP
+[Sun Jun 16 16:41:18 EEST 2013] Numarul de produse avand rezolutie foto de3 Megapixeli sunt: 3
+[Sun Jun 16 16:41:18 EEST 2013] TestSmartphonesRezolutie3MP(): TEST PASSED
+[Sun Jun 16 16:41:26 EEST 2013] TestSmartphonesRezolutie3.15MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 3.15MP
+[Sun Jun 16 16:41:28 EEST 2013] Numarul de produse avand rezolutie foto de3.15 Megapixeli sunt: 2
+[Sun Jun 16 16:41:28 EEST 2013] TestSmartphonesRezolutie3.15MP(): TEST PASSED
+[Sun Jun 16 16:41:36 EEST 2013] TestSmartphonesRezolutie5MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 5MP
+[Sun Jun 16 16:41:39 EEST 2013] Numarul de produse avand rezolutie foto de5 Megapixeli sunt: 12
+[Sun Jun 16 16:41:39 EEST 2013] TestSmartphonesRezolutie5MP(): TEST PASSED
+[Sun Jun 16 16:41:46 EEST 2013] TestSmartphonesRezolutie8MP(): Verifica optiunea de a afisa pe pagina doar produsele avand rezolutie foto 8MP
+[Sun Jun 16 16:41:49 EEST 2013] Numarul de produse avand rezolutie foto de8 Megapixeli sunt: 8
+[Sun Jun 16 16:41:49 EEST 2013] TestSmartphonesRezolutie8MP(): TEST PASSED
+[Sun Jun 16 16:41:57 EEST 2013] TestTVLEDDiagonala102(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 102
+[Sun Jun 16 16:42:03 EEST 2013] Numarul de produse avand diagonala 102 sunt: 20
+[Sun Jun 16 16:42:03 EEST 2013] TestTVLEDDiagonala102(): TEST PASSED
+[Sun Jun 16 16:42:11 EEST 2013] TestTVLEDDiagonala107(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 107
+[Sun Jun 16 16:42:19 EEST 2013] Numarul de produse avand diagonala 107 sunt: 27
+[Sun Jun 16 16:42:19 EEST 2013] TestTVLEDDiagonala107(): TEST PASSED
+[Sun Jun 16 16:42:27 EEST 2013] TestTVLEDDiagonala117(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 117
+[Sun Jun 16 16:42:33 EEST 2013] Numarul de produse avand diagonala 117 sunt: 18
+[Sun Jun 16 16:42:33 EEST 2013] TestTVLEDDiagonala117(): TEST PASSED
+[Sun Jun 16 16:42:40 EEST 2013] TestTVLEDDiagonala119(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 119
+[Sun Jun 16 16:42:49 EEST 2013] Numarul de produse avand diagonala 119 sunt: 23
+[Sun Jun 16 16:42:49 EEST 2013] TestTVLEDDiagonala119(): TEST PASSED
+[Sun Jun 16 16:42:56 EEST 2013] TestTVLEDDiagonala127(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 127
+[Sun Jun 16 16:43:01 EEST 2013] Numarul de produse avand diagonala 127 sunt: 6
+[Sun Jun 16 16:43:01 EEST 2013] TestTVLEDDiagonala127(): TEST PASSED
+[Sun Jun 16 16:43:09 EEST 2013] TestTVLEDDiagonala132(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 132
+[Sun Jun 16 16:43:11 EEST 2013] TestTVLEDDiagonala132(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:43:20 EEST 2013] TestTVLEDDiagonala140(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 140
+[Sun Jun 16 16:43:30 EEST 2013] Numarul de produse avand diagonala 140 sunt: 22
+[Sun Jun 16 16:43:30 EEST 2013] TestTVLEDDiagonala140(): TEST PASSED
+[Sun Jun 16 16:43:37 EEST 2013] TestTVLEDDiagonala152(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 152
+[Sun Jun 16 16:43:42 EEST 2013] Numarul de produse avand diagonala 152 sunt: 4
+[Sun Jun 16 16:43:42 EEST 2013] TestTVLEDDiagonala152(): TEST PASSED
+[Sun Jun 16 16:43:50 EEST 2013] TestTVLEDDiagonala163(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 163
+[Sun Jun 16 16:43:54 EEST 2013] Numarul de produse avand diagonala 163 sunt: 2
+[Sun Jun 16 16:43:54 EEST 2013] TestTVLEDDiagonala163(): TEST PASSED
+[Sun Jun 16 16:44:02 EEST 2013] TestTVLEDDiagonala165(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 165
+[Sun Jun 16 16:44:04 EEST 2013] TestTVLEDDiagonala165(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:44:13 EEST 2013] TestTVLEDDiagonala189(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 189
+[Sun Jun 16 16:44:17 EEST 2013] Numarul de produse avand diagonala 189 sunt: 1
+[Sun Jun 16 16:44:17 EEST 2013] TestTVLEDDiagonala189(): TEST PASSED
+[Sun Jun 16 16:44:25 EEST 2013] TestTVLEDDiagonala48(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 48
+[Sun Jun 16 16:44:30 EEST 2013] Numarul de produse avand diagonala 48 sunt: 2
+[Sun Jun 16 16:44:30 EEST 2013] TestTVLEDDiagonala48(): TEST PASSED
+[Sun Jun 16 16:44:38 EEST 2013] TestTVLEDDiagonala56(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 56
+[Sun Jun 16 16:44:43 EEST 2013] Numarul de produse avand diagonala 56 sunt: 5
+[Sun Jun 16 16:44:43 EEST 2013] TestTVLEDDiagonala56(): TEST PASSED
+[Sun Jun 16 16:44:50 EEST 2013] TestTVLEDDiagonala58(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 58
+[Sun Jun 16 16:44:55 EEST 2013] Numarul de produse avand diagonala 58 sunt: 2
+[Sun Jun 16 16:44:55 EEST 2013] TestTVLEDDiagonala58(): TEST PASSED
+[Sun Jun 16 16:45:03 EEST 2013] TestTVLEDDiagonala61(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 61
+[Sun Jun 16 16:45:08 EEST 2013] Numarul de produse avand diagonala 61 sunt: 3
+[Sun Jun 16 16:45:08 EEST 2013] TestTVLEDDiagonala61(): TEST PASSED
+[Sun Jun 16 16:45:15 EEST 2013] TestTVLEDDiagonala66(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 66
+[Sun Jun 16 16:45:20 EEST 2013] Numarul de produse avand diagonala 66 sunt: 4
+[Sun Jun 16 16:45:20 EEST 2013] TestTVLEDDiagonala66(): TEST PASSED
+[Sun Jun 16 16:45:28 EEST 2013] TestTVLEDDiagonala81(): Verifica optiunea de a afisa pe pagina doar produsele avand diagonala: 81
+[Sun Jun 16 16:45:39 EEST 2013] Numarul de produse avand diagonala 81 sunt: 43
+[Sun Jun 16 16:45:39 EEST 2013] TestTVLEDDiagonala81(): TEST PASSED
+[Sun Jun 16 16:45:47 EEST 2013] TestTVLEDMarcaEboda(): Verifica optiunea de a afisa pe pagina doar produsele avand marca: Eboda
+[Sun Jun 16 16:45:51 EEST 2013] Numarul de produse E-Boda sunt: 1
+[Sun Jun 16 16:45:51 EEST 2013] TestTVLEDMarcaEboda(): TEST PASSED
+[Sun Jun 16 16:45:58 EEST 2013] TestTVLEDMarcaLG(): Verifica optiunea de a afisa pe pagina doar produsele avand marca LG
+[Sun Jun 16 16:46:09 EEST 2013] Numarul de produse LG sunt: 48
+[Sun Jun 16 16:46:09 EEST 2013] TestTVLEDMarcaLG(): TEST PASSED
+[Sun Jun 16 16:46:17 EEST 2013] TestTVLEDMarcaPanasonic(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Panasonic
+[Sun Jun 16 16:46:21 EEST 2013] Numarul de produse Panasonic sunt: 8
+[Sun Jun 16 16:46:21 EEST 2013] TestTVLEDMarcaPanasonic(): TEST PASSED
+[Sun Jun 16 16:46:29 EEST 2013] TestTVLEDMarcaPhilips(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Philips
+[Sun Jun 16 16:46:36 EEST 2013] Numarul de produse Philips sunt: 24
+[Sun Jun 16 16:46:36 EEST 2013] TestTVLEDMarcaPhilips(): TEST PASSED
+[Sun Jun 16 16:46:44 EEST 2013] TestTVLEDMarcaSamsung(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Samsung
+[Sun Jun 16 16:46:58 EEST 2013] Numarul de produse Samsung sunt: 65
+[Sun Jun 16 16:46:58 EEST 2013] TestTVLEDMarcaSamsung(): TEST PASSED
+[Sun Jun 16 16:47:05 EEST 2013] TestTVLEDMarcaSharp(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sharp
+[Sun Jun 16 16:47:10 EEST 2013] Numarul de produse Sharp sunt: 12
+[Sun Jun 16 16:47:10 EEST 2013] TestTVLEDMarcaSharp(): TEST PASSED
+[Sun Jun 16 16:47:17 EEST 2013] TestTVLEDMarcaSony(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Sony
+[Sun Jun 16 16:47:22 EEST 2013] Numarul de produse Sony sunt: 15
+[Sun Jun 16 16:47:22 EEST 2013] TestTVLEDMarcaSony(): TEST PASSED
+[Sun Jun 16 16:47:29 EEST 2013] TestTVLEDMarcaTelefunken(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Telefunken
+[Sun Jun 16 16:47:33 EEST 2013] Numarul de produse Telefunken sunt: 4
+[Sun Jun 16 16:47:33 EEST 2013] TestTVLEDMarcaTelefunken(): TEST PASSED
+[Sun Jun 16 16:47:41 EEST 2013] TestTVLEDMarcaToshiba(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Toshiba
+[Sun Jun 16 16:47:45 EEST 2013] Numarul de produse Toshiba sunt: 18
+[Sun Jun 16 16:47:45 EEST 2013] TestTVLEDMarcaToshiba(): TEST PASSED
+[Sun Jun 16 16:47:53 EEST 2013] TestTVLEDMarcaWestwood(): Verifica optiunea de a afisa pe pagina doar produsele avand marca Westwood
+[Sun Jun 16 16:47:57 EEST 2013] Numarul de produse Westwood sunt: 2
+[Sun Jun 16 16:47:57 EEST 2013] TestTVLEDMarcaWestwood(): TEST PASSED
+[Sun Jun 16 16:48:05 EEST 2013] TestTVLEDPretMax1700(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 1700
+[Sun Jun 16 16:48:05 EEST 2013] TestTVLEDPretMax1700(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:48:14 EEST 2013] TestTVLEDPretMin6200(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 6200
+[Sun Jun 16 16:48:14 EEST 2013] TestTVLEDPretMin6200(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:48:23 EEST 2013] TestPretLEDTV(): Verifica pretul produselor Notebook pe baza fisierului: PreturiProduse.xls
+[Sun Jun 16 16:48:25 EEST 2013] TestPretLEDTV(): Verify product:LED TV Westwood 19V1 LED
+[Sun Jun 16 16:48:25 EEST 2013] TestPretLEDTV(): LED TV Westwood 19V1 LED 549 MATCHED DATABASE
+[Sun Jun 16 16:48:25 EEST 2013] TestPretLEDTV(): Verify product:LED TV Westwood FullHD 22V1 LED
+[Sun Jun 16 16:48:25 EEST 2013] TestPretLEDTV(): LED TV Westwood FullHD 22V1 LED 670 did not match DATABASE -- TEST FAILED !!!
+[Sun Jun 16 16:48:34 EEST 2013] TestTVLEDPret_1700_2700(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 1700 si 2700
+[Sun Jun 16 16:48:34 EEST 2013] TestTVLEDPret_1700_2700(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:48:42 EEST 2013] TestTVLEDPret_2700_4000(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 2700 si 4000
+[Sun Jun 16 16:48:43 EEST 2013] TestTVLEDPret_2700_4000(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:48:51 EEST 2013] TestTVLEDPret_4000_6200(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 4000 si 6200
+[Sun Jun 16 16:48:52 EEST 2013] TestTVLEDPret_4000_6200(): Option is not available TEST FAILED !!!
+[Sun Jun 16 16:49:00 EEST 2013] TestTV3D: Verifica optiunea de a afisa pe pagina doar produsele 3D
+[Sun Jun 16 16:49:20 EEST 2013] Numarul de produse 3D sunt: 103
+[Sun Jun 16 16:49:20 EEST 2013] TestTV3D(): TEST PASSED
+[Sun Jun 16 16:49:28 EEST 2013] TestTVnon3D(): Verifica optiunea de a afisa pe pagina doar produsele non3D
+[Sun Jun 16 16:49:45 EEST 2013] Numarul de produse non 3D sunt: 93
+[Sun Jun 16 16:49:45 EEST 2013] TestTVNON3D(): TEST PASSED

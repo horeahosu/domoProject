@@ -52,6 +52,7 @@ public class SmartphonesRezolutie13MP {
 		}
 		assertTrue(h.isElementPresent(By.id("CB_3_13_Megapixeli"))==true);
 		
+		d.findElements(By.linkText("altele...")).get(2).click();
 		d.findElement(By.id("CB_3_13_Megapixeli")).click();
 		Thread.sleep(2000);
 		
