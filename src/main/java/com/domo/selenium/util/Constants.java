@@ -129,9 +129,9 @@ public class Constants {
 	public final static String DIAGONALA_15_6 ="15.6";
 	public final static String DIAGONALA_17_3 ="17.3";
 	public final static int NOTEBOOK_PRET_2100 = 2100;
-	public final static int NOTEBOOK_PRET_2900 = 2900;
-	public final static int NOTEBOOK_PRET_3600 = 3600;
-	public final static int NOTEBOOK_PRET_4800 = 4800;
+	public final static int NOTEBOOK_PRET_3000 = 3000;
+	public final static int NOTEBOOK_PRET_3800 = 3800;
+	public final static int NOTEBOOK_PRET_5100 = 5100;
 	
 	//TVLED
 	public final static String SITE_TVLED = "http://www.domo.ro/Televizoare_&_Home_cinema/Televizoare/LED_TV";
@@ -172,8 +172,8 @@ public class Constants {
 	public final static String MARCA_WESTERNDIGITAL2 ="Western Digital";
 	public final static String MARCA_SEAGATE ="Seagate";
 	public final static int HARD_EXTERN_PRET_260 =260;
-	public final static int HARD_EXTERN_PRET_270 =270;
-	public final static int HARD_EXTERN_PRET_360 =360;
+	public final static int HARD_EXTERN_PRET_300 =300;
+	public final static int HARD_EXTERN_PRET_350 =350;
 	public final static int HARD_EXTERN_PRET_390 =390;
 	public final static String CAPACITATE_500 ="500 Gb";
 	public final static String CAPACITATE_1000 ="1000 Gb";

@@ -83,9 +83,9 @@ public class TVLEDMarcaSamsung {
 				}
 			} 
 			else 
-				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
+				{ if (h.isElementPresent(By.id("NextPage"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage2")).click();
+						d.findElement(By.id("NextPage")).click();
 						Thread.sleep(2000);
 						i=1;
 						j=1;

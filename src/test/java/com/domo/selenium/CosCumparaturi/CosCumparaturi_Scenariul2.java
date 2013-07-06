@@ -51,10 +51,13 @@ public class CosCumparaturi_Scenariul2 {
 		d.findElement(By.xpath(String.format(Constants.domo_product_name_xpath, 1,1))).click();
 		
 		//stochez pretul
-		h.waitForElementPresent(By.xpath("/html/body/div/div[3]/div[2]/div[3]/table/tbody/tr[2]/td/div/span/strong"), 5);
-		String price1 = d.findElement(By.xpath("/html/body/div/div[3]/div[2]/div[3]/table/tbody/tr[2]/td/div/span/strong")).getText();
+		h.waitForElementPresent(By.xpath("/html/body/div/div[4]/div[2]/div[3]/table/tbody/tr[2]/td/div/span/strong"), 5);
+		                                
+		String price1 = d.findElement(By.xpath("/html/body/div/div[4]/div[2]/div[3]/table/tbody/tr[2]/td/div/span/strong")).getText();
+		System.out.println(price1);
 		//adaug in cos
-		d.findElement(By.xpath("/html/body/div/div[3]/div[2]/div[3]/table/tbody/tr[3]/td/div/div/input")).click();		                        
+		d.findElement(By.xpath("/html/body/div/div[4]/div[2]/div[3]/table/tbody/tr[3]/td/div/div/input")).click();	
+		                   
 		Thread.sleep(2000);
 		//verific pret pe pagina Pasul1
 		String price2 = d.findElement(By.xpath("/html/body/div[4]/div/div/div/div/div/div/form/table/tbody/tr/td[4]")).getText();

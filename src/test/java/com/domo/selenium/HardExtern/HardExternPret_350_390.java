@@ -1,4 +1,4 @@
-package com.domo.selenium.Notebook;
+package com.domo.selenium.HardExtern;
 
 import static org.junit.Assert.assertTrue;
 
@@ -14,7 +14,7 @@ import com.domo.selenium.util.Constants;
 import com.domo.selenium.util.WebDriverHelper;
 import com.domo.selenium.util.logger;
 
-public class NotebookPret_3600_4800 {
+public class HardExternPret_350_390 {
 	
 	FirefoxDriver d = WebDriverHelper.getDriverWithUserAgent(Constants.USER_AGENT);
 	WebDriverHelper h = new WebDriverHelper(d);
@@ -28,36 +28,36 @@ public class NotebookPret_3600_4800 {
 	public void doSetup()
 	{	
 		d.manage().deleteAllCookies();
-		d.get(Constants.SITE_NOTEBOOK);
+		d.get(Constants.SITE_HARDEXTERN);
 	}
 	
 	/**
-	 * TestNotebookPret_3600_4800(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 3600 si 4800
+	 * TestHardexternPret_350_390(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 350 si 390
 	 * 
 	 */
 	
 	@Test
-	public void TestNotebookPret_2900_3600() throws InterruptedException, IOException
+	public void TestHardexternPret_350_390() throws InterruptedException, IOException
 	{
 		
 		//verific daca sunt pe site-ul bun
-		logger.Log(LOG_FILE, "TestNotebookPret_3600_4800(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 3600 si 4800");
+		logger.Log(LOG_FILE, "TestHardexternPret_360_390(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 350 si 390");
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
-		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook")==false)
+		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard")==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookPret_3600_4800(): Wrong page TEST FAILED !!!");
-			h.screenShooter("TestNotebookPret_3600_4800", d);
+			logger.Log(LOG_FILE, "TestHardexternPret_350_390(): Wrong page TEST FAILED !!!");
+			h.screenShooter("TestHardexternPret_350_390()", d);
 		}
-		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
 		
-		if (h.isElementPresent(By.id("CB_1_Intre_3.600_-_4.800_lei"))==false)
+		if (h.isElementPresent(By.id("CB_1_Intre_350_-_390_lei"))==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookPret_3600_4800(): Option is not available TEST FAILED !!!");
-			h.screenShooter("TestNotebookPret_3600_4800", d);
+			logger.Log(LOG_FILE, "TestHardexternPret_350_390(): Option is not available TEST FAILED !!!");
+			h.screenShooter("TestHardexternPret_350_390", d);
 		}
-		assertTrue(h.isElementPresent(By.id("CB_1_Intre_3.600_-_4.800_lei"))==true);			
+		assertTrue(h.isElementPresent(By.id("CB_1_Intre_350_-_390_lei"))==true);			
 				
-		d.findElement(By.id("CB_1_Intre_3.600_-_4.800_lei")).click();
+		d.findElement(By.id("CB_1_Intre_350_-_390_lei")).click();
 		Thread.sleep(2000);
 		
 		while (b!=true)
@@ -72,13 +72,13 @@ public class NotebookPret_3600_4800 {
 			
 				int amount = h.ConvertAmountToInt(pret_produs);
 				
-				if (((amount>Constants.NOTEBOOK_PRET_3600)==false) || (amount<Constants.NOTEBOOK_PRET_4800)==false)
+				if (((amount>Constants.HARD_EXTERN_PRET_350)==false) || (amount<Constants.HARD_EXTERN_PRET_390)==false)
 				{
-					logger.Log(LOG_FILE, "TestNotebookPret_3600_4800(): A product with non coresponding price was found TEST FAILED !!!");
-					h.screenShooter("TestNotebookPret_3600_4800", d);
+					logger.Log(LOG_FILE, "TestHardexternPret_350_390(): A product with non coresponding price was found TEST FAILED !!!");
+					h.screenShooter("TestHardexternPret_350_390", d);
 				}
-				assertTrue(amount>Constants.NOTEBOOK_PRET_3600);
-				assertTrue(amount<Constants.NOTEBOOK_PRET_4800);
+				assertTrue(amount>Constants.HARD_EXTERN_PRET_350);
+				assertTrue(amount<Constants.HARD_EXTERN_PRET_390);				
 				//procesez
 				
 				k++;
@@ -90,9 +90,9 @@ public class NotebookPret_3600_4800 {
 				}
 			} 
 			else 
-				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
+				{ if (h.isElementPresent(By.id("NextPage"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage2")).click();
+						d.findElement(By.id("NextPage")).click();
 						i=6;
 						j=1;
 						Thread.sleep(2000);
@@ -100,8 +100,8 @@ public class NotebookPret_3600_4800 {
 					else
 					{
 						b=true;
-						logger.Log(LOG_FILE, "Numarul de produse avand pretul intre 3600 si 4800 sunt: "+k);
-						logger.Log(LOG_FILE, "TestNotebookPret_3600_4800(): TEST PASSED");
+						logger.Log(LOG_FILE, "Numarul de produse avand pretul intre 350 si 390 sunt: "+k);
+						logger.Log(LOG_FILE, "TestHardexternPret_350_390(): TEST PASSED");
 						i=3;
 						j=1;
 					}

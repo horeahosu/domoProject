@@ -84,9 +84,9 @@ public class NotebookDiagonala_13_3 {
 				}
 			} 
 			else 
-				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
+				{ if (h.isElementPresent(By.id("NextPage"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage2")).click();
+						d.findElement(By.id("NextPage")).click();
 						i=3;
 						j=1;
 						Thread.sleep(2000);

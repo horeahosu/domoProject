@@ -14,7 +14,7 @@ import com.domo.selenium.util.Constants;
 import com.domo.selenium.util.WebDriverHelper;
 import com.domo.selenium.util.logger;
 
-public class NotebookPret_2900_3600 {
+public class NotebookPretMin5100 {
 	
 	FirefoxDriver d = WebDriverHelper.getDriverWithUserAgent(Constants.USER_AGENT);
 	WebDriverHelper h = new WebDriverHelper(d);
@@ -32,32 +32,32 @@ public class NotebookPret_2900_3600 {
 	}
 	
 	/**
-	 * TestNotebookPret_2900_3600(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 2900 si 3600
+	 * TestNotebookPretMin5100(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 5100
 	 * 
 	 */
 	
 	@Test
-	public void TestNotebookPret_2900_3600() throws InterruptedException, IOException
+	public void TestNotebookPretMaxim5100() throws InterruptedException, IOException
 	{
 		
 		//verific daca sunt pe site-ul bun
-		logger.Log(LOG_FILE, "TestNotebookPret_2900_3600(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 2900 si 3600");
+		logger.Log(LOG_FILE, "TestNotebookPretMin5100(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul mai mic de 5100");
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook")==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookPret_2900_3600(): Wrong page TEST FAILED !!!");
-			h.screenShooter("TestNotebookPret_2900_3600", d);
+			logger.Log(LOG_FILE, "TestNotebookPretMin5100(): Wrong page TEST FAILED !!!");
+			h.screenShooter("TestNotebookPretMin5100", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
 		
-		if (h.isElementPresent(By.id("CB_1_Intre_2.900_-_3.600_lei"))==false)
+		if (h.isElementPresent(By.id("CB_1_Peste_5.100_lei"))==false)
 		{
-			logger.Log(LOG_FILE, "TestNotebookPret_2900_3600(): Option is not available TEST FAILED !!!");
-			h.screenShooter("TestNotebookPret_2900_3600", d);
+			logger.Log(LOG_FILE, "TestNotebookPretMin5100(): Option is not available TEST FAILED !!!");
+			h.screenShooter("TestNotebookPretMin5100", d);
 		}
-		assertTrue(h.isElementPresent(By.id("CB_1_Intre_2.900_-_3.600_lei"))==true);			
+		assertTrue(h.isElementPresent(By.id("CB_1_Peste_5.100_lei"))==true);			
 				
-		d.findElement(By.id("CB_1_Intre_2.900_-_3.600_lei")).click();
+		d.findElement(By.id("CB_1_Peste_5.100_lei")).click();
 		Thread.sleep(2000);
 		
 		while (b!=true)
@@ -72,13 +72,12 @@ public class NotebookPret_2900_3600 {
 			
 				int amount = h.ConvertAmountToInt(pret_produs);
 				
-				if (((amount>Constants.NOTEBOOK_PRET_2900)==false) || (amount<Constants.NOTEBOOK_PRET_3600)==false)
+				if ((amount>Constants.NOTEBOOK_PRET_5100)==false)
 				{
-					logger.Log(LOG_FILE, "TestNotebookPret_2900_3600(): A product with non coresponding price was found TEST FAILED !!!");
-					h.screenShooter("TestNotebookPret_2900_3600", d);
+					logger.Log(LOG_FILE, "TestNotebookPretMin5100(): A product with non coresponding price was found TEST FAILED !!!");
+					h.screenShooter("TestNotebookPretMin5100", d);
 				}
-				assertTrue(amount>Constants.NOTEBOOK_PRET_2900);
-				assertTrue(amount<Constants.NOTEBOOK_PRET_3600);
+				assertTrue(amount>Constants.NOTEBOOK_PRET_5100);
 				//procesez
 				
 				k++;
@@ -100,8 +99,8 @@ public class NotebookPret_2900_3600 {
 					else
 					{
 						b=true;
-						logger.Log(LOG_FILE, "Numarul de produse avand pretul intre 2900 si 3600 sunt: "+k);
-						logger.Log(LOG_FILE, "TestNotebookPret_2900_3600(): TEST PASSED");
+						logger.Log(LOG_FILE, "Numarul de produse avand pretul mai mare de 5100 sunt: "+k);
+						logger.Log(LOG_FILE, "TestNotebookPretMin5100(): TEST PASSED");
 						i=3;
 						j=1;
 					}

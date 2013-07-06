@@ -1,4 +1,4 @@
-package com.domo.selenium.HardExtern;
+package com.domo.selenium.Notebook;
 
 import static org.junit.Assert.assertTrue;
 
@@ -14,7 +14,7 @@ import com.domo.selenium.util.Constants;
 import com.domo.selenium.util.WebDriverHelper;
 import com.domo.selenium.util.logger;
 
-public class HardExternPret_270_360 {
+public class NotebookPret_3800_5100 {
 	
 	FirefoxDriver d = WebDriverHelper.getDriverWithUserAgent(Constants.USER_AGENT);
 	WebDriverHelper h = new WebDriverHelper(d);
@@ -28,36 +28,36 @@ public class HardExternPret_270_360 {
 	public void doSetup()
 	{	
 		d.manage().deleteAllCookies();
-		d.get(Constants.SITE_HARDEXTERN);
+		d.get(Constants.SITE_NOTEBOOK);
 	}
 	
 	/**
-	 * TestHardexternPret_270_360(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 270 si 360
+	 * TestNotebookPret_3800_5100(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 3800 si 5100
 	 * 
 	 */
 	
 	@Test
-	public void TestHardexternPret_270_360() throws InterruptedException, IOException
+	public void TestNotebookPret_3800_5100() throws InterruptedException, IOException
 	{
 		
 		//verific daca sunt pe site-ul bun
-		logger.Log(LOG_FILE, "TestHardexternPret_270_360(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 270 si 360");
+		logger.Log(LOG_FILE, "TestNotebookPret_3800_5100(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 3800 si 5100");
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
-		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard")==false)
+		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook")==false)
 		{
-			logger.Log(LOG_FILE, "TestHardexternPret_270_360(): Wrong page TEST FAILED !!!");
-			h.screenShooter("TestHardexternPret_270_360", d);
+			logger.Log(LOG_FILE, "TestNotebookPret_3800_5100(): Wrong page TEST FAILED !!!");
+			h.screenShooter("TestNotebookPret_3800_5100", d);
 		}
-		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
+		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Notebook"));
 		
-		if (h.isElementPresent(By.id("CB_1_Intre_270_-_360_lei"))==false)
+		if (h.isElementPresent(By.id("CB_1_Intre_3.800_-_5.100_lei"))==false)
 		{
-			logger.Log(LOG_FILE, "TestHardexternPret_270_360(): Option is not available TEST FAILED !!!");
-			h.screenShooter("TestHardexternPret_270_360", d);
+			logger.Log(LOG_FILE, "TestNotebookPret_3800_5100(): Option is not available TEST FAILED !!!");
+			h.screenShooter("TestNotebookPret_3800_5100", d);
 		}
-		assertTrue(h.isElementPresent(By.id("CB_1_Intre_270_-_360_lei"))==true);			
+		assertTrue(h.isElementPresent(By.id("CB_1_Intre_3.800_-_5.100_lei"))==true);			
 				
-		d.findElement(By.id("CB_1_Intre_270_-_360_lei")).click();
+		d.findElement(By.id("CB_1_Intre_3.800_-_5.100_lei")).click();
 		Thread.sleep(2000);
 		
 		while (b!=true)
@@ -72,13 +72,13 @@ public class HardExternPret_270_360 {
 			
 				int amount = h.ConvertAmountToInt(pret_produs);
 				
-				if (((amount>Constants.HARD_EXTERN_PRET_270)==false) || (amount<Constants.HARD_EXTERN_PRET_360)==false)
+				if (((amount>Constants.NOTEBOOK_PRET_3800)==false) || (amount<Constants.NOTEBOOK_PRET_5100)==false)
 				{
-					logger.Log(LOG_FILE, "TestHardexternPret_270_360(): A product with non coresponding price was found TEST FAILED !!!");
-					h.screenShooter("TestHardexternPret_270_360", d);
+					logger.Log(LOG_FILE, "TestNotebookPret_3800_5100(): A product with non coresponding price was found TEST FAILED !!!");
+					h.screenShooter("TestNotebookPret_3800_5100", d);
 				}
-				assertTrue(amount>Constants.HARD_EXTERN_PRET_270);
-				assertTrue(amount<Constants.HARD_EXTERN_PRET_360);				
+				assertTrue(amount>Constants.NOTEBOOK_PRET_3800);
+				assertTrue(amount<Constants.NOTEBOOK_PRET_5100);
 				//procesez
 				
 				k++;
@@ -100,8 +100,8 @@ public class HardExternPret_270_360 {
 					else
 					{
 						b=true;
-						logger.Log(LOG_FILE, "Numarul de produse avand pretul intre 270 si 360 sunt: "+k);
-						logger.Log(LOG_FILE, "TestHardexternPret_270_360(): TEST PASSED");
+						logger.Log(LOG_FILE, "Numarul de produse avand pretul intre 3800 si 5100 sunt: "+k);
+						logger.Log(LOG_FILE, "TestNotebookPret_3800_5100(): TEST PASSED");
 						i=3;
 						j=1;
 					}

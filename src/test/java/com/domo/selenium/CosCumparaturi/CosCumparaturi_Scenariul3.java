@@ -51,7 +51,7 @@ public class CosCumparaturi_Scenariul3 {
 		Thread.sleep(2000);
 		
 		//adaug in cos
-		d.findElement(By.xpath("/html/body/div/div[3]/div[2]/div[3]/table/tbody/tr[3]/td/div/div/input")).click();		                        
+		d.findElement(By.xpath("/html/body/div/div[4]/div[2]/div[3]/table/tbody/tr[3]/td/div/div/input")).click();		                        
 		Thread.sleep(2000);     
 		
 		//verific ca produsul exista in cosul de cumparaturi pe pagina Pasul1

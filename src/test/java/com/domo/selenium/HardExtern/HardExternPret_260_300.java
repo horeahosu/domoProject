@@ -14,7 +14,7 @@ import com.domo.selenium.util.Constants;
 import com.domo.selenium.util.WebDriverHelper;
 import com.domo.selenium.util.logger;
 
-public class HardExternPret_360_390 {
+public class HardExternPret_260_300 {
 	
 	FirefoxDriver d = WebDriverHelper.getDriverWithUserAgent(Constants.USER_AGENT);
 	WebDriverHelper h = new WebDriverHelper(d);
@@ -32,32 +32,32 @@ public class HardExternPret_360_390 {
 	}
 	
 	/**
-	 * TestHardexternPret_360_390(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 360 si 390
+	 * TestHardexternPret_260_300(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 260 si 300
 	 * 
 	 */
 	
 	@Test
-	public void TestHardexternPret_270_360() throws InterruptedException, IOException
+	public void TestHardexternPret_260_300() throws InterruptedException, IOException
 	{
 		
 		//verific daca sunt pe site-ul bun
-		logger.Log(LOG_FILE, "TestHardexternPret_360_390(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 360 si 390");
+		logger.Log(LOG_FILE, "TestHardexternPret_260_300(): Verifica optiunea de a afisa pe pagina doar produsele avand pretul intre 260 si 300");
 		h.waitForElementPresent(By.xpath(Constants.domo_product_first_title_xpath), 5);
 		if (d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard")==false)
 		{
-			logger.Log(LOG_FILE, "TestHardexternPret_360_390(): Wrong page TEST FAILED !!!");
-			h.screenShooter("TestHardexternPret_360_390()", d);
+			logger.Log(LOG_FILE, "TestHardexternPretMaxim260(): Wrong page TEST FAILED !!!");
+			h.screenShooter("TestHardexternPretMaxim260", d);
 		}
 		assertTrue(d.findElement(By.xpath(Constants.domo_product_first_title_xpath)).getText().contains("Hard"));
 		
-		if (h.isElementPresent(By.id("CB_1_Intre_360_-_390_lei"))==false)
+		if (h.isElementPresent(By.id("CB_1_Intre_260_-_300_lei"))==false)
 		{
-			logger.Log(LOG_FILE, "TestHardexternPret_360_390(): Option is not available TEST FAILED !!!");
-			h.screenShooter("TestHardexternPret_360_390", d);
+			logger.Log(LOG_FILE, "TestHardexternPretMaxim260(): Option is not available TEST FAILED !!!");
+			h.screenShooter("TestHardexternPretMaxim260", d);
 		}
-		assertTrue(h.isElementPresent(By.id("CB_1_Intre_360_-_390_lei"))==true);			
+		assertTrue(h.isElementPresent(By.id("CB_1_Intre_260_-_300_lei"))==true);			
 				
-		d.findElement(By.id("CB_1_Intre_360_-_390_lei")).click();
+		d.findElement(By.id("CB_1_Intre_260_-_300_lei")).click();
 		Thread.sleep(2000);
 		
 		while (b!=true)
@@ -72,13 +72,13 @@ public class HardExternPret_360_390 {
 			
 				int amount = h.ConvertAmountToInt(pret_produs);
 				
-				if (((amount>Constants.HARD_EXTERN_PRET_360)==false) || (amount<Constants.HARD_EXTERN_PRET_390)==false)
+				if (((amount>Constants.HARD_EXTERN_PRET_260)==false) || (amount<Constants.HARD_EXTERN_PRET_300)==false)
 				{
-					logger.Log(LOG_FILE, "TestHardexternPret_360_390(): A product with non coresponding price was found TEST FAILED !!!");
-					h.screenShooter("TestHardexternPret_360_390", d);
+					logger.Log(LOG_FILE, "TestHardexternPret_260_300(): A product with non coresponding price was found TEST FAILED !!!");
+					h.screenShooter("TestHardexternPret_260_300", d);
 				}
-				assertTrue(amount>Constants.HARD_EXTERN_PRET_360);
-				assertTrue(amount<Constants.HARD_EXTERN_PRET_390);				
+				assertTrue(amount>Constants.HARD_EXTERN_PRET_260);
+				assertTrue(amount<Constants.HARD_EXTERN_PRET_300);				
 				//procesez
 				
 				k++;
@@ -90,9 +90,9 @@ public class HardExternPret_360_390 {
 				}
 			} 
 			else 
-				{ if (h.isElementPresent(By.id("NextPage2"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
+				{ if (h.isElementPresent(By.id("NextPage"))==true && (d.findElement(By.id("NextPage")).isDisplayed()==true))
 					{
-						d.findElement(By.id("NextPage2")).click();
+						d.findElement(By.id("NextPage")).click();
 						i=6;
 						j=1;
 						Thread.sleep(2000);
@@ -100,8 +100,8 @@ public class HardExternPret_360_390 {
 					else
 					{
 						b=true;
-						logger.Log(LOG_FILE, "Numarul de produse avand pretul intre 360 si 390 sunt: "+k);
-						logger.Log(LOG_FILE, "TestHardexternPret_360_390(): TEST PASSED");
+						logger.Log(LOG_FILE, "Numarul de produse avand pretul intre 260 si 300 sunt: "+k);
+						logger.Log(LOG_FILE, "TestHardexternPret_260_300(): TEST PASSED");
 						i=3;
 						j=1;
 					}
