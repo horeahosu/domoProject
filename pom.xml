@@ -49,16 +49,10 @@
                 <version >2.10</version>
                 <configuration>
                     <includes>
-                    	<include>**/CosCumparaturi*</include>
-                    	<include>**/General*</include>
-                        <include>**/HardExtern*</include>
-                        <include>**/Notebook*</include>
-                        <include>**/Smartphones*</include>
-                        <include>**/TVLED*</include>
+                    	<include>**/NotebookMarcaToshiba*</include>
+                    	<include>**/SmartphonesMemorie2_9GB*</include>
+                        <include>**/TVLEDPretProduse*</include>
                     </includes>
-                     <excludes>
-            			<exclude>**/GeneralRate.java</exclude>
-          			</excludes>
                 </configuration>
             </plugin>
             <plugin >
